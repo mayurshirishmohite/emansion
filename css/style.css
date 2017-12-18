@@ -414,11 +414,12 @@
     
     .property-title-date .date {
         /* line-height: 46px; */
-        padding-top: 11px;
     }
     
     .property-title-date a.more-menu {
         padding: 0 5px;
+        margin-top: 8px;
+        display: inline-block;
         color: rgba(255, 255, 255, 0);
     }
     
@@ -514,8 +515,28 @@
         padding: 3px 8px;
     }
     
-    .ratings {
-        font-size: 20px;
+    .rating ul {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .rating li {
+        display: inline;
+        position: relative;
+    }
+    
+    .rating span.st1::before {
+        font-family: "FontAwesome";
+        content: "\f005";
+        color: #f9560d;
+        font-size: 24px;
+    }
+    
+    .rating span.st0::before {
+        font-family: "FontAwesome";
+        content: "\f005";
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 24px;
     }
     
     .property-description h2 {
