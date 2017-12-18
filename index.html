@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Mansion Community</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Custom Google Fonts ROBOTO-->
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav:100,400,700" rel="stylesheet">
+    <!-- FontAwesome icons -->
+    <script src="https://use.fontawesome.com/9be66cb674.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- Sticky buttons -->
+    <div id="detail_and_post">
+        <div class="sticky-btns"> <a href="#">Detail</a> <a id="sticky-action-btn">Post Review</a> </div>
+        <div class="sticky-posts"> <a id="close-sticky-inputs">X</a> <a class="attachment" href=""><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+            <input type="text" placeholder="Write post..." />
+            <a href="#">Post</a> </div>
+    </div>
+
+
+    <div id="header">
+        <div class="mc-wrapper clearfix">
+
+            <div class="col-xs-2 col-lg-1 col-md-1 col-sm-2">
+                <nav>
+                    <div id="nav-icon" class="pull-left clearfix"> <span></span> <span></span> <span></span> </div>
+
+                </nav>
+            </div>
+            <div class="col-xs-8 col-lg-10 col-md-10 col-sm-8">
+                <div class="text-center"><img src="images/img_logo.png" /></div>
+            </div>
+            <div class="col-xs-2 col-lg-1 col-md-1 col-sm-2">
+                <div class="text-right">
+                    <div id="sb-search" class="sb-search">
+                        <a class="sb-search-cta">
+                            <i class="fa fa-search"></i>
+
+                            <div id="nav-icon-search" class="open pull-right"> <span></span> <span></span> <span></span> </div>
+
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Search Form -->
+    <div class="search-form-container">
+        <form id="search-form">
+            <div class="row">
+                <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+                    <input class="sb-search-input" placeholder="Search..." type="search" value="" name="search">
+                    <button type="submit"> <i class="fa fa-search"></i> </button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <div class="main-menu" style="display: none;">
+        <ul class="clearfix primary-menu">
+
+            <li><a class="active">Home</a></li>
+            <li> <a>Discussion Board</a> </li>
+            <li> <a> Something </a> </li>
+
+        </ul>
+        <div class="menu-thread-title">Recently viewed threads</div>
+        <ul class="clearfix thread-menu">
+
+            <li><a>Thread name</a></li>
+            <li> <a>Thread name</a> </li>
+            <li> <a> Thread name </a> </li>
+
+        </ul>
+
+    </div>
+    <div id="fadein_inquiry_position"></div>
+
+    <!-- Advertisement -->
+    <div id="Ad">
+
+    </div>
+
+    <!-- TABS -->
+    <div id="myTabs">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs custom-nav-tabs">
+            <li class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"> 検討</a></li>
+            <li><a href="#tab2" aria-controls="profile" role="tab" data-toggle="tab">  住民 </a></li>
+            <li><a href="#tab3" aria-controls="settings" role="tab" data-toggle="tab">  価格</a></li>
+            <li><a href="#tab4" aria-controls="settings" role="tab" data-toggle="tab">見学記</a></li>
+
+        </ul>
+
+        <!-- Tab pane 1 Thread -->
+        <div class="tab-content">
+            <div class="tab-pane active fade in" id="home">
+                <div class="mc-property-overview position-relative ">
+                    <div class="property-thumbnail"> <img src="https://realestate.c.yimg.jp/new/mansion/image/resize?dir=rich/1002/2063/image/100220630048.jpg" alt="property name" title="property name" />
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="spacer-20px">
+                        <div class="property-title-date">
+                            <div class="row no-margin">
+                                <div class="col-md-10 col-lg-10 col-sm-9 col-xs-9 no-padding">
+                                    <h1>東京都下（市部）</h1>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-3 col-xs-3 no-padding">
+                                    <div class="text-right dropup">
+                                        <a href="#" class="dropdown-toggle more-menu" data-toggle="dropdown" role="button" aria-expanded="true">
+                                            <span></span> <span></span> <span></span>
+                                        </a>
+                                        <ul class="dropdown-menu dropup-custom" role="menu">
+                                            <li><a href="#">Report</a></li>
+                                            <li><a href="#">Share</a></li>
+                                            <div class="css-shapes-arrow"></div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row no-margin">
+                                <div class="col-md-10 col-lg-10 col-sm-9 col-xs-9 no-padding">
+                                    <div class="rating">
+                                        <div class="rating">
+                                            <ul>
+                                                <li><span class="st1"></span></li>
+                                                <li><span class="st1"></span></li>
+                                                <li><span class="st1"></span></li>
+                                                <li><span class="st1"></span></li>
+                                                <li><span class="st0"></span></li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-3 col-xs-3 no-padding">
+                                    <div class="date text-right">2 days ago</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-description">
+                            <div class="row no-margin">
+                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 no-padding">
+                                    <h2>新築マンション、地域・沿線・教育関連など情報交換できる板です... </h2>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="cta-button">
+                            <a href="#">検討スレ</a>
+                            <a href="#">東京市部</a>
+                            <a href="#" class="active">資料請求</a> </div>
+                    </div>
+                    <!-- Spacer 10px ends -->
+                </div>
+                <div class="text-right">
+                    <a href="#" class="show-property-toggle-link"> Show &nbsp;<i class="fa fa-chevron-down" aria-hidden="true"></i> </a>
+                </div>
+                <div class="spacer-10px" id="full-description">
+                    <p class="description-title">Description :</p>
+                    <p> Magicbricks Realty Services Limited is only an intermediary offering its platform to facilitate the transactions between Seller and Customer/Buyer/User and is not and cannot be a party to or control any manner. </p>
+                    <p class="description-title">Flat :</p>
+                    <p> 3 BHK </p>
+                    <p class="description-title">Area :</p>
+                    <p>750 Sq.Ft </p>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagenavi">
+                    <div class="inner">
+                        <div class="navi">
+                            <ul>
+                                <li class="start"><a href="#">1</a></li>
+                                <li class="sepalate">&nbsp;</li>
+                                <li><a href="#">19</a></li>
+                                <li><a href="#">20</a></li>
+                                <li><a href="#">21</a></li>
+                                <li class="current last">22</li>
+                            </ul>
+                        </div>
+                        <div class="navi_tools">
+                            <ul>
+                                <li class="start  current"> <a href="/thread/616758/">10レス</a> </li>
+                                <li class=""> <a href="/thread/616758/res/163-212/">50レス</a> </li>
+                                <li class=""> <a href="/thread/616758/res/113-212/">100レス</a> </li>
+                            </ul>
+                        </div>
+                        <span class="clear"></span> </div>
+                </div>
+
+                <!-- Thread -->
+
+                <!-- first -->
+                <div class="single-thread-container spacer-10px">
+                    <div class="row no-margin">
+                        <div class="col-md-10 col-lg-10 col-sm-9 col-xs-6 no-padding">
+                            <p class="thread-title">6285: マンション検討中さん</p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-sm-3 col-xs-6 no-padding">
+                            <p class="thread-date text-right">2 hours ago</p>
+                        </div>
+                    </div>
+                    <p> 売主：相鉄不動産株式会社・三菱地所レジデンス株式会社 施工会社：五洋建設株式会社 東京建築支店 <br/>
+                        <br/> ￼￼￼所在地：東京都三鷹市下連雀3丁目307-4（地番）他 交通：JR中央線「三鷹」駅（南口）より徒歩1分 ￼総戸数：184戸（事業協力者住戸39戸含む）※他に商業・業務フロア ￼￼構造・規模：鉄筋コンクリート造（一部鉄骨造）、地上26階地下2階建 間取り：1LDK〜3LDK ￼専有面積：40.06平米〜90.66平米 </p>
+                    <div class="text-right"> <a href="#" class="default-link">削除依頼</a> <a href="#" class="default-btn" id="res_form_button">投稿する</a> </div>
+                    <div id="real_response">
+                        <form>
+                            <div class="clearfix border_bottom_1px">
+                                <div class="pull-left">Name : 名無しさん</div>
+                                <div class="pull-right">
+                                    <input type="checkbox" id="real_response_checkbox">
+                                    <label for="real_response_checkbox" id="real_response_checkbox_label"> 返信 <i class="fa fa-check-square-o" id="res_chkbox"></i></label>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <textarea id="real_response_body"></textarea>
+                            </div>
+                            <div class="clearfix">
+                                <div class="pull-left response_upload_file">
+                                    <input type="file" />
+                                </div>
+                                <div class="pull-right"> <span class="fa fa-expand"></span>
+                                    <button type="submit" class="default-btn">確認</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Thread Ends -->
+
+                <!-- Second -->
+                <div class="single-thread-container spacer-10px">
+                    <div class="row no-margin">
+                        <div class="col-md-10 col-lg-10 col-sm-9 col-xs-6 no-padding">
+                            <p class="thread-title">6285: マンション検討中さん</p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-sm-3 col-xs-6 no-padding">
+                            <p class="thread-date text-right">5 days ago</p>
+                        </div>
+                    </div>
+                    <p> 売主：相鉄不動産株式会社・三菱地所レジデンス株式会社 施工会社：五洋建設株式会社 東京建築支店 <br/>
+                    </p>
+                    <div class="text-right"> <a href="#" class="default-link">削除依頼</a> <a href="#" class="default-btn" id="res_form_button_2">投稿する</a> </div>
+                </div>
+                <!-- Thread Ends -->
+
+                <!-- third -->
+                <div class="single-thread-container spacer-10px">
+                    <div class="row no-margin">
+                        <div class="col-md-10 col-lg-10 col-sm-9 col-xs-6 no-padding">
+                            <p class="thread-title">6285: マンション検討中さん</p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-sm-3 col-xs-6 no-padding">
+                            <p class="thread-date text-right">7 hours ago</p>
+                        </div>
+                    </div>
+                    <p> ￼￼￼所在地：東京都三鷹市下連雀3丁目307-4（地番）他 交通：JR中央線「三鷹」駅（南口）より徒歩1分 ￼総戸数：184戸（事業協力者住戸39戸含む）※他に商業・業務フロア ￼￼構造・規模：鉄筋コンクリート造（一部鉄骨造）、地上26階地下2階建 間取り：1LDK〜3LDK ￼専有面積：40.06平米〜90.66平米 </p>
+                    <div class="text-right"> <a href="#" class="default-link">削除依頼</a> <a href="#" class="default-btn" id="res_form_button_3">投稿する</a> </div>
+                </div>
+                <!-- Thread Ends -->
+
+                <!-- fourth -->
+                <div class="single-thread-container spacer-10px">
+                    <div class="row no-margin">
+                        <div class="col-md-10 col-lg-10 col-sm-9 col-xs-6 no-padding">
+                            <p class="thread-title">6285: マンション検討中さん</p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-sm-3 col-xs-6 no-padding">
+                            <p class="thread-date text-right">2 months ago</p>
+                        </div>
+                    </div>
+                    <p> 売主：相鉄不動産株式会社・三菱地所レジデンス株式会社 施工会社：五洋建設株式会社 東京建築支店 <br/>
+                        <br/> ￼￼￼所在地：東京都三鷹市下連雀3丁目30鉄骨造）、地上26階地下2階建 間取り：1LDK〜3LDK ￼専有面積：40.06平米〜90.66平米 </p>
+                    <div class="text-right"> <a href="#" class="default-link">削除依頼</a> <a href="#" class="default-btn" id="res_form_button_4">投稿する</a> </div>
+                </div>
+                <!-- Thread Ends -->
+
+                <!-- Fifth -->
+                <div class="single-thread-container spacer-10px">
+                    <div class="row no-margin">
+                        <div class="col-md-10 col-lg-10 col-sm-9 col-xs-6 no-padding">
+                            <p class="thread-title">6285: マンション検討中さん</p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-sm-3 col-xs-6 no-padding">
+                            <p class="thread-date text-right">14/02/2016</p>
+                        </div>
+                    </div>
+                    <p> 売主：相鉄不動産株式会社・三菱地所レジデンス株式会社 施工会社：</p>
+                    <div class="text-right"> <a href="#" class="default-link">削除依頼</a> <a href="#" class="default-btn" id="res_form_button_5">投稿する</a> </div>
+                </div>
+                <!-- Thread Ends -->
+
+                <!-- Sixth -->
+                <div class="single-thread-container spacer-10px">
+                    <div class="row no-margin">
+                        <div class="col-md-10 col-lg-10 col-sm-9 col-xs-6 no-padding">
+                            <p class="thread-title">6285: マンション検討中さん</p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-sm-3 col-xs-6 no-padding">
+                            <p class="thread-date text-right">1 min ago</p>
+                        </div>
+                    </div>
+                    <p> 売主：相鉄不動産株式会社・三菱地所レジデンス株式会社 施工会社：五洋建設株式会社 東京建築支店 <br/>
+                        <br/> ￼￼￼所在地：東京都三鷹市下連雀3丁目307-4（地番）他 交通：JR中央線「三鷹」駅（南口）より徒歩1分 ￼総戸数：184戸（事業協力者住戸39戸含む）※他に商業・業務フロア ￼￼構造・規模：鉄筋コンクリート造（一部鉄骨造）、地上26階地下2階建 間取り：1LDK〜3LDK ￼専有面積：40.06平米〜90.66平米 </p>
+                    <div class="text-right"> <a href="#" class="default-link">削除依頼</a> <a href="#" class="default-btn" id="res_form_button_6">投稿する</a> </div>
+                </div>
+                <!-- Thread Ends -->
+
+                <!-- Seventh -->
+                <div class="single-thread-container spacer-10px">
+                    <div class="row no-margin">
+                        <div class="col-md-10 col-lg-10 col-sm-9 col-xs-6 no-padding">
+                            <p class="thread-title">6285: マンション検討中さん</p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-sm-3 col-xs-6 no-padding">
+                            <p class="thread-date text-right">3 month ago</p>
+                        </div>
+                    </div>
+                    <p>￼￼￼所在地：東京都三鷹市下連雀3丁目307-4（地番）他 交通：JR中央線「三鷹」駅（南口）より徒歩1分 ￼総戸数：184戸（事業協力者住戸39戸含む）※他に商業・業務フロア ￼￼構造・規模：鉄筋コンクリート造（一部鉄骨造）、地上26階地下2階建 間取り：1LDK〜3LDK ￼専有面積：40.06平米〜90.66平米 </p>
+                    <div class="text-right"> <a href="#" class="default-link">削除依頼</a> <a href="#" class="default-btn" id="res_form_button_7">投稿する</a> </div>
+                </div>
+                <!-- Thread Ends -->
+
+                <!-- Recommended Property Current Property -->
+                <div class="spacing-top">
+                    <div class="current_showcase_property">
+                        <p class="current-text">現在の物件</p>
+                        <div class="recommended_img"> <img src="images/dummy-img-4.png">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="spacer-10px">
+                            <div class="clearfix">
+                                <h1 class="recommended_title">三鷹駅直結タワープロジェクト</h1>
+                            </div>
+                            <div class="text-right links"> <a href="#" class="blue-button">投稿する</a> </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Recommended Property Current Property -->
+
+                <!-- Pagination -->
+                <div class="pagenavi">
+                    <div class="inner">
+                        <div class="navi">
+                            <ul>
+                                <li class="start"><a href="#">1</a></li>
+                                <li class="sepalate">&nbsp;</li>
+                                <li><a href="#">19</a></li>
+                                <li><a href="#">20</a></li>
+                                <li><a href="#">21</a></li>
+                                <li class="current last">22</li>
+                            </ul>
+                        </div>
+                        <div class="navi_tools">
+                            <ul>
+                                <li class="start  current"> <a href="/thread/616758/">10レス</a> </li>
+                                <li class=""> <a href="/thread/616758/res/163-212/">50レス</a> </li>
+                                <li class=""> <a href="/thread/616758/res/113-212/">100レス</a> </li>
+                            </ul>
+                        </div>
+                        <span class="clear"></span> </div>
+                </div>
+                <div id="thread_headline">
+                    <!-- main_headline_plural.tt -->
+                    <div id="headline">
+                        <center>
+                            <a href="#" rel="nofollow" target="_blank" onclick="ga('send', 'event', 'YahooHousing', 'App-Android', 'Thread');"> <img src="images/mikle_banner_brown_Android.png" alt="[PR] 物件探しはYahoo!不動産アプリ"> </a>
+                            <!-- Android --><br>
+                            <a href="http://villa.mikle.com/" rel="nofollow" target="_blank" class="text-link">【お知らせ】ミクルのビジネス合宿所 開始！</a> <br>
+                        </center>
+                    </div>
+
+                    <!-- /main_headline_plural.tt -->
+                </div>
+
+                <!-- Mail Wind -->
+                <div class="mail_wind">
+                    <h2>スレの更新情報を受け取る</h2>
+                    <div id="mail_wind_n">
+                        <form method="post" action="//mail-wind.com/module/regist.cgi">
+                            <div class="input-group margin-bottom-sm"> <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+                                <input class="form-control" type="email" name="mail" placeholder="Email address" value="">
+                            </div>
+                            <input type="hidden" name="siteurl" value="https://m.e-mansion.co.jp/thread/616758/">
+                            <input type="hidden" name="rssurl" value="">
+                            <input type="hidden" name="functionurl" value="thread,rss/thread">
+                            <input type="hidden" name="sitetitle" value="（仮称）三鷹駅直結タワープロジェクト">
+                            <input type="hidden" name="cnt" value="0">
+                            <div class="radios">
+                                <input id="15cc4935b44355" type="radio" name="interval" value="60" checked="">
+                                <label for="15cc4935b44355" class="switch-on">1時間</label>
+                                <input id="15cc4935b442cd" type="radio" name="interval" value="1440">
+                                <label for="15cc4935b442cd" class="switch-off">24時間</label>
+                                <input id="15cc4935b442aa" type="radio" name="interval" value="1">
+                                <label for="15cc4935b442aa" class="switch-off">常に</label>
+                                <span class="clear"></span> </div>
+                            <button type="submit" class="btn btn-primary">登録</button>
+                            <span class="clear"></span>
+                        </form>
+                    </div>
+                    <a href="http://mail-wind.com/" target="_blank" rel="nofollow">更新通知サービスMail-Wind</a> </div>
+                <!-- Fadeout Trigger -->
+                <div id="fadeout_inquiry_position"></div>
+                <!-- Fadeout Trigger -->
+
+                <!-- Ads -->
+                <div class="text-center"><img src="images/ads2.jpg" style="max-width: 100%;padding:50px;" /></div>
+                <!-- Ads -->
+
+                <!-- Fadeout Trigger -->
+                <div id="fadeout_inquiry_position"></div>
+                <!-- Fadeout Trigger -->
+
+                <!-- Select UnSelect   -->
+                <div class="finding_nearby spacer-10px clearfix">
+                    <h2>ご近所物件</h2>
+                    <a href="" class="checkbox_trigger pull-left">Check all</a> <a href="" class="nearby_information pull-right">Information</a> </div>
+                <br/>
+                <!-- Select UnSelect   -->
+                <!-- FadeIn for NearBy Sticky layer -->
+                <div id="fadeinfinding_nearby"></div>
+                <div id="findingNearBy_sticky">
+                    <div class="finding_nearby spacer-10px clearfix"> <a href="" class="checkbox_trigger pull-left">Check all</a> <a href="" class="nearby_information pull-right">Information</a> </div>
+                </div>
+
+                <!-- recommended_property -->
+                <div class="recommended_property">
+                    <div class="overlay"></div>
+                    <div class="recommended_img"> <img src="images/dummy-img.png" /> </div>
+                    <div class="spacer-10px">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-7">
+                                <h1 class="recommended_title">プラウドシティ武蔵野三鷹 プラウドシティ武</h1>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-5">
+                                <div class="price"> 4,490万円～8,790万円</div>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <input id="check" type="checkbox" />
+                            <label for="check">
+            <div class="box"><i class="fa fa-check"></i></div>
+            </label>
+                        </div>
+                        <div class="text-right links"> <a href="#" class="default-btn">投稿する</a> <a href="#" class="blue-button">投稿する</a> </div>
+                    </div>
+                </div>
+                <!-- recommended_property End -->
+                <!-- recommended_property -->
+                <div class="recommended_property">
+                    <div class="overlay"></div>
+                    <div class="recommended_img"> <img src="images/dummy-img-1.png" /> </div>
+                    <div class="spacer-10px">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-7">
+                                <h1 class="recommended_title">ウエリス井の頭公園</h1>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-5">
+                                <div class="price"> 4,490万円～8,790万円</div>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <input id="check1" type="checkbox" />
+                            <label for="check1">
+            <div class="box"><i class="fa fa-check"></i></div>
+            </label>
+                        </div>
+                        <div class="text-right links"> <a href="#" class="default-btn">投稿する</a> <a href="#" class="blue-button">投稿する</a> </div>
+                    </div>
+                </div>
+                <!-- recommended_property End -->
+                <!-- recommended_property -->
+                <div class="recommended_property">
+                    <div class="overlay"></div>
+                    <div class="recommended_img"> <img src="images/dummy-img-2.png" /> </div>
+                    <div class="spacer-10px">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-7">
+                                <h1 class="recommended_title">ガーラ・レジデンス三鷹シャインパークス</h1>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-5">
+                                <div class="price"> 4,490万円～8,790万円</div>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <input id="check2" type="checkbox" />
+                            <label for="check2">
+            <div class="box"><i class="fa fa-check"></i></div>
+            </label>
+                        </div>
+                        <div class="text-right links"> <a href="#" class="default-btn">投稿する</a> <a href="#" class="blue-button">投稿する</a> </div>
+                    </div>
+                </div>
+                <!-- recommended_property End -->
+                <!-- recommended_property -->
+                <div class="recommended_property">
+                    <div class="overlay"></div>
+                    <div class="recommended_img"> <img src="images/dummy-img-3.png" /> </div>
+                    <div class="spacer-10px">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-7">
+                                <h1 class="recommended_title">プレシス武蔵境</h1>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-5">
+                                <div class="price"> 4,490万円～8,790万円</div>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <input id="check3" type="checkbox" />
+                            <label for="check3">
+            <div class="box"><i class="fa fa-check"></i></div>
+            </label>
+                        </div>
+                        <div class="text-right links"> <a href="#" class="default-btn">投稿する</a> <a href="#" class="blue-button">投稿する</a> </div>
+                    </div>
+                </div>
+                <!-- recommended_property End -->
+
+                <!-- recommended_property -->
+                <div class="recommended_property">
+                    <div class="overlay"></div>
+                    <div class="recommended_img"> <img src="images/dummy-img-1.png" /> </div>
+                    <div class="spacer-10px">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-7">
+                                <h1 class="recommended_title">シティハウス吉祥寺北町</h1>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-5">
+                                <div class="price"> 4,490万円～8,790万円</div>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <input id="check5" type="checkbox" />
+                            <label for="check5">
+            <div class="box"><i class="fa fa-check"></i></div>
+            </label>
+                        </div>
+                        <div class="text-right links"> <a href="#" class="default-btn">投稿する</a> <a href="#" class="blue-button">投稿する</a> </div>
+                    </div>
+                </div>
+                <!-- recommended_property End -->
+                <!-- recommended_property -->
+                <div class="recommended_property">
+                    <div class="overlay"></div>
+                    <div class="recommended_img"> <img src="images/dummy-img-2.png" /> </div>
+                    <div class="spacer-10px">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-7">
+                                <h1 class="recommended_title">オープンレジデンシア吉祥寺御殿山</h1>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-5">
+                                <div class="price"> 4,490万円～8,790万円</div>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <input id="check6" type="checkbox" />
+                            <label for="check6">
+            <div class="box"><i class="fa fa-check"></i></div>
+            </label>
+                        </div>
+                        <div class="text-right links"> <a href="#" class="default-btn">投稿する</a> <a href="#" class="blue-button">投稿する</a> </div>
+                    </div>
+                </div>
+                <!-- recommended_property End -->
+
+                <!-- recommended_property -->
+                <div class="recommended_property">
+                    <div class="overlay"></div>
+                    <div class="recommended_img"> <img src="images/dummy-img-3.png" /> </div>
+                    <div class="spacer-10px">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-7">
+                                <h1 class="recommended_title">ウエリス武蔵野関町</h1>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-5">
+                                <div class="price"> 4,490万円～8,790万円</div>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <input id="check7" type="checkbox" />
+                            <label for="check7">
+            <div class="box"><i class="fa fa-check"></i></div>
+            </label>
+                        </div>
+                        <div class="text-right links"> <a href="#" class="default-btn">投稿する</a> <a href="#" class="blue-button">投稿する</a> </div>
+                    </div>
+                </div>
+                <!-- recommended_property End -->
+
+                <!-- recommended_property + Current Property Bigger in size at bottom -->
+                <div class="recommended_property current_property">
+                    <div class="overlay"></div>
+                    <div class="recommended_img"> <img src="images/dummy-img-4.png" /> </div>
+                    <div class="spacer-10px">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-7">
+                                <h1 class="recommended_title">ライオンズ関町北グランヒルズ</h1>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-5">
+                                <div class="price"> 4,490万円～8,790万円</div>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <input id="check4" type="checkbox" />
+                            <label for="check4">
+            <div class="box"><i class="fa fa-check"></i></div>
+            </label>
+                        </div>
+                        <div class="text-right links"> <a href="#" class="default-btn">投稿する</a> <a href="#" class="blue-button">投稿する</a> </div>
+                    </div>
+                </div>
+                <!-- recommended_property End -->
+
+                <!-- Ads -->
+                <div class="text-center"><img src="images/ads2.jpg" style="max-width: 100%;padding:30px;" /></div>
+                <!-- Ads -->
+
+                <!-- Link goto Home -->
+                <div class="text-center"> <a href="/" class="default-link">マンションコミュニティHOMEへ</a> </div>
+
+                <!-- Property Detail-->
+                <table class="table-style">
+                    <tr class="bild_overview_th">
+                        <th class="bild_overview_th" colspan="2">（仮称）三鷹駅直結タワープロジェクト物件概要</th>
+                    </tr>
+                    <tr>
+                        <td class="bild_title_td">所在地</td>
+                        <td class="bild_overview_td">東京都三鷹市下連雀3丁目307-4他（地番）</td>
+                    </tr>
+                    <tr>
+                        <td class="bild_title_td">交通</td>
+                        <td class="bild_overview_td">中央本線（JR東日本） 「三鷹」駅 徒歩1分 （南口より）<br> 総武線 「三鷹」駅 徒歩1分 （南口より）</td>
+                    </tr>
+                    <tr>
+                        <td class="bild_title_td">間取り</td>
+                        <td class="bild_overview_td">1LDK～3LDK</td>
+                    </tr>
+                    <tr>
+                        <td class="bild_title_td">専有面積</td>
+                        <td class="bild_overview_td">40.06m2～90.66m2</td>
+                    </tr>
+                    <tr>
+                        <td class="bild_title_td">価格</td>
+                        <td class="bild_overview_td">未定</td>
+                    </tr>
+                    <tr>
+                        <td class="bild_title_td">種別</td>
+                        <td class="bild_overview_td">新築マンション</td>
+                    </tr>
+                    <tr>
+                        <td class="bild_title_td">総戸数</td>
+                        <td class="bild_overview_td">184戸（事業協力者住戸39戸含む）※他に商業・業務フロア</td>
+                    </tr>
+                    <tr>
+                        <td class="bild_title_td">販売戸数</td>
+                        <td class="bild_overview_td">未定</td>
+                    </tr>
+                    <tr>
+                        <td class="bild_title_td">そのほかの情報</td>
+                        <td class="bild_overview_td">構造、建物階数：（一部鉄骨造）、地上26階 地下2階建<br> 敷地の権利形態：所有権の共有
+                            <br> 完成時期：2019年02月中旬予定
+                            <br> 入居可能時期：2019年04月下旬予定 </td>
+                    </tr>
+                </table>
+                <table class="table-style">
+                    <tr class="bild_overview_th">
+                        <th class="bild_overview_th" colspan="2">会社情報</th>
+                    </tr>
+                    <tr>
+                        <td class="bild_title_td">[売主]相鉄不動産株式会社</td>
+                        <td class="bild_overview_td">神奈川県横浜市西区北幸2-9-14<br> 国土交通大臣（2）第7949号、（一社）不動産協会会員、（公社）首都圏不動産公正取引協議会加盟
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="bild_title_td">[売主・販売代理]三菱地所レジデンス株式会社</td>
+                        <td class="bild_overview_td">東京都千代田区大手町1-6-1<br> 国土交通大臣（14）第408号、（一社）不動産協会会員、（公社）首都圏不動産公正取引協議会加盟
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bild_title_td">[販売代理]相鉄不動産販売株式会社</td>
+                        <td class="bild_overview_td">神奈川県横浜市西区北幸2-9-14相鉄本社ビル6階<br> 国土交通大臣（3）第6809号、（一社）不動産流通経営協会　（公社）首都圏不動産公正取引協議会加盟
+                        </td>
+                    </tr>
+                </table>
+                <!-- Property Detail ENDS-->
+                <!-- Sticky layer hide from here -->
+                <div id="fadeoutfinding_nearby"></div>
+                <div style="margin:10px 10px; padding:10px 10px 0 10px; font-size:80%;border:#777 solid 1px;">
+                    <div class="tit_knowhow"></div>
+                    <p class="gap no-margin">注目のスレッド</p>
+                    <!-- start feedwind code -->
+
+                    <script type="text/javascript" src="https://feed.mikle.com/js/rssmikle.js"></script>
+                    <div style="font-size:70%; text-align:right; margin:0; padding:0;"><a href="#" target="_blank" rel="nofollow" style="color:#CCCCCC;">Powered by feedwind</a>
+                        <!--Please display the above link in your web page according to Terms of Service.-->
+                    </div>
+                    <!-- end feedwind code -->
+                </div>
+
+                <!-- Ads -->
+                <div class="text-center"><img src="images/ads2.jpg" style="max-width: 100%;padding:30px;" /></div>
+                <!-- Ads -->
+
+                <dl id="link_site">
+                    <dt>PC版</dt>
+                    <dd> <a href="#">（仮称）三鷹駅直結タワープロジェクト</a> </dd>
+                </dl>
+                <dl id="link_site">
+                    <dt>不動産</dt>
+                    <dd> <a href="https://m.e-kodate.com/">e戸建て</a> <a href="http://sutekicookan.com/">住適空間</a> </dd>
+                </dl>
+                <div id="head_pankuzu">
+                    <ul class="tpl_pankuzu">
+                        <li class="first"><a href="/"><span >マンション</span></a></li>
+                        <li class="arrow"></li>
+                        <li> <a href="#"><span >検討板/新築分譲マンション</span></a> </li>
+                        <li class="arrow"></li>
+                        <li> <a href="#"><span >東京都下（市部）の新築分譲マンション掲示板</span></a> </li>
+                        <li class="arrow"></li>
+                        <li> <a href="#"><span >東京都</span></a> </li>
+                        <li class="arrow"></li>
+                        <li> <a href="#"><span >三鷹市</span></a> </li>
+                        <li class="arrow"></li>
+                        <li> <a href="#"><span >下連雀</span></a> </li>
+                        <li class="arrow"></li>
+                        <li> <a href="#"><span >三鷹駅</span></a> </li>
+                        <li class="arrow"></li>
+                        <li class="last"><a href="#"><span >（仮称）三鷹駅直結タワープロジェクト</span></a></li>
+                        <li class="clear"></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Tabs END here -->
+
+            <!-- EXTRA TABS BELOW -->
+            <div class="tab-pane fade" id="tab2">2...</div>
+            <div class="tab-pane fade" id="tab3">3...</div>
+            <div class="tab-pane fade" id="tab4">4...</div>
+        </div>
+    </div>
+    <div id="footer">
+        <ul>
+            <li><a href="/mail_form_smart.html">お問い合わせフォーム</a></li>
+            <li><a href="http://mikle.co.jp/">会社概要</a></li>
+        </ul>
+        <p>Copyright(C)2017.eマンション All Rights Reserved.</p>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
