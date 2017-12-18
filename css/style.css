@@ -282,7 +282,7 @@
         position: relative;
     }
     
-    form#search-form button[type=submit] {
+    button.search-btn {
         background: none;
         border: none;
         color: #f9560d;
@@ -290,9 +290,15 @@
         position: absolute;
         right: 25px;
         top: 5px;
+        border-radius: 4px;
     }
     
-    form#search-form .fa {
+    input.sb-search-input:focus,
+    input.sb-search-input:active {
+        border: 1px solid #A0AAAE;
+    }
+    
+    button.search-btn .fa {
         font-size: 22px;
         padding: 5px;
         cursor: pointer;
@@ -617,6 +623,13 @@
     .cta-button a:focus {
         background-color: #f9560d;
         color: #fff;
+    }
+    /***** SEARCH BOX ***********/
+    
+    #res_search_box {
+        background-color: #f4f6f7;
+        padding: 20px;
+        position: relative;
     }
     /**** PAGINATION ************/
     
