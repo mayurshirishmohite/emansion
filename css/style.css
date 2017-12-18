@@ -221,7 +221,7 @@
     }
     
     #Ad {
-        height: 160px;
+        height: 120px;
         overflow: hidden;
         background-color: #fff;
     }
@@ -237,6 +237,13 @@
         margin: 0 10px;
     }
     
+    .custom-nav-tabs>li>a {
+        color: #FFF;
+        padding: 0 0 5px 0;
+        margin-right: 2px;
+        border: none;
+    }
+    
     .custom-nav-tabs>li.active>a,
     .custom-nav-tabs>li.active>a:focus,
     .custom-nav-tabs>li.active>a:hover {
@@ -249,9 +256,14 @@
         border-right: 0px;
     }
     
-    .custom-nav-tabs>li>a {
-        color: #FFF;
-        padding: 0 0 5px 0;
+    .custom-nav-tabs>li>a:focus,
+    .custom-nav-tabs>li>a:hover {
+        color: #fff;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        background-color: transparent;
+        border-bottom: 2px solid #fff;
     }
     /****************** SEARCH *********************/
     
@@ -489,12 +501,19 @@
         border-right: 8px solid transparent;
     }
     
+    .dropup-custom>ul {
+        margin: 3px 0;
+    }
+    
+    .dropup-custom>li {
+        text-align: center;
+    }
+    
     .dropup-custom>li>a {
         display: block;
-        padding: 3px 20px;
+        padding: 3px 10px;
         clear: both;
         font-weight: 400;
-        margin: 3px 0;
         line-height: 1.42857143;
         color: #333;
         white-space: nowrap;
