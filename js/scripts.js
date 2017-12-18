@@ -54,14 +54,17 @@ $(document).ready(function() {
     }
 
     // Show/Hide Property  Detail Toggle
-    $('.show-property-toggle-link').click(function(event) {
+    $('.property-view-detail-toggle').click(function(event) {
         event.preventDefault();
         if ($('#full-description').css('display') == 'none') {
             $('#full-description').slideDown();
-            $(this).html('Hide &nbsp;  <i class="fa fa-times" aria-hidden="true"></i>');
+            $(this).find('i').removeClass('fa-chevron-down');
+            $(this).find('i').addClass('fa-chevron-up');
         } else {
             $('#full-description').slideUp('slow');
-            $(this).html('Show  &nbsp; <i class="fa fa-chevron-down" aria-hidden="true"></i>');
+            $(this).find('i').removeClass('fa-chevron-up');
+            $(this).find('i').addClass('fa-chevron-down');
+
         }
     });
 

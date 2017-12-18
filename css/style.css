@@ -4,7 +4,7 @@
         font-family: 'Yantramanav', sans-serif;
         font-weight: 400;
         transition: background-color .5s;
-        font-size: 15px;
+        font-size: 14px;
         line-height: 24px;
         padding-bottom: 20px;
     }
@@ -211,7 +211,6 @@
         height: 60px;
         line-height: 60px;
         text-transform: uppercase;
-        font-size: 14px;
         border-bottom: #d9e0e3 1px solid;
         border-top: #d9e0e3 1px solid;
         background-color: white;
@@ -229,7 +228,6 @@
     .custom-nav-tabs {
         background-color: #f9560d;
         padding: 20px;
-        font-size: 16px;
         border-bottom: none;
     }
     
@@ -418,7 +416,7 @@
     }
     
     .property-title-date h1 {
-        font-size: 30px;
+        font-size: 34px;
         padding: 10px 0;
         margin: 0;
         font-weight: 400;
@@ -527,15 +525,6 @@
         background-color: #f4f6f7;
     }
     
-    a.show-property-toggle-link,
-    a.show-property-toggle-link:focus {
-        color: white;
-        text-decoration: none;
-        font-weight: 300;
-        /* border: 1px solid #626365;*/
-        padding: 3px 8px;
-    }
-    
     .rating ul {
         padding: 0;
         margin: 0;
@@ -563,19 +552,39 @@
     .property-description h2 {
         font-weight: 400;
         color: white;
-        font-size: 20px;
+        font-size: 24px;
+    }
+    
+    a.property-view-detail-toggle {
+        color: #000;
+        height: 60px;
+        line-height: 60px;
+        text-decoration: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        display: block;
+    }
+    
+    .property-view-detail-toggle .fa {
+        color: #f9560d;
+        margin-left: 10px;
     }
     
     #full-description {
         display: none;
-        background-color: #f7f7f7;
+        background-color: #fff;
+        padding: 20px;
+        border-bottom: 1px solid #d9e0e3;
     }
     
-    #full-description p.description-title {
+    #full-description label {
         padding: 0;
         margin: 0;
-        color: #636364;
-        font-weight: 700;
+        color: #f9560d;
+        letter-spacing: 1px;
+        font-weight: 400;
+        text-transform: uppercase;
     }
     
     .cta-button {
