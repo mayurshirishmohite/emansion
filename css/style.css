@@ -10,7 +10,7 @@
     }
     
     #header {
-        background-color: #52646D;
+        background-color: #f9560d;
         height: 60px;
     }
     
@@ -220,48 +220,47 @@
     }
     
     #Ad {
-        height: 120px;
+        height: auto;
         overflow: hidden;
         background-color: #fff;
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    #Ad img {
+        width: 100%;
+        max-width: 480px;
     }
     
     .custom-nav-tabs {
-        background-color: #f9560d;
+        background-color: #fff;
         padding: 20px;
-        border-bottom: none;
+        border-top: 1px solid #d9e0e3;
     }
     
     .custom-nav-tabs>li {
-        margin: 0 10px;
+        margin: 0 15px;
     }
     
     .custom-nav-tabs>li>a {
-        color: #FFF;
-        padding: 0 0 5px 0;
-        margin-right: 2px;
+        color: #000;
+        padding: 0;
         border: none;
     }
     
     .custom-nav-tabs>li.active>a,
     .custom-nav-tabs>li.active>a:focus,
     .custom-nav-tabs>li.active>a:hover {
-        color: #fff;
+        color: #f9560d;
         cursor: default;
+        border: none;
         background-color: transparent;
-        border-bottom: 2px solid #fff;
-        border-top: 0px;
-        border-left: 0px;
-        border-right: 0px;
     }
     
     .custom-nav-tabs>li>a:focus,
     .custom-nav-tabs>li>a:hover {
-        color: #fff;
-        border-top: 0px;
-        border-left: 0px;
-        border-right: 0px;
+        color: #f9560d;
         background-color: transparent;
-        border-bottom: 2px solid #fff;
     }
     /****************** SEARCH *********************/
     
@@ -630,6 +629,17 @@
         background-color: #f4f6f7;
         padding: 20px;
         position: relative;
+    }
+    
+    #res_search_box label input#has_img {
+        opacity: 0;
+        position: absolute;
+    }
+    
+    #res_search_box label .fa {
+        color: rgb(193, 205, 211);
+        font-size: 22px;
+        padding-top: 13px;
     }
     /**** PAGINATION ************/
     
