@@ -110,6 +110,7 @@ $(document).ready(function() {
         }
     });
     // Scroll to fixed for detail_and_post
+
     $(window).scroll(function() {
         var trigger_position = $(this).scrollTop() + $(this).height();
         /* console.log('Scroll top:' + $(this).scrollTop());
@@ -118,6 +119,7 @@ $(document).ready(function() {
         var fadeoutposition = $('#fadeout_inquiry_position').offset().top;
         var fadeinfinding_nearby = $('#fadeinfinding_nearby').offset().top;
         var fadeoutfinding_nearby = $('#fadeoutfinding_nearby').offset().top;
+        var fadeoutfinding_downarrow = $('#fadeout_downarrow').offset().top;
         if (trigger_position > fadeoutposition) {
             $("#detail_and_post").fadeOut("slow");
         } else if (trigger_position < fadeinposition) {
@@ -133,9 +135,26 @@ $(document).ready(function() {
         } else if (trigger_position > fadeinfinding_nearby) {
             $("#findingNearBy_sticky").fadeIn("slow");
         }
+        if (trigger_position > fadeoutfinding_downarrow) {
+            $("#sticky-arrow .arrow-down").hide();
+            $("#sticky-arrow .arrow-up").show();
+        } else if (trigger_position < fadeinposition) {
+            $("#sticky-arrow .arrow-down").hide();
+            $("#sticky-arrow .arrow-up").fadeIn();
+        } else if (trigger_position > fadeinposition) {
+            $("#sticky-arrow .arrow-down").fadeIn();
+            $("#sticky-arrow .arrow-up").hide();
+        }
 
     });
-
+    $('#sticky-arrow a.arrow-down').click(function() {
+        var downpositionY =
+            $("#thread_downcontrol_position").offset().top;
+        $('html,body').animate({ scrollTop: downpositionY }, 'slow');
+    });
+    $('#sticky-arrow a.arrow-up').click(function() {
+        $('html,body').animate({ scrollTop: 0 }, 'slow');
+    });
     //show hide sticky inputs
     $('#sticky-action-btn').click(function() {
         $(this).parent().hide();
@@ -159,5 +178,7 @@ $(document).ready(function() {
             checkBoxes.prop("checked", false);
         }
     });
+
+
 
 });
