@@ -1056,7 +1056,7 @@
         
         #detail_and_post .sticky-posts label.attachment {
             width: 14%;
-            height: 46px;
+            height: 22px;
             background-image: url(../images/attach-file.png);
             background-position: top center;
             display: inline-block;
@@ -1066,6 +1066,7 @@
             border-radius: 4px;
             vertical-align: middle;
             cursor: pointer;
+            background-size: auto 46px;
         }
         
         #detail_and_post .sticky-posts label.attachment:hover {
@@ -1089,7 +1090,7 @@
             background-color: #ffffff;
             color: #f9560d;
             cursor: pointer;
-            top: -57px;
+            top: -58px;
             right: -10px;
             /* width: auto !important; */
             text-decoration: none;
