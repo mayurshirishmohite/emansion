@@ -40,9 +40,18 @@
             <a href="#">Detail</a>
             <a id="sticky-action-btn">Post Review</a>
         </div>
-        <div class="sticky-posts"> <a id="close-sticky-inputs">X</a> <a class="attachment" href=""><i class="fa fa-paperclip" aria-hidden="true"></i></a>
-            <input type="text" placeholder="Start writing..." />
-            <a href="#">Send</a> </div>
+        <div class="sticky-posts"> <a id="close-sticky-inputs">X</a>
+            <div class="clearfix">
+                <div class="file-upload-left">
+                    <input type="file" id="upload-file" class="upload-file" />
+                    <label class="attachment" for="upload-file"></label>
+                    <input type="text" placeholder="Start writing..." />
+                </div>
+                <div class="file-upload-send-btn">
+
+                    <a href="#">Send</a> </div>
+            </div>
+        </div>
     </div>
 
 
@@ -292,30 +301,35 @@
                         <a href="#" class="default-link">参考になる!</a>
                         <a href="#" class="default-link active" id="res_form_button">投稿する</a>
                     </div>
-                    <div id="real_response">
-                        <form>
-                            <div class="clearfix border_bottom_1px">
-                                <div class="pull-left">Name : 名無しさん</div>
-                                <div class="pull-right">
-                                    <input type="checkbox" id="real_response_checkbox">
-                                    <label for="real_response_checkbox" id="real_response_checkbox_label"> 返信 <i class="fa fa-check-square-o" id="res_chkbox"></i></label>
-                                </div>
-                            </div>
-                            <div class="clearfix">
-                                <textarea id="real_response_body"></textarea>
-                            </div>
-                            <div class="clearfix">
-                                <div class="pull-left response_upload_file">
-                                    <input type="file" />
-                                </div>
-                                <div class="pull-right"> <span class="fa fa-expand"></span>
-                                    <button type="submit" class="default-btn">確認</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
 
+                </div>
+                <!-- Thread Response -->
+                <div id="real_response">
+                    <form>
+                        <div class="clearfix">
+                            <p class="pull-left"> Name : 名無しさん</p>
+                            <div class="pull-right">
+                                <input type="checkbox" id="real_response_checkbox" checked>
+                                <label for="real_response_checkbox" id="real_response_checkbox_label"> 
+                                    <p>返信 </p>
+                                    <i class="fa" id="res_chkbox"></i>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <textarea id="real_response_body"></textarea>
+                        </div>
+                        <div class="clearfix">
+                            <div class="pull-left response_upload_file">
+                                <input type="file" id="upload-file" class="upload-file">
+                                <label class="attachment" for="upload-file"></label>
+                            </div>
+                            <div class="pull-right"> <span class="fa fa-expand"></span>
+                                <button type="submit" class="default-btn">確認</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
 
                 <!-- Second -->
                 <div class="single-thread-container spacer-10px">
@@ -505,7 +519,7 @@
                 <!-- FadeIn for NearBy Sticky layer -->
                 <div id="fadeinfinding_nearby"></div>
                 <div id="findingNearBy_sticky">
-                    <div class="finding_nearby spacer-10px clearfix"> <a href="" class="checkbox_trigger pull-left">Check all</a> <a href="" class="nearby_information pull-right">Information</a> </div>
+                    <div class="finding_nearby spacer-20px clearfix"> <a href="" class="checkbox_trigger pull-left">Check all</a> <a href="" class="nearby_information pull-right">Information</a> </div>
                 </div>
 
                 <!-- recommended_property -->

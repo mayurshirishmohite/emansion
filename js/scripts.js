@@ -71,17 +71,16 @@ $(document).ready(function() {
     // #real_response_checkbox 
     $('#real_response_checkbox_label').click(function() {
         if ($('#real_response_checkbox').is(':checked')) {
-            $(this).children('#res_chkbox').removeClass('fa-square-o');
-            $(this).children('#res_chkbox').addClass('fa-check-square-o');
+            $(this).children('#res_chkbox').addClass('fa-check');
         } else {
-            $(this).children('#res_chkbox').removeClass('fa-check-square-o');
-            $(this).children('#res_chkbox').addClass('fa-square-o');
+            $('#real_response_checkbox').attr('checked', false);
+            $(this).children('#res_chkbox').removeClass('fa-check');
         }
     });
 
     // Response form button 
     $('#res_form_button').click(function(event) {
-        var response_form = $(this).parent().next('#real_response');
+        var response_form = $('#real_response');
         event.preventDefault();
         if (response_form.css('display') == 'none') {
             response_form.slideDown();
@@ -99,6 +98,7 @@ $(document).ready(function() {
     });
 
     // expand textarea
+
     $('#real_response .fa-expand').click(function(event) {
         var textarea_input = $('#real_response_body');
         if (!$(this).hasClass('active')) {

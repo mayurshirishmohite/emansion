@@ -338,9 +338,14 @@
             display: block;
             box-shadow: 0px 0px 15px rgba(0, 0, 0, .15);
             float: right;
-            color: #f9560d;
+            color: #97A2A8;
             text-align: center;
             line-height: 35px;
+        }
+        
+        .sticky-arrow a:hover,
+        .sticky-arrow a:active {
+            color: #f9560d;
         }
         
         .sticky-arrow a.arrow-up {
@@ -377,7 +382,7 @@
         
         .default-btn,
         .default-btn a {
-            background-color: #7d7d7c;
+            background-color: #f9560d;
             color: #fff;
             padding: 5px 10px;
             text-decoration: none;
@@ -860,7 +865,8 @@
             margin-left: 0;
         }
         
-        .single-thread-container p {
+        .single-thread-container p,
+        #real_response p {
             font-size: 14px;
             font-weight: 400;
             color: #52646d;
@@ -893,28 +899,72 @@
         /****** Response Textarera *******/
         
         #real_response {
-            display: none;
+            /*display: none;*/
+        }
+        
+        #real_response_checkbox_label {
+            position: relative;
+        }
+        
+        #real_response_checkbox_label p {
+            font-weight: 400;
+            padding-right: 30px;
+        }
+        
+        #real_response label.attachment {
+            width: 14%;
+            height: 30px;
+            background-image: url(../images/attach-file.png);
+            background-position: top center;
+            display: inline-block;
+            font-size: 24px;
+            margin: 0;
+            background-repeat: no-repeat;
+            border-radius: 4px;
+            vertical-align: middle;
+            cursor: pointer;
+            background-size: auto 60px;
+        }
+        
+        #real_response label.attachment:hover {
+            background-position: bottom center;
+        }
+        
+        #real_response input.upload-file {
+            opacity: 0;
+            position: absolute;
+            visibility: hidden;
         }
         
         #real_response {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin: 10px 0;
-            box-shadow: 0px 0pc 5px #c1c1c1;
+            padding: 20px;
+            background-color: #F4F6F7;
         }
         
         #real_response_checkbox {
             display: none;
         }
         
-        i#res_chkbox {
-            font-size: 16px;
+        #real_response_checkbox_label i#res_chkbox {
+            background-color: white;
+            border: 1px solid #CDD4D8;
+            width: 25px;
+            height: 23px;
+            color: #f9560d;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.22);
+            top: 0;
+            line-height: 22px;
+            border-radius: 4px;
+            z-index: 1;
         }
         
-        #real_response_body {
+        textarea#real_response_body {
             width: 100%;
             height: 100px !important;
-            border: inset 1px #ccc;
+            border: solid 1px #CDD4D8;
         }
         
         #real_response_body.expand {
@@ -925,10 +975,11 @@
             font-size: 20px;
             cursor: pointer;
             margin: 0 15px;
+            color: #A0AAAE;
         }
         
         #real_response .fa-expand.active {
-            color: #006a9d;
+            color: #f9560d;
         }
         
         .response_upload_file {
@@ -951,7 +1002,7 @@
             padding: 20px;
             text-align: center;
             border-top: 1px solid #ccc;
-            box-shadow: 0px 0px 5px #545454;
+            box-shadow: 0px 0px 5px rgba(84, 84, 84, 0.4);
         }
         
         #detail_and_post .sticky-btns a {
@@ -960,53 +1011,77 @@
             height: 46px;
             line-height: 46px;
             border-radius: 4px;
-            margin: 0 2px;
         }
         
         #detail_and_post .sticky-btns a:first-child {
             background-color: #a0aaae;
-            width: 30%;
+            width: 28%;
+            margin-right: 5px;
+        }
+        
+        #detail_and_post .sticky-btns a:hover:first-child {
+            background-color: #CDD4D8;
         }
         
         #detail_and_post .sticky-btns a#sticky-action-btn {
             background-color: #f9560d;
-            width: 65%;
+            width: 68%;
         }
         
         #detail_and_post .sticky-posts {
             position: relative;
+            text-align: left;
         }
         
-        #detail_and_post .sticky-posts input {
+        #detail_and_post .sticky-posts input[type=text] {
             padding: 7px 8px;
-            width: 65%;
             border-radius: 4px;
             border: 1px solid #ccc;
             margin-right: 5px;
             height: 46px;
+            width: 80%;
         }
         
-        #detail_and_post .sticky-posts .attachment {
-            width: 10%;
-            background-color: #ffffff;
-            color: #cdd4d8;
+        #detail_and_post .file-upload-left {
+            float: left;
+            width: 70%;
+        }
+        
+        #detail_and_post .file-upload-send-btn {
+            float: right;
+            width: 30%;
+        }
+        
+        #detail_and_post input.upload-file {
+            opacity: 0;
+            position: absolute;
+            visibility: hidden;
+        }
+        
+        #detail_and_post .sticky-posts label.attachment {
+            width: 14%;
+            height: 46px;
+            background-image: url(../images/attach-file.png);
+            background-position: top center;
             display: inline-block;
             font-size: 24px;
+            margin: 0;
+            background-repeat: no-repeat;
             border-radius: 4px;
-            vertical-align: sub;
-            height: 39px;
+            vertical-align: middle;
             cursor: pointer;
         }
         
-        #detail_and_post .sticky-posts a.attachment:hover {
-            color: #f9560d;
+        #detail_and_post .sticky-posts label.attachment:hover {
+            background-position: bottom center;
         }
         
         #detail_and_post .sticky-posts a:last-child {
             background-color: #f9560d;
             color: #fff;
+            text-align: center;
             padding: 0;
-            width: 20%;
+            width: 100%;
             height: 46px;
             display: inline-block;
             border-radius: 4px;
@@ -1018,7 +1093,7 @@
             background-color: #ffffff;
             color: #f9560d;
             cursor: pointer;
-            top: -48px;
+            top: -57px;
             right: -10px;
             /* width: auto !important; */
             text-decoration: none;
@@ -1027,6 +1102,7 @@
             width: 35px;
             cursor: pointer;
             display: block;
+            text-align: center;
             line-height: 35px;
             font-weight: 700;
             box-shadow: 0px 0px 15px rgba(0, 0, 0, .15);
@@ -1327,8 +1403,12 @@
             width: 33%;
             display: inline-block;
             border: 1px solid #cdd4d8;
-            margin: 5px 0 0px 0;
             text-align: center;
+        }
+        
+        .finding_nearby a:hover.checkbox_trigger,
+        .finding_nearby a:active.checkbox_trigger {
+            border: 1px solid #a0aaae;
         }
         
         .finding_nearby a.nearby_information {
@@ -1341,7 +1421,6 @@
             text-align: center;
             display: inline-block;
             border: none;
-            margin: 5px 0 0px 0;
         }
         /* Recommended Property */
         
