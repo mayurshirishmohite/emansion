@@ -363,18 +363,6 @@
             padding: 0;
         }
         
-        a.default-link,
-        .default-link a {
-            color: #7d7d7c;
-            text-decoration: underline;
-        }
-        
-        a.default-link:hover,
-        .default-link a:hover {
-            color: #006a9d;
-            text-decoration: underline;
-        }
-        
         .default-btn,
         .default-btn a {
             background-color: #f9560d;
@@ -826,6 +814,7 @@
         
         .result-page ul.result-nav>li>a {
             color: #212b31;
+            text-decoration: underline;
         }
         
         .result-page ul.result-nav>li.active>a,
@@ -873,23 +862,38 @@
             right: 20px;
         }
         
-        .single-thread-container a.default-link {
+        a.default-link {
+            border: 1px solid #CDD4d8;
+            color: #52646D;
+        }
+        
+        a.default-link-cta {
+            border: 1px solid #f9560d;
+            color: #f9560d;
+        }
+        
+        a.default-link,
+        a.default-link-cta {
             width: auto;
             padding: 5px 7px;
             text-align: center;
-            border: 1px solid #CDD4d8;
             display: inline-block;
             text-decoration: none;
             margin: 5px;
-            color: #52646D;
             border-radius: 4px;
             box-shadow: 0px 1px 2px rgba(87, 87, 87, 0.1);
         }
         
-        .single-thread-container a:hover.default-link,
-        .single-thread-container a.active {
+        a:hover.default-link-cta,
+        a.default-link-cta.active {
             border: 1px solid #f9560d;
             color: #f9560d;
+        }
+        
+        a:hover.default-link,
+        a.default-link.active {
+            border: 1px solid #A0AAAE;
+            color: #212B31;
         }
         /****** Response Textarera *******/
         
@@ -956,6 +960,14 @@
             z-index: 1;
         }
         
+        #real_response_checkbox+label i#res_chkbox .fa {
+            display: none;
+        }
+        
+        #real_response_checkbox:checked+label i#res_chkbox .fa {
+            display: inline-block;
+        }
+        
         textarea#real_response_body {
             width: 100%;
             height: 100px !important;
@@ -1012,6 +1024,7 @@
             background-color: #a0aaae;
             width: 28%;
             margin-right: 5px;
+            text-decoration: none;
         }
         
         #detail_and_post .sticky-btns a:hover:first-child {
@@ -1021,6 +1034,7 @@
         #detail_and_post .sticky-btns a#sticky-action-btn {
             background-color: #f9560d;
             width: 68%;
+            text-decoration: none;
         }
         
         #detail_and_post .sticky-posts {
@@ -1055,7 +1069,7 @@
         
         #detail_and_post .sticky-posts label.attachment {
             width: 14%;
-            height: 22px;
+            height: 35px;
             background-image: url(../images/attach-file.png);
             background-position: top center;
             display: inline-block;
@@ -1065,7 +1079,7 @@
             border-radius: 4px;
             vertical-align: middle;
             cursor: pointer;
-            background-size: auto 46px;
+            /* background-size: auto 46px;*/
         }
         
         #detail_and_post .sticky-posts label.attachment:hover {
@@ -1153,80 +1167,43 @@
             position: absolute;
             visibility: hidden;
         }
-        /* The container */
+        
+        .radio-container {
+            position: relative;
+            padding-left: 30px;
+            margin-right: 10px;
+        }
+        
+        i.res_radio {
+            background-color: white;
+            border: 1px solid #CDD4D8;
+            width: 25px;
+            height: 23px;
+            color: #f9560d;
+            position: absolute;
+            left: 0;
+            text-align: center;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.22);
+            top: 0;
+            line-height: 22px;
+            border-radius: 4px;
+            z-index: 1;
+        }
+        
+        i.res_radio .fa {
+            display: none;
+        }
+        
+        .mail_wind .radio-container input[type=radio]:checked+i.res_radio .fa {
+            display: inline-block;
+        }
+        
+        .mail_wind .radio-container input[type=radio]:checked+i.res_radio {
+            border: 1px solid #A0AAAE;
+        }
         
         .mail_wind .radios {
             padding: 10px 0;
-        }
-        
-        .radio-container {
-            display: inline-block;
-            position: relative;
-            padding-left: 33px;
-            margin-bottom: 12px;
-            color: #52646D;
-            cursor: pointer;
-            margin-right: 13px;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            font-weight: 400;
-            -ms-user-select: none;
-            user-select: none;
-        }
-        /* Hide the browser's default checkbox */
-        
-        .radio-container input {
-            position: absolute;
-            opacity: 0;
-        }
-        /* Create a custom checkbox */
-        
-        .radio-checkmark {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 25px;
-            width: 25px;
-            background-color: #fff;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.14);
-            border-radius: 4px;
-            margin-right: 5px;
-        }
-        /* On mouse-over, add a grey background color */
-        
-        .radio-container:hover input~.radio-checkmark {
-            background-color: #fff;
-        }
-        /* When the checkbox is checked, add a blue background */
-        
-        .container input:checked~.radio-checkmark {
-            background-color: #fff;
-            border: 1px solid #f9560d;
-        }
-        /* Create the checkmark/indicator (hidden when not checked) */
-        
-        .radio-checkmark:after {
-            content: "";
-            position: absolute;
-            display: none;
-        }
-        /* Show the checkmark when checked */
-        
-        .radio-container input:checked~.radio-checkmark:after {
-            display: block;
-        }
-        /* Style the checkmark/indicator */
-        
-        .radio-container .radio-checkmark:after {
-            left: 9px;
-            top: 5px;
-            width: 5px;
-            height: 10px;
-            border: solid #f9560d;
-            border-width: 0 2px 2px 0;
-            -webkit-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
         }
         
         .mail_wind a {
@@ -1247,205 +1224,6 @@
         
         #mail_wind_n .margin-bottom-sm {
             margin-bottom: 10px !important;
-        }
-        
-        #mail_wind_n .input-group {
-            position: relative;
-            display: table;
-            border-collapse: separate;
-        }
-        
-        #mail_wind_n .input-group-addon:first-child {
-            border-right: 0;
-        }
-        
-        #mail_wind_n .input-group .form-control:first-child,
-        #mail_wind_n .input-group-addon:first-child,
-        #mail_wind_n .input-group-btn:first-child>.btn,
-        #mail_wind_n .input-group-btn:first-child>.btn-group>.btn,
-        #mail_wind_n .input-group-btn:first-child>.dropdown-toggle,
-        #mail_wind_n .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle),
-        #mail_wind_n .input-group-btn:last-child>.btn-group:not(:last-child)>.btn {
-            border-bottom-right-radius: 0;
-            border-top-right-radius: 0;
-        }
-        
-        #mail_wind_n .input-group-addon {
-            padding: 6px 12px;
-            font-size: 14px;
-            font-weight: normal;
-            line-height: 1;
-            color: #555;
-            text-align: center;
-            background-color: #eee;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        
-        #mail_wind_n .input-group-addon,
-        #mail_wind_n .input-group-btn {
-            width: 1%;
-            white-space: nowrap;
-            vertical-align: middle;
-        }
-        
-        #mail_wind_n .input-group-addon,
-        #mail_wind_n .input-group-btn,
-        #mail_wind_n .input-group .form-control {
-            display: table-cell;
-        }
-        
-        #mail_wind_n .input-group .form-control:last-child,
-        #mail_wind_n .input-group-addon:last-child,
-        #mail_wind_n .input-group-btn:last-child>.btn,
-        #mail_wind_n .input-group-btn:last-child>.btn-group>.btn,
-        #mail_wind_n .input-group-btn:last-child>.dropdown-toggle,
-        #mail_wind_n .input-group-btn:first-child>.btn:not(:first-child),
-        #mail_wind_n .input-group-btn:first-child>.btn-group:not(:first-child)>.btn {
-            border-bottom-left-radius: 0;
-            border-top-left-radius: 0;
-        }
-        
-        #mail_wind_n .input-group-addon,
-        #mail_wind_n .input-group-btn,
-        #mail_wind_n .input-group .form-control {
-            display: table-cell;
-        }
-        
-        #mail_wind_n .input-group .form-control {
-            position: relative;
-            z-index: 2;
-            float: left;
-            width: 100%;
-            margin-bottom: 0;
-        }
-        
-        #mail_wind_n .form-control {
-            display: block;
-            width: 100%;
-            height: 34px;
-            padding: 6px 12px;
-            font-size: 14px;
-            line-height: 1.42857143;
-            color: #555;
-            background-color: #fff;
-            background-image: none;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-            -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-            -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-        }
-        
-        #mail_wind_n input,
-        #mail_wind_n button,
-        #mail_wind_n select,
-        #mail_wind_n textarea {
-            font-family: inherit;
-            font-size: inherit;
-            line-height: inherit;
-        }
-        
-        #mail_wind_n input {
-            line-height: normal;
-        }
-        
-        #mail_wind_n button,
-        #mail_wind_n input,
-        #mail_wind_n optgroup,
-        #mail_wind_n select,
-        #mail_wind_n textarea {
-            color: inherit;
-            font: inherit;
-            margin: 0;
-        }
-        
-        #mail_wind_n .radios input {
-            display: none;
-        }
-        
-        #mail_wind_n .radios label {
-            display: block;
-            float: left;
-            cursor: pointer;
-            width: 80px;
-            padding: 7px;
-            background: #bdc3c7;
-            color: #495054;
-            font-size: 16px;
-            text-align: center;
-            line-height: 1;
-            transition: .2s;
-            border-right: solid 1px #ccc;
-        }
-        
-        #mail_wind_n .radios label:first-of-type {
-            border-radius: 3px 0 0 3px;
-            margin: 0;
-        }
-        
-        #mail_wind_n .radios label:last-of-type {
-            border-radius: 0 3px 3px 0;
-            border: none;
-        }
-        
-        #mail_wind_n .radios input[type="radio"]:checked+.switch-on {
-            background-color: #ff6600;
-            color: #fff;
-        }
-        
-        #mail_wind_n .radios input[type="radio"]:checked+.switch-off {
-            background-color: #ff6600;
-            color: #fff;
-        }
-        
-        #mail_wind_n .btn-primary,
-        #mail_wind_n .btn-success,
-        #mail_wind_n .btn-warning,
-        #mail_wind_n .btn-danger,
-        #mail_wind_n .btn-info {
-            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-        }
-        
-        #mail_wind_n .btn {
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
-        }
-        
-        #mail_wind_n .btn-primary {
-            color: #fff;
-            background-color: #4a90e2;
-            border-color: #2e6da4;
-        }
-        
-        #mail_wind_n .btn {
-            display: inline-block;
-            margin-bottom: 0;
-            font-weight: normal;
-            text-align: center;
-            vertical-align: middle;
-            touch-action: manipulation;
-            cursor: pointer;
-            background-image: none;
-            border: 1px solid transparent;
-            white-space: nowrap;
-            padding: 4px 12px;
-            font-size: 14px;
-            line-height: 1.42857143;
-            border-radius: 4px;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-        
-        #mail_wind_n .radios {
-            float: left;
-        }
-        
-        #mail_wind_n button {
-            float: right;
         }
         /* FINDING NEARBY */
         

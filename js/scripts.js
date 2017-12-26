@@ -68,16 +68,6 @@ $(document).ready(function() {
         }
     });
 
-    // #real_response_checkbox 
-    $('#real_response_checkbox_label').click(function() {
-        if ($('#real_response_checkbox').is(':checked')) {
-            $(this).children('#res_chkbox').addClass('fa-check');
-        } else {
-            $('#real_response_checkbox').attr('checked', false);
-            $(this).children('#res_chkbox').removeClass('fa-check');
-        }
-    });
-
     // Response form button 
     $('#res_form_button').click(function(event) {
         var response_form = $('#real_response');

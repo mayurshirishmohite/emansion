@@ -299,7 +299,7 @@
                     <div class="text-right">
                         <a href="#" class="default-link">削除依頼</a>
                         <a href="#" class="default-link">参考になる!</a>
-                        <a href="#" class="default-link active" id="res_form_button">投稿する</a>
+                        <a href="#" class=" default-link-cta active" id="res_form_button">投稿する</a>
                     </div>
 
                 </div>
@@ -309,10 +309,13 @@
                         <div class="clearfix">
                             <p class="pull-left"> Name : 名無しさん</p>
                             <div class="pull-right">
-                                <input type="checkbox" id="real_response_checkbox" checked>
+                                <input type="checkbox" id="real_response_checkbox">
                                 <label for="real_response_checkbox" id="real_response_checkbox_label"> 
                                     <p>返信 </p>
-                                    <i class="fa" id="res_chkbox"></i>
+                                    <i id="res_chkbox">
+                                        <span class="fa fa-check"</span>
+                                    </i>
+                                    
                                 </label>
                             </div>
                         </div>
@@ -362,7 +365,7 @@
                     <div class="text-right">
                         <a href="#" class="default-link">削除依頼</a>
                         <a href="#" class="default-link">参考になる!</a>
-                        <a href="#" class="default-link" id="res_form_button">投稿する</a>
+                        <a href="#" class="default-link-cta" id="res_form_button">投稿する</a>
                     </div>
 
                 </div>
@@ -399,7 +402,7 @@
                     <div class="text-right">
                         <a href="#" class="default-link">削除依頼</a>
                         <a href="#" class="default-link">参考になる!</a>
-                        <a href="#" class="default-link " id="res_form_button">投稿する</a>
+                        <a href="#" class="default-link-cta " id="res_form_button">投稿する</a>
                     </div>
 
                 </div>
@@ -462,19 +465,25 @@
                         <h2>スレの更新情報を受け取る</h2>
                         <form action="">
                             <div class="radios">
-                                <label class="radio-container">1時間
-                                            <input type="radio" name="interval">
-                                            <span class="radio-checkmark"></span>
+                                <label class="radio-container" for="hour">
+                                            <input type="radio" id="hour" name="interval">
+                                            <i class="res_radio"><span class="fa fa-check"></span></i>
+                                                1時間
                                 </label>
-                                <label class="radio-container">24時間
-                                        <input type="radio" name="interval">
-                                        <span class="radio-checkmark"></span>
+                                <label class="radio-container" for="daily">24時間
+                                        <input type="radio" id="daily" name="interval">
+                                        <i class="res_radio"><span class="fa fa-check"></span></i>
+                                        1時間
                             </label>
-                                <label class="radio-container">常に
-                                    <input type="radio" name="interval">
-                                    <span class="radio-checkmark"></span>
+                                <label class="radio-container" for="weekly">常に
+                                    <input type="radio" id="weekly" name="interval">
+                                    <i class="res_radio"><span class="fa fa-check"></span></i>
+                                    1時間
                         </label>
 
+                            </div>
+                            <div class="signup-email-address">
+                                <input class="form-control" type="email" name="mail" placeholder="Email address" value="">
                             </div>
                         </form>
                     </div>
@@ -482,32 +491,7 @@
                 <!-- Pagination ends -->
 
 
-                <!-- Mail Wind -->
-                <div class="mail_wind">
-                    <h2>スレの更新情報を受け取る</h2>
-                    <div id="mail_wind_n">
-                        <form method="post" action="//mail-wind.com/module/regist.cgi">
-                            <div class="input-group margin-bottom-sm"> <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
-                                <input class="form-control" type="email" name="mail" placeholder="Email address" value="">
-                            </div>
-                            <input type="hidden" name="siteurl" value="https://m.e-mansion.co.jp/thread/616758/">
-                            <input type="hidden" name="rssurl" value="">
-                            <input type="hidden" name="functionurl" value="thread,rss/thread">
-                            <input type="hidden" name="sitetitle" value="（仮称）三鷹駅直結タワープロジェクト">
-                            <input type="hidden" name="cnt" value="0">
-                            <div class="radios">
-                                <input id="15cc4935b44355" type="radio" name="interval" value="60" checked="">
-                                <label for="15cc4935b44355" class="switch-on">1時間</label>
-                                <input id="15cc4935b442cd" type="radio" name="interval" value="1440">
-                                <label for="15cc4935b442cd" class="switch-off">24時間</label>
-                                <input id="15cc4935b442aa" type="radio" name="interval" value="1">
-                                <label for="15cc4935b442aa" class="switch-off">常に</label>
-                                <span class="clear"></span> </div>
-                            <button type="submit" class="btn btn-primary">登録</button>
-                            <span class="clear"></span>
-                        </form>
-                    </div>
-                    <a href="http://mail-wind.com/" target="_blank" rel="nofollow">更新通知サービスMail-Wind</a> </div>
+
                 <!-- Fadeout Trigger -->
                 <div id="fadeout_inquiry_position"></div>
                 <!-- Fadeout Trigger -->
