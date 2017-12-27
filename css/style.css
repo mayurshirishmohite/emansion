@@ -1260,15 +1260,23 @@
         /* FINDING NEARBY */
         
         #findingNearBy_sticky {
-            display: none;
-        }
-        
-        #findingNearBy_sticky {
             position: fixed;
             bottom: 0;
             width: 100%;
             z-index: 3;
             background-color: rgba(255, 255, 255, 1);
+        }
+        
+        #findingNearBy_sticky.active {
+            position: fixed;
+            background-color: white;
+            transition: all 0.3s ease-in;
+        }
+        
+        #findingNearBy_sticky.inactive {
+            position: relative;
+            background-color: #F4F6F7;
+            border-bottom: 1px solid #d9e0e3;
         }
         
         .finding_nearby {

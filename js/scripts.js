@@ -110,6 +110,7 @@ $(document).ready(function() {
         var fadeinfinding_nearby = $('#fadeinfinding_nearby').offset().top;
         var fadeoutfinding_nearby = $('#fadeoutfinding_nearby').offset().top;
         var fadeoutfinding_downarrow = $('#fadeout_downarrow').offset().top;
+
         if (trigger_position > fadeoutposition) {
             $("#detail_and_post").fadeOut("slow");
         } else if (trigger_position < fadeinposition) {
@@ -119,11 +120,14 @@ $(document).ready(function() {
         }
 
         if (trigger_position > fadeoutfinding_nearby) {
-            $("#findingNearBy_sticky").fadeOut("slow");
+            $("#findingNearBy_sticky").removeClass('active');
+            $("#findingNearBy_sticky").addClass('inactive');
         } else if (trigger_position < fadeinfinding_nearby) {
-            $("#findingNearBy_sticky").fadeOut("slow");
+            $("#findingNearBy_sticky").removeClass('active');
+            $("#findingNearBy_sticky").addClass('inactive');
         } else if (trigger_position > fadeinfinding_nearby) {
-            $("#findingNearBy_sticky").fadeIn("slow");
+            $("#findingNearBy_sticky").addClass('active');
+            $("#findingNearBy_sticky").removeClass('inactive');
         }
         if (trigger_position > fadeoutfinding_downarrow) {
             $("#sticky-arrow .arrow-down").hide();
