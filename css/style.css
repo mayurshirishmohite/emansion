@@ -387,6 +387,10 @@
             border: none;
         }
         
+        .gray-bg {
+            background-color: #F4F6F7;
+        }
+        
         .color-button:hover {
             color: #fff;
             text-decoration: none;
@@ -407,7 +411,15 @@
         }
         
         .overlay {
-            background: rgba(59, 73, 80, 0.8);
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#70838c+0,101619+100&0.7+0,0.7+100 */
+            background: -moz-linear-gradient(top, rgba(112, 131, 140, 0.8) 0%, rgba(16, 22, 25, 0.8) 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(112, 131, 140, 0.8) 0%, rgba(16, 22, 25, 0.8) 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba(112, 131, 140, 0.8) 0%, rgba(16, 22, 25, 0.8) 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b370838c', endColorstr='#b3101619', GradientType=0);
+            /* IE6-9 */
             z-index: 0;
             position: absolute;
             width: 100%;
@@ -527,6 +539,11 @@
         
         .dropup-custom>li {
             text-align: center;
+            border-top: 1px solid #f4f6f7;
+        }
+        
+        .dropup-custom>li:first-child {
+            border-top: 0px solid #f4f6f7;
         }
         
         .dropup-custom>li>a {
@@ -1150,11 +1167,12 @@
             border-bottom: 1px solid #D9E0E3;
         }
         
-        .mail_wind h2 {
+        .mail_wind h2,
+        .finding_nearby h2 {
             font-size: 24px;
             line-height: 1em;
             font-weight: normal;
-            margin: 0 0 10px 0;
+            margin: 0 0 15px 0;
             color: #f9560d;
             font-family: 'Yantramanav', sans-serif;
         }
@@ -1202,7 +1220,7 @@
         }
         
         .mail_wind .radios {
-            padding: 15px 0;
+            padding: 0 0 15px 0;
         }
         
         .mail_wind .signup-email-address {
@@ -1255,18 +1273,13 @@
         
         .finding_nearby {
             padding: 20px;
-        }
-        
-        .finding_nearby h2 {
-            font-size: 15px;
-            margin: 5px 0;
-            color: #9b9b9b;
+            border-top: 1px solid #d9e0e3;
         }
         
         .finding_nearby a.checkbox_trigger {
             background-color: #fff;
             color: #000;
-            padding: 10px;
+            padding: 9px;
             text-decoration: none;
             border-radius: 4px;
             width: 33%;
@@ -1276,28 +1289,149 @@
         }
         
         .finding_nearby a:hover.checkbox_trigger,
-        .finding_nearby a:active.checkbox_trigger {
+        .finding_nearby a:active.checkbox_trigger,
+        .finding_nearby a:focus.checkbox_trigger {
             border: 1px solid #a0aaae;
         }
         
         .finding_nearby a.nearby_information {
             background-color: #f9560d;
             color: #fff;
-            padding: 10px;
+            border: 1px solid #f9560d;
+            padding: 9px;
             text-decoration: none;
             border-radius: 4px;
             width: 63%;
             text-align: center;
             display: inline-block;
-            border: none;
+        }
+        /* new recommended property styles*/
+        
+        .rec_property {
+            min-height: 220px;
+            display: block;
+            width: 100%;
+            position: relative;
+            color: white;
+            margin-bottom: 1px;
+        }
+        
+        .rec_cta_btn_div {
+            position: relative;
+            bottom: 0;
+            height: 100%;
+            margin-top: 60px;
+        }
+        
+        .rec_cta_button a {
+            display: inline-block;
+            width: 100px;
+            text-align: center;
+            background-color: #fff;
+            padding: 10px 15px;
+            color: #000;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 10px 0 0 10px;
+        }
+        
+        .rec_cta_button a.active {
+            background-color: #f9560d;
+            color: #fff;
+        }
+        
+        .rec_cta_button a:hover,
+        .rec_cta_button a:focus {
+            background-color: #f9560d;
+            color: #fff;
+        }
+        
+        .rec_property .rec_property_image {
+            background-size: cover;
+            background-position: center center;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+        
+        .rec_property h1.rec_title {
+            color: #fff;
+            font-size: 18px;
+            margin: 5px 0;
+            float: left;
+        }
+        
+        .rec_property .dropdown-custom {
+            margin-top: 0px;
+        }
+        
+        .rec_property .price {
+            font-size: 14px;
+            color: white;
+            padding: 10px 0;
+            text-align: right;
+        }
+        
+        .rec_property .checkbox {
+            padding: 0;
+            margin-top: 0;
+            padding-top: 4px;
+            margin-bottom: 0;
+        }
+        
+        .rec_property .checkbox input {
+            margin: 0;
+            display: none;
+        }
+        
+        .rec_property .checkbox input:checked+label .box {
+            background: #f9560d;
+            cursor: pointer;
+        }
+        
+        .rec_property .checkbox input:checked+label .box i {
+            -webkit-transition-duration: 150ms;
+            transition-duration: 150ms;
+            opacity: 1;
+        }
+        
+        .rec_property .checkbox label {
+            cursor: pointer;
+            padding-left: 0;
+        }
+        
+        .rec_property .checkbox label .box {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            position: relative;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            -webkit-transition: background 300ms ease;
+            transition: background 300ms ease;
+        }
+        
+        .rec_property .checkbox label .box:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        .rec_property .checkbox label .box i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 20px;
+            display: inline-block;
+            /*opacity: 0.3;*/
+            pointer-events: none;
+            -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+            -webkit-transition-delay: 200ms;
+            transition-delay: 200ms;
+            -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
         }
         /* Recommended Property */
         
-        .recommended_property {
-            height: auto;
-        }
-        
-        .recommended_property,
         .current_showcase_property {
             position: relative;
             width: 100%;
@@ -1310,7 +1444,6 @@
             height: 120px;
         }
         
-        .recommended_property .recommended_img,
         .current_showcase_property .recommended_img {
             width: 100%;
             z-index: -1;
@@ -1318,7 +1451,6 @@
             position: absolute;
         }
         
-        .recommended_property img,
         .current_showcase_property img {
             position: absolute;
             width: 100%;
@@ -1329,29 +1461,20 @@
             transform: scale3d(1, 1, 1);
         }
         
-        .recommended_property.current_property,
         .current_showcase_property {
             height: 200px;
         }
         
-        .recommended_property.current_property img,
         .current_showcase_property img {
             top: 0;
-            width: auto;
-            height: 100%;
+            height: auto;
+            width: 100%;
         }
         
-        .recommended_property.current_property .checkbox,
         .current_showcase_property .checkbox {
             padding: 5px 0 170px 0;
         }
         
-        .recommended_property:hover img {
-            -webkit-transform: scale3d(1.2, 1.2, 1);
-            transform: scale3d(1.2, 1.2, 1);
-        }
-        
-        .recommended_property h1.recommended_title,
         .current_showcase_property h1.recommended_title {
             color: #fff;
             font-size: 18px;
@@ -1359,14 +1482,12 @@
             float: left;
         }
         
-        .recommended_property .price,
         .current_showcase_property .price {
             float: right;
             padding: 0 0 0 5px;
             font-size: 12px;
         }
         
-        .recommended_property .checkbox,
         .current_showcase_property .checkbox {
             padding: 0;
             margin-bottom: 0;
@@ -1380,7 +1501,7 @@
         
         .recommended_property .checkbox input:checked+label .box,
         .current_showcase_property .checkbox input:checked+label .box {
-            background: #5196e6;
+            background: #f9560d;
             cursor: pointer;
         }
         

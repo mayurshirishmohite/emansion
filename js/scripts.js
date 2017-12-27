@@ -159,7 +159,7 @@ $(document).ready(function() {
     $(".checkbox_trigger").click(function(event) {
         event.preventDefault();
         var checkbox_trigger = $(".checkbox_trigger");
-        var checkBoxes = $(".recommended_property .checkbox input");
+        var checkBoxes = $(".rec_property .checkbox input");
         if (!$(checkbox_trigger).hasClass('active')) {
             $(checkbox_trigger).addClass('active').html('Uncheck all');
             checkBoxes.prop("checked", true);
