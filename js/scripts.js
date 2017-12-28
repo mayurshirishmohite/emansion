@@ -120,9 +120,11 @@ $(document).ready(function() {
         }
 
         if (trigger_position > fadeoutfinding_nearby) {
+            $("#findingNearBy_sticky").show();
             $("#findingNearBy_sticky").removeClass('active');
             $("#findingNearBy_sticky").addClass('inactive');
         } else if (trigger_position < fadeinfinding_nearby) {
+            $("#findingNearBy_sticky").show();
             $("#findingNearBy_sticky").removeClass('active');
             $("#findingNearBy_sticky").addClass('inactive');
         } else if (trigger_position > fadeinfinding_nearby) {

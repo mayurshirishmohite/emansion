@@ -1265,6 +1265,10 @@
         /* FINDING NEARBY */
         
         #findingNearBy_sticky {
+            display: none;
+        }
+        
+        #findingNearBy_sticky {
             position: fixed;
             bottom: 0;
             width: 100%;
