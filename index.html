@@ -37,19 +37,20 @@
     <!-- Sticky buttons -->
     <div id="detail_and_post">
         <div class="sticky-btns">
-            <a href="#">Detail</a>
-            <a id="sticky-action-btn">Post Review</a>
+            <a href="#">詳細</a>
+            <a id="sticky-action-btn">ポストレビュー</a>
         </div>
         <div class="sticky-posts"> <a id="close-sticky-inputs">X</a>
             <div class="clearfix">
                 <div class="file-upload-left">
                     <input type="file" id="upload-file" class="upload-file" />
                     <label class="attachment" for="upload-file"></label>
-                    <input type="text" placeholder="Start writing..." />
+                    <input type="text" placeholder="書き始め" />
                 </div>
                 <div class="file-upload-send-btn">
 
-                    <a href="#">Send</a> </div>
+                    <a href="#">役職</a>
+                </div>
             </div>
         </div>
     </div>
@@ -88,7 +89,7 @@
         <form id="search-form">
             <div class="row">
                 <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-                    <input class="sb-search-input" placeholder="Search..." type="search" value="" name="search">
+                    <input class="sb-search-input" placeholder="物件名・住所・売主を入力" type="search" value="" name="search">
                     <button type="submit" class="search-btn"> <i class="fa fa-search"></i> </button>
                 </div>
 
@@ -152,8 +153,8 @@
                                             <span></span>
                                             <span></span>
                                         </a>
-                                        <ul class="dropdown-menu dropup-custom" role="menu">
-                                            <li><a href="#">Report</a></li>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">削除依頼</a></li>
 
                                             <div class="css-shapes-arrow"></div>
                                         </ul>
@@ -176,7 +177,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-2 col-lg-2 col-sm-3 col-xs-3 no-padding">
-                                    <div class="date text-right">2 days ago</div>
+                                    <div class="date text-right">2 前日</div>
                                 </div>
                             </div>
                         </div>
@@ -198,18 +199,18 @@
                     <!-- Spacer 10px ends -->
                 </div>
                 <div class="text-center">
-                    <a href="#" class="property-view-detail-toggle"> View detail <i class="fa fa-chevron-down" aria-hidden="true"></i> </a>
+                    <a href="#" class="property-view-detail-toggle"> 続きを読む <i class="fa fa-chevron-down" aria-hidden="true"></i> </a>
                 </div>
                 <div id="full-description">
-                    <label>Location </label>
-                    <p>Tokyo Mitaka City Shimonoseka 3 - chome 307 - 4 Other (lots)</p>
-                    <label>Description</label>
+                    <label>￼￼￼所在地 </label>
+                    <p>東京都三鷹市下連雀3丁目307-4（地番）他 </p>
+                    <label>説明</label>
                     <p> 中央線「三鷹」駅徒歩1分/南口直結/商業一体再開発タワー※1/東京メトロ東西線始発駅※2　三鷹市最高層※3/JR中央線「三鷹」駅南口にペデストリアンデッキにて直結　相鉄不動産と三菱地所レジデンスの共同事業/デザイン監修:三菱地所設計 </p>
 
-                    <label>Flat </label>
-                    <p>3 BHK </p>
-                    <label>Area </label>
-                    <p>750 sq.ft </p>
+                    <label>間取り </label>
+                    <p>1LDK〜3LDK </p>
+                    <label>専有面積 </label>
+                    <p>40.06平米〜90.66平米 </p>
 
                 </div>
                 <!-- SEARCH BOX -->
@@ -223,7 +224,7 @@
                                  </label>
                             </div>
                             <div class="col-xs-10 col-lg-11 col-md-11 col-sm-11">
-                                <input class="sb-search-input" placeholder="Search..." type="search" value="" name="search">
+                                <input class="sb-search-input" placeholder="スレッド内を検索" type="search" value="" name="search">
                                 <button type="submit" class="search-btn"> <i class="fa fa-search"></i> </button>
                             </div>
                         </div>
@@ -251,7 +252,7 @@
                     <div class="result-page">
                         <div class="row">
                             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2">
-                                <p>Results</p>
+                                <p>結果</p>
                             </div>
                             <div class="col-lg-11 col-md-11 col-sm-11 col-xs-10">
                                 <ul class="result-nav">
@@ -279,7 +280,7 @@
                             </p>
                         </div>
                         <div class="dot-nav-thread">
-                            <div class="dropup text-right">
+                            <div class="dropup dropdown-menu-thread text-right">
 
                                 <a href="#" class="dropdown-toggle more-menu-thread" id="dropdownMenu2" data-toggle="dropdown" role="button" aria-expanded="true">
                                     <span></span>
@@ -287,17 +288,16 @@
                                     <span></span>
                                 </a>
 
-                                <ul class="dropdown-menu dropdown-menu-thread" aria-labelledby="dropdownMenu2">
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                     <li><a href="#">削除依頼</a></li>
                                     <div class="css-shapes-arrow"></div>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
-                        Virginia </p>
+                    <p>出てないけど、プラウドの立川、ツインの国分寺を考えた時に、グレード規模を考えたら、グレーシア並みで頑張ると思う。で、それでも売れると思う。グレーシアは三鷹駅直結と言っても南口側のマンション群は雑踏感があるんで、高級感がないんですよね…仕様云々の前に雰囲気のポテンシャルが駅力以上に低いと思います。 </p>
                     <div class="text-right">
-                        <a href="#" class="default-link">削除依頼</a>
+
                         <a href="#" class="default-link">参考になる!</a>
                         <a href="#" class=" default-link-cta active" id="res_form_button">投稿する</a>
                     </div>
@@ -307,7 +307,7 @@
                 <div id="real_response">
                     <form>
                         <div class="clearfix">
-                            <p class="pull-left"> Name : 名無しさん</p>
+                            <p class="pull-left"> 名前 : 名無しさん</p>
                             <div class="pull-right">
                                 <input type="checkbox" id="real_response_checkbox">
                                 <label for="real_response_checkbox" id="real_response_checkbox_label"> 
@@ -345,7 +345,7 @@
                             </p>
                         </div>
                         <div class="dot-nav-thread">
-                            <div class="dropup text-right">
+                            <div class="dropup dropdown-menu-thread text-right">
 
                                 <a href="#" class="dropdown-toggle more-menu-thread" id="dropdownMenu2" data-toggle="dropdown" role="button" aria-expanded="true">
                                     <span></span>
@@ -353,17 +353,16 @@
                                     <span></span>
                                 </a>
 
-                                <ul class="dropdown-menu dropdown-menu-thread" aria-labelledby="dropdownMenu2">
+                                <ul class="dropdown-menu " aria-labelledby="dropdownMenu2">
                                     <li><a href="#">削除依頼</a></li>
                                     <div class="css-shapes-arrow"></div>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
-                        Virginia </p>
+                    <p>スーモに出てる予定価格と販売開始予定が変わってますね。やはり、モデルルームでの反応がイマイチだということでしょうか…。</p>
                     <div class="text-right">
-                        <a href="#" class="default-link">削除依頼</a>
+
                         <a href="#" class="default-link">参考になる!</a>
                         <a href="#" class="default-link-cta" id="res_form_button">投稿する</a>
                     </div>
@@ -382,7 +381,7 @@
                             </p>
                         </div>
                         <div class="dot-nav-thread">
-                            <div class="dropup text-right">
+                            <div class="dropup dropdown-menu-thread text-right">
 
                                 <a href="#" class="dropdown-toggle more-menu-thread" id="dropdownMenu2" data-toggle="dropdown" role="button" aria-expanded="true">
                                     <span></span>
@@ -390,7 +389,7 @@
                                     <span></span>
                                 </a>
 
-                                <ul class="dropdown-menu dropdown-menu-thread" aria-labelledby="dropdownMenu2">
+                                <ul class="dropdown-menu " aria-labelledby="dropdownMenu2">
                                     <li><a href="#">削除依頼</a></li>
                                     <div class="css-shapes-arrow"></div>
                                 </ul>
@@ -400,7 +399,7 @@
                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
                         Virginia </p>
                     <div class="text-right">
-                        <a href="#" class="default-link">削除依頼</a>
+
                         <a href="#" class="default-link">参考になる!</a>
                         <a href="#" class="default-link-cta " id="res_form_button">投稿する</a>
                     </div>
@@ -462,7 +461,7 @@
                         </div>
                     </div>
                     <div class="mail_wind">
-                        <h2>スレの更新情報を受け</h2>
+                        <h2>スレの更新情報を受け取る</h2>
                         <form action="">
                             <div class="radios">
                                 <label class="radio-container" for="hour">
@@ -494,19 +493,15 @@
                     <img src="images/ads2.png">
                 </div>
 
-
                 <!-- Fadeout Trigger -->
                 <div id="fadeout_inquiry_position"></div>
                 <!-- Fadeout Trigger -->
 
-
-
-
                 <!-- Select UnSelect   -->
                 <div class="finding_nearby gray-bg clearfix">
                     <h2>ご近所物件</h2>
-                    <a href="" class="checkbox_trigger pull-left">Check all</a>
-                    <a href="" class="nearby_information pull-right">Information</a>
+                    <a href="" class="checkbox_trigger pull-left">全てにチェックを入れる</a>
+                    <a href="" class="nearby_information pull-right">まとめて資料請求(無料)</a>
                 </div>
 
                 <!-- Select UnSelect   -->
@@ -531,8 +526,8 @@
                                         <span></span>
                                     </a>
                                     <ul class="dropdown-menu dropup-custom" role="menu" aria-labelledby="rec_property_dd">
-                                        <li><a href="#">Report</a></li>
-                                        <li><a href="#">Share</a></li>
+                                        <li><a href="#">削除依頼</a></li>
+
                                         <div class="css-shapes-arrow"></div>
                                     </ul>
                                 </div>
@@ -580,8 +575,8 @@
                                         <span></span>
                                     </a>
                                     <ul class="dropdown-menu dropup-custom" role="menu" aria-labelledby="rec_property_dd">
-                                        <li><a href="#">Report</a></li>
-                                        <li><a href="#">Share</a></li>
+                                        <li><a href="#">削除依頼</a></li>
+
 
                                         <div class="css-shapes-arrow"></div>
                                     </ul>
@@ -631,8 +626,8 @@
                                         <span></span>
                                     </a>
                                     <ul class="dropdown-menu dropup-custom" role="menu" aria-labelledby="rec_property_dd">
-                                        <li><a href="#">Report</a></li>
-                                        <li><a href="#">Share</a></li>
+                                        <li><a href="#">削除依頼</a></li>
+
                                         <div class="css-shapes-arrow"></div>
                                     </ul>
                                 </div>
@@ -666,8 +661,8 @@
                 <!-- recommended property ends 27/12/2017-->
                 <div id="findingNearBy_sticky" class="gray-bg">
                     <div class="finding_nearby spacer-20px clearfix">
-                        <a href="" class="checkbox_trigger pull-left">Check all</a>
-                        <a href="" class="nearby_information pull-right">Information</a> </div>
+                        <a href="" class="checkbox_trigger pull-left">全てにチェックを入れる</a>
+                        <a href="" class="nearby_information pull-right">まとめて資料請求(無料)</a> </div>
                 </div>
 
 
@@ -676,24 +671,7 @@
                     <a href="/" class="inline-link">マンションコミュニティHOMEへ</a>
                 </div>
 
-                <!-- guidelines content -->
-                <div class="content-items">
-                    <div class="content-items-item">
-                        <h2>This is headline 2</h2>
-                        <h3>This is subheadline 2</h3>
-                        <a href="/" class="inline-link">This is some link</a>
-                    </div>
-                    <div class="content-items-item">
 
-                        <h3>This is subheadline 2</h3>
-                        <a href="/" class="inline-link">This is some link</a>
-                    </div>
-                    <div class="content-items-item">
-
-                        <h3>This is subheadline 2</h3>
-                        <a href="/" class="inline-link">This is some link</a>
-                    </div>
-                </div>
 
                 <!-- Property Detail-->
                 <table class="table-style">

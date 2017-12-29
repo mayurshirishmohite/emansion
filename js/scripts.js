@@ -167,10 +167,10 @@ $(document).ready(function() {
         var checkbox_trigger = $(".checkbox_trigger");
         var checkBoxes = $(".rec_property .checkbox input");
         if (!$(checkbox_trigger).hasClass('active')) {
-            $(checkbox_trigger).addClass('active').html('Uncheck all');
+            $(checkbox_trigger).addClass('active').html('全てのチェックを外す');
             checkBoxes.prop("checked", true);
         } else {
-            $(checkbox_trigger).removeClass('active').html('Check all');
+            $(checkbox_trigger).removeClass('active').html('全てにチェックを入れる');
             checkBoxes.prop("checked", false);
         }
     });

@@ -451,6 +451,7 @@
         
         .dropdown-custom {
             margin-top: 12px;
+            position: relative;
         }
         
         a.more-menu,
@@ -484,27 +485,19 @@
             border-radius: 4px;
         }
         
-        .dropup-custom {
-            position: absolute;
-            top: 100%;
+        .dropdown-custom .dropdown-menu,
+        .dropdown-menu-thread .dropdown-menu {
+            top: auto;
+            bottom: 100%;
+            margin-bottom: 2px;
             right: 0;
-            z-index: 1000;
-            display: none;
-            float: left;
-            min-width: auto;
-            padding: 5px 0;
-            margin: 2px 0 0;
-            text-align: left;
-            font-size: 15px;
-            list-style: none;
-            background-color: #fff;
-            -webkit-background-clip: padding-box;
-            background-clip: padding-box;
-            border: 1px solid #ccc;
-            border: 1px solid rgba(0, 0, 0, .15);
-            border-radius: 4px;
-            -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+            left: auto;
+            text-align: center;
+        }
+        
+        .dropdown-custom .dropdown-menu,
+        .dropdown-menu-thread .dropdown-menu {
+            min-width: 100px;
         }
         
         .dropdown-backdrop {
@@ -517,8 +510,7 @@
         }
         
         .dropdown-menu-thread {
-            right: 0;
-            min-width: auto;
+            position: relative;
         }
         
         .css-shapes-arrow {
@@ -1291,6 +1283,7 @@
         .finding_nearby {
             padding: 20px;
             border-top: 1px solid #d9e0e3;
+            font-size: 12px;
         }
         
         .finding_nearby a.checkbox_trigger {
@@ -1299,16 +1292,10 @@
             padding: 9px;
             text-decoration: none;
             border-radius: 4px;
-            width: 33%;
+            width: 45%;
             display: inline-block;
             border: 1px solid #cdd4d8;
             text-align: center;
-        }
-        
-        .finding_nearby a:hover.checkbox_trigger,
-        .finding_nearby a:active.checkbox_trigger,
-        .finding_nearby a:focus.checkbox_trigger {
-            border: 1px solid #a0aaae;
         }
         
         .finding_nearby a.nearby_information {
@@ -1318,9 +1305,15 @@
             padding: 9px;
             text-decoration: none;
             border-radius: 4px;
-            width: 63%;
+            width: 53%;
             text-align: center;
             display: inline-block;
+        }
+        
+        .finding_nearby a:hover.checkbox_trigger,
+        .finding_nearby a:active.checkbox_trigger,
+        .finding_nearby a:focus.checkbox_trigger {
+            border: 1px solid #a0aaae;
         }
         /* new recommended property styles*/
         
@@ -1541,7 +1534,7 @@
         
         .table-style {
             width: inherit;
-            margin: 15px 20px 15px 20px;
+            margin: 0px 20px 15px 20px;
             border: 1px solid #EFEFEF;
         }
         
@@ -1610,5 +1603,13 @@
         @media screen and (max-width:390px) {
             .pagenavi {
                 padding: 10px 0px;
+            }
+        }
+        
+        @media only screen and (max-width:370px) {
+            .finding_nearby a.checkbox_trigger,
+            .finding_nearby a.nearby_information {
+                width: 100%;
+                margin: 0 0 5px 0;
             }
         }
