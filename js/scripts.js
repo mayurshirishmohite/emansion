@@ -34,7 +34,8 @@ $(document).ready(function() {
     var searchImgTooltip = $('.fa.fa-picture-o');
     var sbSearchInput = $(".sb-search-input");
     searchImgTooltip.tooltip({
-        container: '#res_search_box'
+        container: '#res_search_box',
+        html: true
     });
     sbSearchInput.focus(function() {
         searchImgTooltip.tooltip('show');
