@@ -30,6 +30,19 @@ $(document).ready(function() {
         }
     }
 
+    //Popover for image search UI
+    var searchImgTooltip = $('.fa.fa-picture-o');
+    var sbSearchInput = $(".sb-search-input");
+    searchImgTooltip.tooltip({
+        container: '#res_search_box'
+    });
+    sbSearchInput.focus(function() {
+        searchImgTooltip.tooltip('show');
+    });
+    sbSearchInput.blur(function() {
+        searchImgTooltip.tooltip('hide');
+    });
+
     // Humburger Menu
     $('#nav-icon').click(function() {
         hamburgerMenu();
@@ -162,10 +175,17 @@ $(document).ready(function() {
     });
 
     // Trigger checkbox On Off 
-    $(".checkbox_trigger").click(function(event) {
+    var checkBoxes = $(".rec_property .checkbox input");
+    var checkbox_trigger = $(".checkbox_trigger");
+    // By Default Active
+    checkBoxes.prop("checked", true);
+    checkboxCheckStatus();
+    $(checkbox_trigger).click(function(event) {
         event.preventDefault();
-        var checkbox_trigger = $(".checkbox_trigger");
-        var checkBoxes = $(".rec_property .checkbox input");
+        checkboxCheckStatus();
+    });
+
+    function checkboxCheckStatus() {
         if (!$(checkbox_trigger).hasClass('active')) {
             $(checkbox_trigger).addClass('active').html('全てのチェックを外す');
             checkBoxes.prop("checked", true);
@@ -173,7 +193,7 @@ $(document).ready(function() {
             $(checkbox_trigger).removeClass('active').html('全てにチェックを入れる');
             checkBoxes.prop("checked", false);
         }
-    });
+    }
 
 
 
