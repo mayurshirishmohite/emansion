@@ -602,18 +602,16 @@
         position: relative;
     }
     
-    .rating span.st1::before {
-        font-family: "FontAwesome";
-        content: "\f005";
+    .rating i.fas {
         color: #f9560d;
-        font-size: 24px;
     }
     
-    .rating span.st0::before {
-        font-family: "FontAwesome";
-        content: "\f005";
+    .rating i.far {
         color: rgba(255, 255, 255, 0.6);
-        font-size: 24px;
+    }
+    
+    .rating i.fa-star {
+        font-size: 20px;
     }
     
     .rating .rate {
