@@ -336,7 +336,7 @@
         float: right;
         color: #97A2A8;
         text-align: center;
-        line-height: 35px;
+        line-height: 37px;
     }
     
     .sticky-arrow a:hover,
@@ -711,13 +711,13 @@
         cursor: pointer;
     }
     
-    #res_search_box label .fa {
+    #res_search_box label .far {
         color: rgb(193, 205, 211);
         font-size: 22px;
         padding-top: 13px;
     }
     
-    #res_search_box input:checked+.fa {
+    #res_search_box input:checked+.far {
         color: #f9560d;
     }
     /**** PAGINATION ************/
