@@ -932,7 +932,7 @@
     /****** Response Textarera *******/
     
     #real_response {
-        /*display: none;*/
+        display: none;
     }
     
     #real_response_checkbox_label {
@@ -1017,6 +1017,7 @@
         cursor: pointer;
         margin: 0 15px;
         color: #A0AAAE;
+        vertical-align: middle;
     }
     
     #real_response .fa-expand.active {
@@ -1627,7 +1628,9 @@
         overflow: visible;
     }
     
-    .svg-icon-clap-link:hover {
+    .svg-icon-clap-link:hover,
+    .svg-icon-clap-link:active,
+    .svg-icon-clap-link:focus {
         -webkit-animation: pulse-shadow 0.7s linear;
         animation: pulse-shadow 0.7s linear;
     }

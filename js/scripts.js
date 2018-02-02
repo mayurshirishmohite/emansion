@@ -81,6 +81,20 @@ $(document).ready(function() {
 
         }
     });
+    // Clap Count 
+    var clapCount = $('.clap-count');
+    if ($('.clap-count:empty')) {
+        clapCount.hide();
+    }
+    $("#clap_count").click(function(event) {
+        event.preventDefault();
+        var num = "";
+        if (clapCount.is(':hidden')) {
+            clapCount.show().text('0');
+        }
+        num = parseInt(clapCount.text());
+        clapCount.text(num + 1);
+    });
 
     // Response form button 
     $('#res_form_button').click(function(event) {
