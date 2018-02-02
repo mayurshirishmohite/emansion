@@ -86,7 +86,7 @@ $(document).ready(function() {
     if ($('.clap-count:empty')) {
         clapCount.hide();
     }
-    $("#clap_count").click(function(event) {
+    $(".svg-icon-clap-link").click(function(event) {
         event.preventDefault();
         var num = "";
         if (clapCount.is(':hidden')) {
