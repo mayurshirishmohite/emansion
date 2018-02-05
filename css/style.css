@@ -569,7 +569,7 @@
     .single-thread-container .dropdown-menu>li>a {
         display: block;
         padding: 3px 5px;
-        text-align: center;
+        text-align: left;
         clear: both;
         font-weight: 400;
         line-height: 1.42857143;
@@ -585,9 +585,9 @@
         text-align: left;
     }
     
-    .property-title-date .dropdown-menu>li>a .fa-icons {
+    .dropdown-menu>li>a .fa-icons {
         display: inline-block;
-        width: 28px;
+        width: 25px;
         text-align: center;
     }
     
@@ -1652,8 +1652,14 @@
         padding: 0px 4px;
         position: relative;
         border-radius: 4px;
-        margin-left: 3px;
-        /*margin-left: -3px;*/
+    }
+    
+    .clap-btn+span.clap-count {
+        margin-left: 0px;
+    }
+    
+    span.clap-count.with-clap-icon {
+        margin-left: -3px;
     }
     
     span.clap-count:after,

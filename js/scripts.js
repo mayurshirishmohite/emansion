@@ -83,17 +83,20 @@ $(document).ready(function() {
     });
     // Clap Count 
     var clapCount = $('.clap-count');
+    var numClapCount = "";
     if ($('.clap-count:empty')) {
         clapCount.hide();
     }
-    $(".svg-icon-clap-link").click(function(event) {
+    $(".single-thread-container a.clap-btn").click(function(event) {
         event.preventDefault();
-        var num = "";
-        if (clapCount.is(':hidden')) {
-            clapCount.show().text('0');
+        if ($(this).next(clapCount)) {
+            if ($(this).next(clapCount).is(':hidden')) {
+                $(this).next(clapCount).show().text('0');
+            }
+            numClapCount = parseInt($(this).next(clapCount).text());
+            $(this).next(clapCount).text(numClapCount + 1);
         }
-        num = parseInt(clapCount.text());
-        clapCount.text(num + 1);
+
     });
 
     // Response form button 
