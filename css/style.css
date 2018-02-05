@@ -535,7 +535,7 @@
     }
     
     .dropup-custom>li {
-        text-align: center;
+        text-align: left;
     }
     
     .dropup-custom>li,
@@ -550,7 +550,7 @@
     
     .dropup-custom>li>a {
         display: block;
-        padding: 3px 10px;
+        padding: 3px 5px;
         clear: both;
         font-weight: 400;
         line-height: 1.42857143;
