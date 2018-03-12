@@ -213,7 +213,7 @@ $(document).ready(function() {
         }
     }
 
-    //scroll tabs 
+    //horizontal scroll tabs 
     $('.left-tab-arrow').hide();
     $('.right-tab-arrow').click(function() {
         event.preventDefault();
@@ -223,7 +223,6 @@ $(document).ready(function() {
             hscrollTab();
         });
     });
-
     $('.left-tab-arrow').click(function() {
         event.preventDefault();
         $('.custom-nav-tabs').animate({
@@ -236,7 +235,7 @@ $(document).ready(function() {
     $('.custom-nav-tabs').scroll(function() {
         hscrollTab();
     });
-
+    // scroll tab function to hide and how arrows
     function hscrollTab() {
         var $elem = $('.custom-nav-tabs');
         var newScrollLeft = $elem.scrollLeft(),
