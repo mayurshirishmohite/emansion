@@ -214,14 +214,12 @@ $(document).ready(function() {
     }
 
     //scroll tabs 
-    var rightScroll = false;
     $('.left-tab-arrow').hide();
     $('.right-tab-arrow').click(function() {
         event.preventDefault();
         $('.custom-nav-tabs').animate({
             scrollLeft: "+=200px"
         }, "slow", function() {
-            rightScroll = true;
             hscrollTab();
         });
     });
@@ -234,13 +232,17 @@ $(document).ready(function() {
             hscrollTab();
         });
     });
+    //detect user manuel scroll event triggered
+    $('.custom-nav-tabs').scroll(function() {
+        hscrollTab();
+    });
 
     function hscrollTab() {
         var $elem = $('.custom-nav-tabs');
         var newScrollLeft = $elem.scrollLeft(),
             width = $elem.outerWidth(),
             scrollWidth = $elem.get(0).scrollWidth;
-        if (scrollWidth - newScrollLeft == width && rightScroll == true) {
+        if (scrollWidth - newScrollLeft == width) {
             $('.right-tab-arrow').fadeOut();
             $('.left-tab-arrow').fadeIn();
         } else {

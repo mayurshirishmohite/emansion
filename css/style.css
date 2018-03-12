@@ -234,7 +234,7 @@
     .container-tabs a.scroll-tabs {
         position: absolute;
         padding: 26px 16px;
-        background: rgba(255, 255, 255, 0.91);
+        background: rgba(255, 255, 255, 1);
         display: block;
         color: #97a2a8;
         top: 0px;
