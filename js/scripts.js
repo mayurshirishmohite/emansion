@@ -31,7 +31,7 @@ $(document).ready(function() {
     }
 
     //Popover for image search UI
-    var searchImgTooltip = $('.fa.fa-picture-o');
+    var searchImgTooltip = $('.far.fa-image');
     var sbSearchInput = $(".sb-search-input");
     searchImgTooltip.tooltip({
         container: '#res_search_box',
