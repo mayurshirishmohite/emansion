@@ -227,11 +227,36 @@
         max-width: 480px;
     }
     
+    .container-tabs {
+        position: relative;
+    }
+    
+    .container-tabs a.scroll-tabs {
+        position: absolute;
+        padding: 26px 16px;
+        background: rgba(255, 255, 255, 0.91);
+        display: block;
+        color: #97a2a8;
+        top: 0px;
+        z-index: 10;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        margin: 0px 0px;
+    }
+    
+    .container-tabs a.right-tab-arrow {
+        right: 0;
+    }
+    
+    .container-tabs a.left-tab-arrow {
+        left: 0;
+    }
+    
     .custom-nav-tabs {
         background-color: #fff;
         padding: 20px;
         border-top: 1px solid #d9e0e3;
         overflow: auto;
+        position: relative;
         white-space: nowrap;
     }
     
@@ -256,12 +281,14 @@
         border: none;
         background-color: transparent;
         border-bottom: solid 2px #f9560d;
+        padding: 0px 6px 7px;
     }
     
     .custom-nav-tabs>li>a:focus,
     .custom-nav-tabs>li>a:hover {
         color: #f9560d;
         background-color: transparent;
+        border: 0px;
     }
     /****************** SEARCH *********************/
     
