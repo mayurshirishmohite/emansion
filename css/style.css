@@ -1112,6 +1112,7 @@
         margin-right: 5px;
         height: 46px;
         width: 80%;
+        transition: all 0.5s linear;
     }
     
     #detail_and_post .file-upload-left {
@@ -1292,8 +1293,9 @@
     input[type=search]:focus,
     textarea#real_response_body:focus {
         outline: none;
-        border: 1px solid #A0AAAE;
+        border: 1px solid white !important;
         color: #212B31;
+        box-shadow: 0px 0px 5px #ee5430;
     }
     
     .mail_wind .signup-email-address input[type=submit] {

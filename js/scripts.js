@@ -9,7 +9,10 @@ $(document).ready(function() {
         $('.test-div').hide();
     }*/
 
-
+    // cursor on tap
+    $('input').click(function(){
+        $(this).focus();
+    })
     // Search action
     $('.sb-search-cta').click(function(e) {
         e.preventDefault();
