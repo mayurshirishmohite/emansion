@@ -1106,7 +1106,7 @@
     }
     
     #detail_and_post .sticky-posts input[type=text] {
-        padding: 7px 8px;
+        text-indent: 8px;
         border-radius: 4px;
         border: 1px solid #ccc;
         margin-right: 5px;
