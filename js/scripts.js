@@ -9,7 +9,10 @@ $(document).ready(function() {
         $('.test-div').hide();
     }*/
 
-
+    // cursor on tap
+    $('input').click(function(){
+        $(this).focus();
+    })
     // Search action
     $('.sb-search-cta').click(function(e) {
         e.preventDefault();
@@ -235,6 +238,16 @@ $(document).ready(function() {
     $('.custom-nav-tabs').scroll(function() {
         hscrollTab();
     });
+    //function to detect HScroll bar if exists or not!
+    $.fn.hasHScrollBar = function()
+    {
+        return this.get(0).scrollWidth > this.innerWidth();
+    }
+    if($('.custom-nav-tabs').hasHScrollBar()){
+        $('.right-tab-arrow').fadeIn();
+    }else{
+        $('.right-tab-arrow,.left-tab-arrow').fadeOut();
+    }
     // scroll tab function to hide and how arrows
     function hscrollTab() {
         var $elem = $('.custom-nav-tabs');

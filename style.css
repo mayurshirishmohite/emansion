@@ -996,10 +996,6 @@
         position: absolute;
         visibility: hidden;
     }
-	 .file-upload-left input[type=file]{
-		width: 35px;
-		height: 40px;
-	}
     
     #real_response {
         padding: 20px;
@@ -1110,7 +1106,7 @@
     }
     
     #detail_and_post .sticky-posts input[type=text] {
-        text-indent: 8px;
+        padding: 7px 8px;
         border-radius: 4px;
         border: 1px solid #ccc;
         margin-right: 5px;
