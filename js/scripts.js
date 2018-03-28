@@ -10,10 +10,10 @@ $(document).ready(function() {
     }*/
 
     // cursor on tap
-    $('input').click(function(){
-        $(this).focus();
-    })
-    // Search action
+    $('input').click(function() {
+            $(this).focus();
+        })
+        // Search action
     $('.sb-search-cta').click(function(e) {
         e.preventDefault();
         checkSearch();
@@ -56,17 +56,23 @@ $(document).ready(function() {
     $('.main-menu ul li a').click(function() {
         $('.main-menu ul li a').removeClass('active')
         $(this).addClass('active');
-    })
+    });
+    // sticky post field variable
+    var StickyOnScroll = $('#detail_and_post,#sticky-arrow');
 
     function hamburgerMenu() {
         if ($('.main-menu').css('display') == 'none') {
             $('#nav-icon').addClass('open');
             $('nav').addClass('active');
             $('.main-menu').slideDown();
+            if ($('.main-menu').css('display') !== 'none') {
+                StickyOnScroll.hide();
+            }
         } else {
             $('#nav-icon').removeClass('open');
             $('nav').removeClass('active');
             $('.main-menu').slideUp();
+            StickyOnScroll.show();
         }
     }
 
@@ -239,13 +245,12 @@ $(document).ready(function() {
         hscrollTab();
     });
     //function to detect HScroll bar if exists or not!
-    $.fn.hasHScrollBar = function()
-    {
+    $.fn.hasHScrollBar = function() {
         return this.get(0).scrollWidth > this.innerWidth();
     }
-    if($('.custom-nav-tabs').hasHScrollBar()){
+    if ($('.custom-nav-tabs').hasHScrollBar()) {
         $('.right-tab-arrow').fadeIn();
-    }else{
+    } else {
         $('.right-tab-arrow,.left-tab-arrow').fadeOut();
     }
     // scroll tab function to hide and how arrows
