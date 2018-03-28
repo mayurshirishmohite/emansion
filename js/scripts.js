@@ -1,24 +1,13 @@
 $(document).ready(function() {
-    /*Set Environment here
-    var env = 'prod';
-    if (env == 'development') {
-        $('.test-div').show();
-        console.log(env);
-    } else {
-        console.log(env);
-        $('.test-div').hide();
-    }*/
-
     // cursor on tap
     $('input').click(function() {
-            $(this).focus();
-        })
-        // Search action
+        $(this).focus();
+    });
+    // Search action
     $('.sb-search-cta').click(function(e) {
         e.preventDefault();
         checkSearch();
     });
-
     // CheckSearch Function
     function checkSearch() {
         if ($('#search-form').css('display') == 'none') {
