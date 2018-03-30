@@ -557,6 +557,8 @@
     .dropdown-menu-thread .dropdown-menu,
     .dropdown-custom-bottom .dropdown-menu {
         min-width: 100px;
+        -webkit-box-shadow: 0 -2px 15px rgba(0, 0, 0, .175);
+        box-shadow: 0 -2px 15px rgba(0, 0, 0, .175);
     }
     
     .dropdown-backdrop {
