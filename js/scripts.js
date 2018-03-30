@@ -48,6 +48,7 @@ $(document).ready(function() {
     });
     // sticky post field variable
     var StickyOnScroll = $('#detail_and_post,#sticky-arrow');
+    var overlayMenu = $('.overlay-for-menu');
 
     function hamburgerMenu() {
         if ($('.main-menu').css('display') == 'none') {
@@ -56,12 +57,14 @@ $(document).ready(function() {
             $('.main-menu').slideDown();
             if ($('.main-menu').css('display') !== 'none') {
                 StickyOnScroll.hide();
+                overlayMenu.show();
             }
         } else {
             $('#nav-icon').removeClass('open');
             $('nav').removeClass('active');
             $('.main-menu').slideUp();
             StickyOnScroll.show();
+            overlayMenu.hide();
         }
     }
 
