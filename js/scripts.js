@@ -145,7 +145,11 @@ $(document).ready(function() {
         } else if (trigger_position < fadeinposition) {
             $("#detail_and_post").fadeOut("slow");
         } else if (trigger_position > fadeinposition) {
-            $("#detail_and_post").fadeIn("slow");
+            if ($('.main-menu').css('display') !== 'none') {
+                $("#detail_and_post").fadeOut("slow");
+            } else {
+                $("#detail_and_post").fadeIn("slow");
+            }
         }
 
         if (trigger_position > fadeoutfinding_nearby) {
