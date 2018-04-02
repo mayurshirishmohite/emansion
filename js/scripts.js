@@ -108,9 +108,13 @@ $(document).ready(function() {
             response_form.slideDown();
             $(this).addClass('active');
             $(this).html('閉じる');
-            $('html, body').animate({
-                scrollTop: response_form.offset().top - 70
-            }, 500);
+            if ($(response_form).isInViewport()) {
+                return;
+            } else {
+                $('html, body').animate({
+                    scrollTop: response_form.offset().top - 350
+                }, 500);
+            }
         } else {
             response_form.slideUp();
             $(this).removeClass('active');
@@ -118,9 +122,18 @@ $(document).ready(function() {
         }
 
     });
+    // checked visiblity function
+    $.fn.isInViewport = function() {
+        var elementTop = $(this).offset().top;
+        var elementBottom = elementTop + $(this).outerHeight();
+
+        var viewportTop = $(window).scrollTop();
+        var viewportBottom = viewportTop + $(window).height();
+
+        return elementBottom > viewportTop && elementTop < viewportBottom;
+    };
 
     // expand textarea
-
     $('#real_response .fa-expand').click(function(event) {
         var textarea_input = $('#real_response_body');
         if (!$(this).hasClass('active')) {
@@ -131,8 +144,8 @@ $(document).ready(function() {
             textarea_input.removeClass('expand');
         }
     });
-    // Scroll to fixed for detail_and_post
 
+    // Scroll to fixed for detail_and_post
     $(window).scroll(function() {
         var trigger_position = $(this).scrollTop() + $(this).height();
         /* console.log('Scroll top:' + $(this).scrollTop());
