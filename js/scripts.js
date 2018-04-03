@@ -103,6 +103,16 @@ $(document).ready(function() {
     // Response form button 
     $('#res_form_button').click(function(event) {
         var response_form = $('#real_response');
+        var deviceOffset = '';
+        if ($(window).width() >= 320 && $(window).width() < 375) {
+            deviceOffset = 230;
+        } else if ($(window).width() > 320 && $(window).width() <= 375) {
+            deviceOffset = 490;
+        } else if ($(window).width() > 375 && $(window).width() <= 415) {
+            deviceOffset = 400;
+        } else if ($(window).width() <= 768 && $(window).width() > 415) {
+            deviceOffset = 720;
+        }
         event.preventDefault();
         if (response_form.css('display') == 'none') {
             response_form.slideDown();
@@ -113,7 +123,7 @@ $(document).ready(function() {
                 //move input up if its near the bottom hidden behind the sticky section
                 if ($(response_form).offset().top > ($(window).scrollTop() + $(window).height() - 150)) {
                     $('html, body').animate({
-                        scrollTop: response_form.offset().top - 230
+                        scrollTop: response_form.offset().top - deviceOffset
                     }, 500);
                 }
             } else {
