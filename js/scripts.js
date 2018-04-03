@@ -104,10 +104,11 @@ $(document).ready(function() {
     $('#res_form_button').click(function(event) {
         var response_form = $('#real_response');
         var deviceOffset = '';
+        // offset based on device
         if ($(window).width() >= 320 && $(window).width() < 375) {
             deviceOffset = 230;
         } else if ($(window).width() > 320 && $(window).width() <= 375) {
-            deviceOffset = 490;
+            deviceOffset = 370;
         } else if ($(window).width() > 375 && $(window).width() <= 415) {
             deviceOffset = 400;
         } else if ($(window).width() <= 768 && $(window).width() > 415) {
