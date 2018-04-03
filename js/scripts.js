@@ -108,11 +108,17 @@ $(document).ready(function() {
             response_form.slideDown();
             $(this).addClass('active');
             $(this).html('閉じる');
+            //check if input is in visible viewport if not than slide up in viewport
             if ($(response_form).isInViewport()) {
-                return;
+                //move input up if its near the bottom hidden behind the sticky section
+                if ($(response_form).offset().top > ($(window).scrollTop() + $(window).height() - 150)) {
+                    $('html, body').animate({
+                        scrollTop: response_form.offset().top - 230
+                    }, 500);
+                }
             } else {
                 $('html, body').animate({
-                    scrollTop: response_form.offset().top - 350
+                    scrollTop: response_form.offset().top - 330
                 }, 500);
             }
         } else {
@@ -122,7 +128,7 @@ $(document).ready(function() {
         }
 
     });
-    // checked visiblity function
+    // Generic function to check elements in viewport
     $.fn.isInViewport = function() {
         var elementTop = $(this).offset().top;
         var elementBottom = elementTop + $(this).outerHeight();
