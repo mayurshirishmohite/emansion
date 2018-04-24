@@ -71,12 +71,12 @@ $(document).ready(function() {
     // Show/Hide Property  Detail Toggle
     $('.property-view-detail-toggle').click(function(event) {
         event.preventDefault();
-        if ($('#full-description').css('display') == 'none') {
-            $('#full-description').slideDown();
+        if ($(this).parent().next('#full-description').css('display') == 'none') {
+            $(this).parent().next('#full-description').slideDown();
             $(this).find('i').removeClass('fa-chevron-down');
             $(this).find('i').addClass('fa-chevron-up');
         } else {
-            $('#full-description').slideUp('slow');
+            $(this).parent().next('#full-description').slideUp('slow');
             $(this).find('i').removeClass('fa-chevron-up');
             $(this).find('i').addClass('fa-chevron-down');
 
@@ -172,6 +172,8 @@ $(document).ready(function() {
         var fadeinfinding_nearby = $('#fadeinfinding_nearby').offset().top;
         var fadeoutfinding_nearby = $('#fadeoutfinding_nearby').offset().top;
         var fadeoutfinding_downarrow = $('#fadeout_downarrow').offset().top;
+        var fadein_price_btn = $('#fadein_price_btn').offset().top;
+        var fadeout_price_btn = $('#fadeout_price_btn').offset().top;
 
         if (trigger_position > fadeoutposition) {
             $("#detail_and_post").fadeOut("slow");
@@ -182,6 +184,18 @@ $(document).ready(function() {
                 $("#detail_and_post").fadeOut("slow");
             } else {
                 $("#detail_and_post").fadeIn("slow");
+            }
+        }
+
+        if (trigger_position > fadeout_price_btn) {
+            $("#pricing_tables").addClass("relative");
+        } else if (trigger_position < fadein_price_btn) {
+            $("#pricing_tables").fadeOut("slow").removeClass("relative");
+        } else if (trigger_position > fadein_price_btn) {
+            if ($('.main-menu').css('display') !== 'none') {
+                $("#pricing_tables").fadeOut("slow").removeClass("relative");
+            } else {
+                $("#pricing_tables").fadeIn("slow").removeClass("relative");
             }
         }
 
@@ -293,5 +307,15 @@ $(document).ready(function() {
             $('.right-tab-arrow').fadeIn();
         }
     }
+
+    //freeze columns
+    var $table = $('.table-pinned');
+    var $fixedColumn = $table.clone().insertBefore($table).addClass('fixed-column');
+
+    $fixedColumn.find('th,td').not('.pinned').remove();
+
+    $fixedColumn.find('tr').each(function(i, elem) {
+        $(this).height($table.find('tr:eq(' + i + ')').height());
+    });
 
 });

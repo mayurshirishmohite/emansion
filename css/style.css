@@ -686,11 +686,13 @@
         color: #000;
         height: 60px;
         line-height: 60px;
+        border-bottom: 1px solid #e1e1e1;
         text-decoration: none;
         border-top: none;
         border-left: none;
         border-right: none;
         display: block;
+        border-collapse: collapse;
     }
     
     .property-view-detail-toggle .fa {
@@ -751,7 +753,6 @@
         background-color: #f4f6f7;
         padding: 20px;
         position: relative;
-        border-top: 1px solid #d9e0e3;
         border-bottom: 1px solid #d9e0e3;
     }
     
@@ -1094,7 +1095,8 @@
         display: none;
     }
     
-    #detail_and_post {
+    #detail_and_post,
+    #pricing_tables {
         position: fixed;
         bottom: 0px;
         width: 100%;
@@ -1107,7 +1109,14 @@
         box-shadow: 0px 0px 5px rgba(84, 84, 84, 0.4);
     }
     
-    #detail_and_post .sticky-btns a {
+    #pricing_tables.relative {
+        position: relative;
+        border-top: 0px solid #ccc;
+        box-shadow: 0px 0px 0px rgba(255, 255, 255, 1);
+    }
+    
+    #detail_and_post .sticky-btns a,
+    #pricing_tables .sticky-btns a {
         color: #fff;
         display: inline-block;
         height: 46px;
@@ -1115,18 +1124,21 @@
         border-radius: 4px;
     }
     
-    #detail_and_post .sticky-btns a:first-child {
+    #detail_and_post .sticky-btns a:first-child,
+    #pricing_tables .sticky-btns a:first-child {
         background-color: #a0aaae;
         width: 28%;
         margin-right: 5px;
         text-decoration: none;
     }
     
-    #detail_and_post .sticky-btns a:hover:first-child {
+    #detail_and_post .sticky-btns a:hover:first-child,
+    #pricing_tables .sticky-btns a:hover:first-child {
         background-color: #CDD4D8;
     }
     
-    #detail_and_post .sticky-btns a#sticky-action-btn {
+    #detail_and_post .sticky-btns a#sticky-action-btn,
+    #pricing_tables .sticky-btns a#sticky-action-btn {
         background-color: #f9560d;
         width: 68%;
         text-decoration: none;
@@ -1779,6 +1791,36 @@
         100% {
             -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
             box-shadow: 0 0 0 0 rgba(255, 255, 255, 0)
+        }
+    }
+    
+    .table-price {
+        padding: 20px 20px 0 20px;
+    }
+    
+    .table-price .table-striped>thead>tr {
+        background-color: #eee;
+    }
+    
+    .table-price .table-striped>tbody>tr:nth-of-type(odd) {
+        background-color: #fff;
+    }
+    
+    .table-price .table-striped>tbody>tr:nth-of-type(even) {
+        background-color: #eee;
+    }
+    
+    .table-responsive>.fixed-column {
+        position: absolute;
+        display: inline-block;
+        width: auto;
+        border-right: 1px solid #ddd;
+        background: white;
+    }
+    
+    @media(min-width:768px) {
+        .table-responsive>.fixed-column {
+            display: none;
         }
     }
     /*********** MEDIA QUERIES *************/

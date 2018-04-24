@@ -30,34 +30,6 @@
 </head>
 
 <body>
-    <!-- Sticky arrow -->
-    <div class="sticky-arrow" id="sticky-arrow">
-        <a href="#" class="arrow-down"><i class="fa fa-chevron-down"></i></a>
-        <a href="#" class="arrow-up"><i class="fa fa-chevron-up"></i></a>
-    </div>
-
-    <!-- Sticky buttons -->
-    <div id="detail_and_post">
-        <div class="sticky-btns">
-            <a href="#">物件概要</a>
-            <a id="sticky-action-btn">投稿する</a>
-        </div>
-        <div class="sticky-posts"> <a id="close-sticky-inputs">X</a>
-            <div class="clearfix">
-                <div class="file-upload-left">
-                    <input type="file" id="upload-file" class="upload-file" />
-                    <label class="attachment" for="upload-file"></label>
-                    <input type="text" placeholder="" />
-                </div>
-                <div class="file-upload-send-btn">
-
-                    <a href="#">確認</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
     <div id="header">
         <div class="mc-wrapper clearfix">
 
@@ -136,6 +108,31 @@
         <!-- Tab pane 1 Thread -->
         <div class="tab-content">
             <div class="tab-pane active fade in" id="home">
+                <!-- Sticky arrow -->
+                <div class="sticky-arrow" id="sticky-arrow">
+                    <a href="#" class="arrow-down"><i class="fa fa-chevron-down"></i></a>
+                    <a href="#" class="arrow-up"><i class="fa fa-chevron-up"></i></a>
+                </div>
+                <!-- Sticky buttons -->
+                <div id="detail_and_post">
+                    <div class="sticky-btns">
+                        <a href="#">物件概要</a>
+                        <a id="sticky-action-btn">投稿する</a>
+                    </div>
+                    <div class="sticky-posts"> <a id="close-sticky-inputs">X</a>
+                        <div class="clearfix">
+                            <div class="file-upload-left">
+                                <input type="file" id="upload-file" class="upload-file" />
+                                <label class="attachment" for="upload-file"></label>
+                                <input type="text" placeholder="" />
+                            </div>
+                            <div class="file-upload-send-btn">
+
+                                <a href="#">確認</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="mc-property-overview position-relative ">
                     <div class="property-thumbnail"> <img src="https://realestate.c.yimg.jp/new/mansion/image/resize?dir=rich/1002/2063/image/100220630048.jpg" alt="property name" title="property name" />
                         <div class="overlay"></div>
@@ -530,320 +527,591 @@
                         </form>
                     </div>
                 </div>
-                <!-- Pagination ends -->
-
-                <div id="Ad">
-                    <img src="images/property.png">
-                </div>
-
-                <!-- Fadeout Trigger -->
-                <div id="fadeout_inquiry_position"></div>
-                <!-- Fadeout Trigger -->
-
-                <!-- Select UnSelect   -->
-                <div class="finding_nearby gray-bg clearfix">
-                    <h2>ご近所物件</h2>
-                    <a href="" class="checkbox_trigger pull-left">全てにチェックを入れる</a>
-                    <a href="" class="nearby_information pull-right">まとめて資料請求(無料)</a>
-                </div>
-
-                <!-- Select UnSelect   -->
-                <!-- FadeIn for NearBy Sticky layer -->
-                <div id="fadeinfinding_nearby"></div>
-
-
-                <!-- recommended property 27/12/2017-->
-                <div class="rec_property">
-                    <div class="rec_property_image" style="background-image:url(https://dummy-images.com/buildings/dummy-600x900-City.jpg);"></div>
-                    <div class="overlay"></div>
-                    <div class="spacer-20px">
-                        <div class="row no-margin">
-                            <div class="col-md-9 col-lg-9 col-sm-9 col-xs-7 no-padding">
-                                <h1 class="rec_title">プラウドシティ</h1>
-                            </div>
-                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-5 no-padding">
-                                <div class="text-right dropup dropdown-custom-bottom">
-                                    <a href="#" class="dropdown-toggle more-menu" id="rec_property_dd" data-toggle="dropdown" role="button" aria-expanded="true">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </a>
-                                    <ul class="dropdown-menu dropup-custom" role="menu" aria-labelledby="rec_property_dd">
-
-                                        <li>
-                                            <a href="#">
-                                                <div class="fa-icons"> <i class="far fa-file">
-                                                        </i>
-                                                </div> 見学記</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="fa-icons"><i class="fas fa-info"></i></div> まとめ</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="fa-icons"><i class="far fa-user"></i></div> 住民スレ</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="fa-icons"><i class="far fa-question-circle"></i></div> 資料請求</a>
-                                        </li>
-                                        <div class="css-shapes-arrow-top"></div>
-                                    </ul>
-                                </div>
-                                <div class="price"> 4,490万円～8,790万円</div>
-                            </div>
-
-                        </div>
-                        <div class="rec_cta_btn_div">
-                            <div class="row">
-                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-2">
-                                    <div class="checkbox">
-                                        <input id="check" type="checkbox" />
-                                        <label for="check">
-                                <div class="box"><i class="fa fa-check"></i></div>
-                                </label></div>
-                                </div>
-                                <div class="col-md-9 col-lg-9 col-sm-9 col-xs-10 text-right">
-                                    <div class="rec_cta_button">
-
-                                        <a href="#" class="white-btn">検討スレ</a>
-                                        <a href="#" class="color-btn active">物件概要</a> </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- recommended property ends 27/12/2017-->
-                <!-- recommended property 27/12/2017-->
-                <div class="rec_property">
-                    <div class="rec_property_image" style="background-image:url(https://dummy-images.com/buildings/dummy-600x900-City.jpg);"></div>
-                    <div class="overlay"></div>
-                    <div class="spacer-20px">
-                        <div class="row no-margin">
-                            <div class="col-md-9 col-lg-9 col-sm-9 col-xs-7 no-padding">
-                                <h1 class="rec_title">プラウドシティ</h1>
-                            </div>
-                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-5 no-padding">
-
-
-                                <div class="text-right dropup dropdown-custom-bottom">
-                                    <a href="#" class="dropdown-toggle more-menu" id="rec_property_dd" data-toggle="dropdown" role="button" aria-expanded="true">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </a>
-                                    <ul class="dropdown-menu dropup-custom" role="menu" aria-labelledby="rec_property_dd">
-
-                                        <li>
-                                            <a href="#">
-                                                <div class="fa-icons"> <i class="far fa-file">
-                                                                </i>
-                                                </div> 見学記</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="fa-icons"><i class="fas fa-info"></i></div> まとめ</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="fa-icons"><i class="far fa-user"></i></div> 住民スレ</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="fa-icons"><i class="far fa-question-circle"></i></div> 資料請求</a>
-                                        </li>
-
-                                        <div class="css-shapes-arrow-top"></div>
-                                    </ul>
-                                </div>
-
-                                <div class="price"> 4,490万円～8,790万円</div>
-                            </div>
-
-                        </div>
-                        <div class="rec_cta_btn_div">
-                            <div class="row">
-                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-2">
-                                    <div class="checkbox">
-                                        <input id="check_01" type="checkbox" />
-                                        <label for="check_01">
-                    <div class="box"><i class="fa fa-check"></i></div>
-                    </label></div>
-                                </div>
-                                <div class="col-md-9 col-lg-9 col-sm-9 col-xs-10 text-right">
-                                    <div class="rec_cta_button">
-
-                                        <a href="#" class="white-btn">検討スレ</a>
-                                        <a href="#" class="color-btn active">物件概要</a> </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- recommended property ends 27/12/2017-->
-                <!-- recommended property 27/12/2017-->
-                <div class="rec_property">
-                    <div class="rec_property_image" style="background-image:url(https://dummy-images.com/buildings/dummy-600x900-City.jpg);"></div>
-                    <div class="overlay"></div>
-                    <div class="spacer-20px">
-                        <div class="row no-margin">
-                            <div class="col-md-9 col-lg-9 col-sm-9 col-xs-7 no-padding">
-                                <h1 class="rec_title">プラウドシティ</h1>
-                            </div>
-                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-5 no-padding">
-
-
-                                <div class="text-right dropup dropdown-custom-bottom">
-                                    <a href="#" class="dropdown-toggle more-menu" id="rec_property_dd" data-toggle="dropdown" role="button" aria-expanded="true">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </a>
-                                    <ul class="dropdown-menu dropup-custom" role="menu" aria-labelledby="rec_property_dd">
-
-                                        <li>
-                                            <a href="#">
-                                                <div class="fa-icons"> <i class="far fa-file">
-                                                                </i>
-                                                </div> 見学記</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="fa-icons"><i class="fas fa-info"></i></div> まとめ</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="fa-icons"><i class="far fa-user"></i></div> 住民スレ</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="fa-icons"><i class="far fa-question-circle"></i></div> 資料請求</a>
-                                        </li>
-                                        <div class="css-shapes-arrow-top"></div>
-                                    </ul>
-                                </div>
-
-                                <div class="price"> 4,490万円～8,790万円</div>
-                            </div>
-
-                        </div>
-                        <div class="rec_cta_btn_div">
-                            <div class="row">
-                                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-2">
-                                    <div class="checkbox">
-                                        <input id="check_02" type="checkbox" />
-                                        <label for="check_02">
-                        <div class="box"><i class="fa fa-check"></i></div>
-                        </label></div>
-                                </div>
-                                <div class="col-md-9 col-lg-9 col-sm-9 col-xs-10 text-right">
-                                    <div class="rec_cta_button">
-
-                                        <a href="#" class="white-btn">検討スレ</a>
-                                        <a href="#" class="color-btn active">物件概要</a> </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- Sticky layer hide from here -->
-                <div id="fadeoutfinding_nearby"></div>
-                <!-- recommended property ends 27/12/2017-->
-                <div id="findingNearBy_sticky" class="gray-bg">
-                    <div class="finding_nearby spacer-20px clearfix">
-                        <a href="" class="checkbox_trigger pull-left">全てにチェックを入れる</a>
-                        <a href="" class="nearby_information pull-right">まとめて資料請求(無料)</a> </div>
-                </div>
-
-
-                <!-- Link goto Home -->
-                <div class="text-center spacer-20px">
-                    <a href="/" class="inline-link">マンションコミュニティHOMEへ</a>
-                </div>
-
-
-
-                <!-- Property Detail-->
-                <table class="table-style">
-                    <tr class="bild_overview_th">
-                        <th class="bild_overview_th" colspan="2">（仮称）三鷹駅直結タワープロジェクト物件概要</th>
-                    </tr>
-                    <tr>
-                        <td class="bild_title_td">所在地</td>
-                        <td class="bild_overview_td">東京都三鷹市下連雀3丁目307-4他（地番）</td>
-                    </tr>
-                    <tr>
-                        <td class="bild_title_td">交通</td>
-                        <td class="bild_overview_td">中央本線（JR東日本） 「三鷹」駅 徒歩1分 （南口より）<br> 総武線 「三鷹」駅 徒歩1分 （南口より）</td>
-                    </tr>
-                    <tr>
-                        <td class="bild_title_td">間取り</td>
-                        <td class="bild_overview_td">1LDK～3LDK</td>
-                    </tr>
-                    <tr>
-                        <td class="bild_title_td">専有面積</td>
-                        <td class="bild_overview_td">40.06m2～90.66m2</td>
-                    </tr>
-                    <tr>
-                        <td class="bild_title_td">価格</td>
-                        <td class="bild_overview_td">未定</td>
-                    </tr>
-                    <tr>
-                        <td class="bild_title_td">種別</td>
-                        <td class="bild_overview_td">新築マンション</td>
-                    </tr>
-                    <tr>
-                        <td class="bild_title_td">総戸数</td>
-                        <td class="bild_overview_td">184戸（事業協力者住戸39戸含む）※他に商業・業務フロア</td>
-                    </tr>
-                    <tr>
-                        <td class="bild_title_td">販売戸数</td>
-                        <td class="bild_overview_td">未定</td>
-                    </tr>
-                    <tr>
-                        <td class="bild_title_td">そのほかの情報</td>
-                        <td class="bild_overview_td">構造、建物階数：（一部鉄骨造）、地上26階 地下2階建<br> 敷地の権利形態：所有権の共有
-                            <br> 完成時期：2019年02月中旬予定
-                            <br> 入居可能時期：2019年04月下旬予定 </td>
-                    </tr>
-                </table>
-                <table class="table-style">
-                    <tr class="bild_overview_th">
-                        <th class="bild_overview_th" colspan="2">会社情報</th>
-                    </tr>
-                    <tr>
-                        <td class="bild_title_td">[売主]相鉄不動産株式会社</td>
-                        <td class="bild_overview_td">神奈川県横浜市西区北幸2-9-14<br> 国土交通大臣（2）第7949号、（一社）不動産協会会員、（公社）首都圏不動産公正取引協議会加盟
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="bild_title_td">[売主・販売代理]三菱地所レジデンス株式会社</td>
-                        <td class="bild_overview_td">東京都千代田区大手町1-6-1<br> 国土交通大臣（14）第408号、（一社）不動産協会会員、（公社）首都圏不動産公正取引協議会加盟
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="bild_title_td">[販売代理]相鉄不動産販売株式会社</td>
-                        <td class="bild_overview_td">神奈川県横浜市西区北幸2-9-14相鉄本社ビル6階<br> 国土交通大臣（3）第6809号、（一社）不動産流通経営協会　（公社）首都圏不動産公正取引協議会加盟
-                        </td>
-                    </tr>
-                </table>
-                <!-- Property Detail ENDS-->
-
-
             </div>
             <!-- Tabs END here -->
 
             <!-- EXTRA TABS BELOW -->
-            <div class="tab-pane fade" id="tab2">2...</div>
-            <div class="tab-pane fade" id="tab3">3...</div>
+            <div class="tab-pane fade" id="tab2">
+                <div class="spacer-20px">Tab 2 content here </div>
+            </div>
+            <div class="tab-pane fade" id="tab3">
+
+                <div class="mc-property-overview position-relative ">
+                    <div class="property-thumbnail"> <img src="https://realestate.c.yimg.jp/new/mansion/image/resize?dir=rich/1002/2063/image/100220630048.jpg" alt="property name" title="property name" />
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="spacer-20px">
+                        <div class="property-title-date">
+                            <div class="row no-margin">
+                                <div class="col-md-10 col-lg-10 col-sm-9 col-xs-9 no-padding">
+                                    <h1>アルファグランデ千桜タワー</h1>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-3 col-xs-3 no-padding">
+                                    <div class="text-right dropup dropdown-custom-bottom">
+                                        <a href="#" class="dropdown-toggle more-menu" data-toggle="dropdown" role="button" aria-expanded="true">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li>
+                                                <a href="#">
+                                                    <div class="fa-icons"> <i class="far fa-trash-alt">
+                                                                </i>
+                                                    </div> 削除依頼</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="fa-icons"><i class="fas fa-share-alt"></i></div> 関連スレ</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="fa-icons"><i class="fas fa-info"></i></div> まとめ</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="fa-icons"><i class="fas fa-dollar-sign"></i></div> 価格表</a>
+                                            </li>
+                                            <div class="css-shapes-arrow-top"></div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row no-margin">
+                                <div class="col-md-10 col-lg-10 col-sm-9 col-xs-9 no-padding">
+                                    <div class="rating">
+                                        <div class="rating">
+                                            <ul>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+
+                                                <!-- unstarred -->
+                                                <li><i class="far fa-star"></i></li>
+                                            </ul>
+                                            <div class="rate">3.6</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-sm-3 col-xs-3 no-padding">
+                                    <div class="date text-right">2日前</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-description">
+                            <div class="row no-margin">
+                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 no-padding">
+                                    <h2>
+                                        シティテラス荻窪についての情報を希望しています。<br/> 物件を検討中の方やご近所の方など、色々と意見を交換したいと思っています。 よろしくお願いします。
+                                        <br/> 所在地：東京都千代田区神田東松下町22番地外
+                                    </h2>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="cta-button">
+                            <a href="#">資料請求</a>
+                            <a href="#">ご近所物件</a>
+                            <a href="#" class="active">物件概要</a> </div>
+                    </div>
+                    <!-- Spacer 10px ends -->
+                </div>
+                <div id="fadein_price_btn"></div>
+                <div class="text-center">
+                    <a href="#" class="property-view-detail-toggle"> 続きを読む <i class="fa fa-chevron-down" aria-hidden="true"></i> </a>
+                </div>
+                <div id="full-description">
+                    <label>￼￼￼所在地 </label>
+                    <p>東京都三鷹市下連雀3丁目307-4（地番）他 </p>
+                    <label>説明</label>
+                    <p> 中央線「三鷹」駅徒歩1分/南口直結/商業一体再開発タワー※1/東京メトロ東西線始発駅※2　三鷹市最高層※3/JR中央線「三鷹」駅南口にペデストリアンデッキにて直結　相鉄不動産と三菱地所レジデンスの共同事業/デザイン監修:三菱地所設計 </p>
+
+                    <label>間取り </label>
+                    <p>1LDK〜3LDK </p>
+                    <label>専有面積 </label>
+                    <p>40.06平米〜90.66平米 </p>
+
+                </div>
+                <div class="table-price">
+                    <div class="table-responsive">
+                        <table class="table table-pinned table-striped table-bordered table-hover table-condensed">
+                            <thead>
+                                <tr>
+                                    <td class="pinned">棟名</td>
+                                    <td class="pinned">階数</td>
+                                    <td>タイプ名</td>
+                                    <td>向き</td>
+                                    <td>間取り</td>
+                                    <td>専有面積</td>
+                                    <td>分譲価格</td>
+                                    <td>坪単価</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="pinned">タワー棟</td>
+                                    <td class="pinned">2F</td>
+                                    <td></td>
+                                    <td>西</td>
+                                    <td>3LDK</td>
+                                    <td>77.23平米</td>
+                                    <td>4520万円</td>
+                                    <td>193万円</td>
+                                </tr>
+                                <tr>
+                                    <td class="pinned">タワー棟</td>
+                                    <td class="pinned">2F</td>
+                                    <td></td>
+                                    <td>西</td>
+                                    <td>3LDK</td>
+                                    <td>77.23平米</td>
+                                    <td>4520万円</td>
+                                    <td>193万円</td>
+                                </tr>
+                                <tr>
+                                    <td class="pinned">タワー棟</td>
+                                    <td class="pinned">2F</td>
+                                    <td></td>
+                                    <td>西</td>
+                                    <td>3LDK</td>
+                                    <td>77.23平米</td>
+                                    <td>4520万円</td>
+                                    <td>193万円</td>
+                                </tr>
+                                <tr>
+                                    <td class="pinned">タワー棟</td>
+                                    <td class="pinned">2F</td>
+                                    <td></td>
+                                    <td>西</td>
+                                    <td>3LDK</td>
+                                    <td>77.23平米</td>
+                                    <td>4520万円</td>
+                                    <td>193万円</td>
+                                </tr>
+                                <tr>
+                                    <td class="pinned">タワー棟</td>
+                                    <td class="pinned">2F</td>
+                                    <td></td>
+                                    <td>西</td>
+                                    <td>3LDK</td>
+                                    <td>77.23平米</td>
+                                    <td>4520万円</td>
+                                    <td>193万円</td>
+                                </tr>
+                                <tr>
+                                    <td class="pinned">タワー棟</td>
+                                    <td class="pinned">2F</td>
+                                    <td></td>
+                                    <td>西</td>
+                                    <td>3LDK</td>
+                                    <td>77.23平米</td>
+                                    <td>4520万円</td>
+                                    <td>193万円</td>
+                                </tr>
+                                <tr>
+                                    <td class="pinned">タワー棟</td>
+                                    <td class="pinned">2F</td>
+                                    <td></td>
+                                    <td>西</td>
+                                    <td>3LDK</td>
+                                    <td>77.23平米</td>
+                                    <td>4520万円</td>
+                                    <td>193万円</td>
+                                </tr>
+                                <tr>
+                                    <td class="pinned">タワー棟</td>
+                                    <td class="pinned">2F</td>
+                                    <td></td>
+                                    <td>西</td>
+                                    <td>3LDK</td>
+                                    <td>77.23平米</td>
+                                    <td>4520万円</td>
+                                    <td>193万円</td>
+                                </tr>
+                                <tr>
+                                    <td class="pinned">タワー棟</td>
+                                    <td class="pinned">2F</td>
+                                    <td></td>
+                                    <td>西</td>
+                                    <td>3LDK</td>
+                                    <td>77.23平米</td>
+                                    <td>4520万円</td>
+                                    <td>193万円</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <!-- Price table ends -->
+                <!-- Sticky buttons Price tables-->
+                <div id="pricing_tables">
+                    <div class="sticky-btns">
+                        <a href="#">適正価格</a>
+                        <a id="sticky-action-btn">部屋ごとの価格を見る</a>
+                    </div>
+                </div>
+                <div id="fadeout_price_btn"></div>
+                <div class="spacing-top">
+                    <div class="current_showcase_property">
+
+                        <div class="recommended_img"> <img src="https://realestate.c.yimg.jp/new/mansion/image/resize?dir=rich/1002/1963/image/100219630047.jpg">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="spacer-20px">
+                            <div class="clearfix">
+                                <h1 class="recommended_title">タワープロジェクト</h1>
+                            </div>
+                            <div class="price"> 4,490万円～8,790万円</div>
+                            <div class="text-right links"> <a href="#" class="color-button">ご近所物件を見る</a> </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Ad">
+                    <img src="images/fw_holder.png">
+                </div>
+                <div class="custom-pagination">
+                    <div class="mail_wind">
+                        <h2>スレの更新情報を受け取る</h2>
+                        <form action="">
+                            <div class="radios">
+                                <label class="radio-container" for="hour-1">
+                                            <input type="radio" id="hour-1" name="interval">
+                                            <i class="res_radio"><span class="fa fa-check"></span></i>
+                                                1時間
+                                </label>
+                                <label class="radio-container" for="daily-1">
+                                        <input type="radio" id="daily-1" name="interval">
+                                        <i class="res_radio"><span class="fa fa-check"></span></i>
+                                        24時間
+                            </label>
+                                <label class="radio-container" for="weekly-1">
+                                    <input type="radio" id="weekly-1" name="interval">
+                                    <i class="res_radio"><span class="fa fa-check"></span></i>
+                                    常に
+                        </label>
+
+                            </div>
+                            <div class="signup-email-address">
+                                <input type="email" name="mail" placeholder="your@email.com" value="">
+                                <input type="submit" value="登録"> </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Tab 3 ends -->
             <div class="tab-pane fade" id="tab4">4...</div>
         </div>
     </div>
+    <!-- Pagination ends -->
+
+    <!-- footer repeated contents start  -->
+    <div id="Ad">
+        <img src="images/property.png">
+    </div>
+
+    <!-- Fadeout Trigger -->
+    <div id="fadeout_inquiry_position"></div>
+    <!-- Fadeout Trigger -->
+
+    <!-- Select UnSelect   -->
+    <div class="finding_nearby gray-bg clearfix">
+        <h2>ご近所物件</h2>
+        <a href="" class="checkbox_trigger pull-left">全てにチェックを入れる</a>
+        <a href="" class="nearby_information pull-right">まとめて資料請求(無料)</a>
+    </div>
+
+    <!-- Select UnSelect   -->
+    <!-- FadeIn for NearBy Sticky layer -->
+    <div id="fadeinfinding_nearby"></div>
+
+
+    <!-- recommended property 27/12/2017-->
+    <div class="rec_property">
+        <div class="rec_property_image" style="background-image:url(https://dummy-images.com/buildings/dummy-600x900-City.jpg);"></div>
+        <div class="overlay"></div>
+        <div class="spacer-20px">
+            <div class="row no-margin">
+                <div class="col-md-9 col-lg-9 col-sm-9 col-xs-7 no-padding">
+                    <h1 class="rec_title">プラウドシティ</h1>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-5 no-padding">
+                    <div class="text-right dropup dropdown-custom-bottom">
+                        <a href="#" class="dropdown-toggle more-menu" id="rec_property_dd" data-toggle="dropdown" role="button" aria-expanded="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                        <ul class="dropdown-menu dropup-custom" role="menu" aria-labelledby="rec_property_dd">
+
+                            <li>
+                                <a href="#">
+                                    <div class="fa-icons"> <i class="far fa-file">
+                                                </i>
+                                    </div> 見学記</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="fa-icons"><i class="fas fa-info"></i></div> まとめ</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="fa-icons"><i class="far fa-user"></i></div> 住民スレ</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="fa-icons"><i class="far fa-question-circle"></i></div> 資料請求</a>
+                            </li>
+                            <div class="css-shapes-arrow-top"></div>
+                        </ul>
+                    </div>
+                    <div class="price"> 4,490万円～8,790万円</div>
+                </div>
+
+            </div>
+            <div class="rec_cta_btn_div">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-2">
+                        <div class="checkbox">
+                            <input id="check" type="checkbox" />
+                            <label for="check">
+                        <div class="box"><i class="fa fa-check"></i></div>
+                        </label></div>
+                    </div>
+                    <div class="col-md-9 col-lg-9 col-sm-9 col-xs-10 text-right">
+                        <div class="rec_cta_button">
+
+                            <a href="#" class="white-btn">検討スレ</a>
+                            <a href="#" class="color-btn active">物件概要</a> </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- recommended property ends 27/12/2017-->
+    <!-- recommended property 27/12/2017-->
+    <div class="rec_property">
+        <div class="rec_property_image" style="background-image:url(https://dummy-images.com/buildings/dummy-600x900-City.jpg);"></div>
+        <div class="overlay"></div>
+        <div class="spacer-20px">
+            <div class="row no-margin">
+                <div class="col-md-9 col-lg-9 col-sm-9 col-xs-7 no-padding">
+                    <h1 class="rec_title">プラウドシティ</h1>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-5 no-padding">
+
+
+                    <div class="text-right dropup dropdown-custom-bottom">
+                        <a href="#" class="dropdown-toggle more-menu" id="rec_property_dd" data-toggle="dropdown" role="button" aria-expanded="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                        <ul class="dropdown-menu dropup-custom" role="menu" aria-labelledby="rec_property_dd">
+
+                            <li>
+                                <a href="#">
+                                    <div class="fa-icons"> <i class="far fa-file">
+                                                        </i>
+                                    </div> 見学記</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="fa-icons"><i class="fas fa-info"></i></div> まとめ</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="fa-icons"><i class="far fa-user"></i></div> 住民スレ</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="fa-icons"><i class="far fa-question-circle"></i></div> 資料請求</a>
+                            </li>
+
+                            <div class="css-shapes-arrow-top"></div>
+                        </ul>
+                    </div>
+
+                    <div class="price"> 4,490万円～8,790万円</div>
+                </div>
+
+            </div>
+            <div class="rec_cta_btn_div">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-2">
+                        <div class="checkbox">
+                            <input id="check_01" type="checkbox" />
+                            <label for="check_01">
+            <div class="box"><i class="fa fa-check"></i></div>
+            </label></div>
+                    </div>
+                    <div class="col-md-9 col-lg-9 col-sm-9 col-xs-10 text-right">
+                        <div class="rec_cta_button">
+
+                            <a href="#" class="white-btn">検討スレ</a>
+                            <a href="#" class="color-btn active">物件概要</a> </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- recommended property ends 27/12/2017-->
+    <!-- recommended property 27/12/2017-->
+    <div class="rec_property">
+        <div class="rec_property_image" style="background-image:url(https://dummy-images.com/buildings/dummy-600x900-City.jpg);"></div>
+        <div class="overlay"></div>
+        <div class="spacer-20px">
+            <div class="row no-margin">
+                <div class="col-md-9 col-lg-9 col-sm-9 col-xs-7 no-padding">
+                    <h1 class="rec_title">プラウドシティ</h1>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-5 no-padding">
+
+
+                    <div class="text-right dropup dropdown-custom-bottom">
+                        <a href="#" class="dropdown-toggle more-menu" id="rec_property_dd" data-toggle="dropdown" role="button" aria-expanded="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                        <ul class="dropdown-menu dropup-custom" role="menu" aria-labelledby="rec_property_dd">
+
+                            <li>
+                                <a href="#">
+                                    <div class="fa-icons"> <i class="far fa-file">
+                                                        </i>
+                                    </div> 見学記</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="fa-icons"><i class="fas fa-info"></i></div> まとめ</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="fa-icons"><i class="far fa-user"></i></div> 住民スレ</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="fa-icons"><i class="far fa-question-circle"></i></div> 資料請求</a>
+                            </li>
+                            <div class="css-shapes-arrow-top"></div>
+                        </ul>
+                    </div>
+
+                    <div class="price"> 4,490万円～8,790万円</div>
+                </div>
+
+            </div>
+            <div class="rec_cta_btn_div">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-2">
+                        <div class="checkbox">
+                            <input id="check_02" type="checkbox" />
+                            <label for="check_02">
+                <div class="box"><i class="fa fa-check"></i></div>
+                </label></div>
+                    </div>
+                    <div class="col-md-9 col-lg-9 col-sm-9 col-xs-10 text-right">
+                        <div class="rec_cta_button">
+
+                            <a href="#" class="white-btn">検討スレ</a>
+                            <a href="#" class="color-btn active">物件概要</a> </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Sticky layer hide from here -->
+    <div id="fadeoutfinding_nearby"></div>
+    <!-- recommended property ends 27/12/2017-->
+    <div id="findingNearBy_sticky" class="gray-bg">
+        <div class="finding_nearby spacer-20px clearfix">
+            <a href="" class="checkbox_trigger pull-left">全てにチェックを入れる</a>
+            <a href="" class="nearby_information pull-right">まとめて資料請求(無料)</a> </div>
+    </div>
+
+
+    <!-- Link goto Home -->
+    <div class="text-center spacer-20px">
+        <a href="/" class="inline-link">マンションコミュニティHOMEへ</a>
+    </div>
+
+
+
+    <!-- Property Detail-->
+    <table class="table-style">
+        <tr class="bild_overview_th">
+            <th class="bild_overview_th" colspan="2">（仮称）三鷹駅直結タワープロジェクト物件概要</th>
+        </tr>
+        <tr>
+            <td class="bild_title_td">所在地</td>
+            <td class="bild_overview_td">東京都三鷹市下連雀3丁目307-4他（地番）</td>
+        </tr>
+        <tr>
+            <td class="bild_title_td">交通</td>
+            <td class="bild_overview_td">中央本線（JR東日本） 「三鷹」駅 徒歩1分 （南口より）<br> 総武線 「三鷹」駅 徒歩1分 （南口より）</td>
+        </tr>
+        <tr>
+            <td class="bild_title_td">間取り</td>
+            <td class="bild_overview_td">1LDK～3LDK</td>
+        </tr>
+        <tr>
+            <td class="bild_title_td">専有面積</td>
+            <td class="bild_overview_td">40.06m2～90.66m2</td>
+        </tr>
+        <tr>
+            <td class="bild_title_td">価格</td>
+            <td class="bild_overview_td">未定</td>
+        </tr>
+        <tr>
+            <td class="bild_title_td">種別</td>
+            <td class="bild_overview_td">新築マンション</td>
+        </tr>
+        <tr>
+            <td class="bild_title_td">総戸数</td>
+            <td class="bild_overview_td">184戸（事業協力者住戸39戸含む）※他に商業・業務フロア</td>
+        </tr>
+        <tr>
+            <td class="bild_title_td">販売戸数</td>
+            <td class="bild_overview_td">未定</td>
+        </tr>
+        <tr>
+            <td class="bild_title_td">そのほかの情報</td>
+            <td class="bild_overview_td">構造、建物階数：（一部鉄骨造）、地上26階 地下2階建<br> 敷地の権利形態：所有権の共有
+                <br> 完成時期：2019年02月中旬予定
+                <br> 入居可能時期：2019年04月下旬予定 </td>
+        </tr>
+    </table>
+    <table class="table-style">
+        <tr class="bild_overview_th">
+            <th class="bild_overview_th" colspan="2">会社情報</th>
+        </tr>
+        <tr>
+            <td class="bild_title_td">[売主]相鉄不動産株式会社</td>
+            <td class="bild_overview_td">神奈川県横浜市西区北幸2-9-14<br> 国土交通大臣（2）第7949号、（一社）不動産協会会員、（公社）首都圏不動産公正取引協議会加盟
+            </td>
+        </tr>
+
+        <tr>
+            <td class="bild_title_td">[売主・販売代理]三菱地所レジデンス株式会社</td>
+            <td class="bild_overview_td">東京都千代田区大手町1-6-1<br> 国土交通大臣（14）第408号、（一社）不動産協会会員、（公社）首都圏不動産公正取引協議会加盟
+            </td>
+        </tr>
+        <tr>
+            <td class="bild_title_td">[販売代理]相鉄不動産販売株式会社</td>
+            <td class="bild_overview_td">神奈川県横浜市西区北幸2-9-14相鉄本社ビル6階<br> 国土交通大臣（3）第6809号、（一社）不動産流通経営協会　（公社）首都圏不動産公正取引協議会加盟
+            </td>
+        </tr>
+    </table>
+    <!-- Property Detail ENDS-->
+    <!-- footer repeated contents ends -->
     <footer>
         <ul>
             <li>
