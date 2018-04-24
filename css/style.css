@@ -1810,12 +1810,17 @@
         background-color: #eee;
     }
     
-    .table-responsive>.fixed-column {
+    .table-price .table-responsive>.fixed-column {
         position: absolute;
         display: inline-block;
         width: auto;
         border-right: 1px solid #ddd;
         background: white;
+    }
+    
+    .table-price .table-bordered>thead>tr>td,
+    .table-price .table-bordered>thead>tr>th {
+        border-bottom-width: 1px;
     }
     
     @media(min-width:768px) {

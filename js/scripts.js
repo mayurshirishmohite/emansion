@@ -71,15 +71,14 @@ $(document).ready(function() {
     // Show/Hide Property  Detail Toggle
     $('.property-view-detail-toggle').click(function(event) {
         event.preventDefault();
-        if ($(this).parent().next('#full-description').css('display') == 'none') {
-            $(this).parent().next('#full-description').slideDown();
+        if ($('#full-description').css('display') == 'none') {
+            $('#full-description').slideDown();
             $(this).find('i').removeClass('fa-chevron-down');
             $(this).find('i').addClass('fa-chevron-up');
         } else {
-            $(this).parent().next('#full-description').slideUp('slow');
+            $('#full-description').slideUp('slow');
             $(this).find('i').removeClass('fa-chevron-up');
             $(this).find('i').addClass('fa-chevron-down');
-
         }
     });
     // Clap Count 
@@ -200,16 +199,11 @@ $(document).ready(function() {
         }
 
         if (trigger_position > fadeoutfinding_nearby) {
-            $("#findingNearBy_sticky").show();
-            $("#findingNearBy_sticky").removeClass('active');
-            $("#findingNearBy_sticky").addClass('inactive');
+            $("#findingNearBy_sticky").show().removeClass('active').addClass('inactive');
         } else if (trigger_position < fadeinfinding_nearby) {
-            $("#findingNearBy_sticky").show();
-            $("#findingNearBy_sticky").removeClass('active');
-            $("#findingNearBy_sticky").addClass('inactive');
+            $("#findingNearBy_sticky").show().removeClass('active').addClass('inactive');
         } else if (trigger_position > fadeinfinding_nearby) {
-            $("#findingNearBy_sticky").addClass('active');
-            $("#findingNearBy_sticky").removeClass('inactive');
+            $("#findingNearBy_sticky").addClass('active').removeClass('inactive');
         }
         if (trigger_position > fadeoutfinding_downarrow) {
             $("#sticky-arrow .arrow-down").hide();
