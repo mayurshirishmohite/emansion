@@ -302,7 +302,7 @@ $(document).ready(function() {
         }
     }
 
-    //freeze columns
+    //freeze tables columns
     var $table = $('.table-pinned');
     var $fixedColumn = $table.clone().insertBefore($table).addClass('fixed-column');
 
