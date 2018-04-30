@@ -388,11 +388,11 @@
     }
     
     .no-margin {
-        margin: 0;
+        margin: 0 !important;
     }
     
     .no-padding {
-        padding: 0;
+        padding: 0 !important;
     }
     
     .default-btn,
@@ -1818,6 +1818,10 @@
         background: white;
     }
     
+    .table-price .table-responsive {
+        margin-bottom: 0;
+    }
+    
     .table-price .table-bordered>thead>tr>td,
     .table-price .table-bordered>thead>tr>th {
         border-bottom-width: 1px;
@@ -1835,6 +1839,11 @@
     
     a.custom-color-orange {
         background: #80d1db !important;
+    }
+    
+    .post-item-spacing {
+        padding-top: 0;
+        padding-bottom: 20px;
     }
     /*********** MEDIA QUERIES *************/
     
