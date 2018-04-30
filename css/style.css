@@ -1823,10 +1823,18 @@
         border-bottom-width: 1px;
     }
     
+    .table-price .table-responsive table+table tr td.pinned:nth-child(1) {
+        width: 39px;
+    }
+    
     @media(min-width:768px) {
         .table-responsive>.fixed-column {
             display: none;
         }
+    }
+    
+    a.custom-color-orange {
+        background: #80d1db !important;
     }
     /*********** MEDIA QUERIES *************/
     

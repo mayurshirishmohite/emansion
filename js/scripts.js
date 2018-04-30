@@ -71,12 +71,13 @@ $(document).ready(function() {
     // Show/Hide Property  Detail Toggle
     $('.property-view-detail-toggle').click(function(event) {
         event.preventDefault();
-        if ($('#full-description').css('display') == 'none') {
-            $('#full-description').slideDown();
+        var fullDescrition = $('#full-description');
+        if ($(this).parent().next(fullDescrition).css('display') == 'none') {
+            $(this).parent().next(fullDescrition).slideDown();
             $(this).find('i').removeClass('fa-chevron-down');
             $(this).find('i').addClass('fa-chevron-up');
         } else {
-            $('#full-description').slideUp('slow');
+            $(this).parent().next(fullDescrition).slideUp('slow');
             $(this).find('i').removeClass('fa-chevron-up');
             $(this).find('i').addClass('fa-chevron-down');
         }
