@@ -1137,10 +1137,14 @@
         background-color: #CDD4D8;
     }
     
-    #detail_and_post .sticky-btns a#sticky-action-btn,
-    #pricing_tables .sticky-btns a#sticky-action-btn {
+    #detail_and_post .sticky-btns a#sticky-action-btn {
         background-color: #f9560d;
         width: 68%;
+        text-decoration: none;
+    }
+    
+    #pricing_tables .sticky-btns a#sticky-action-btn {
+        width: 100%;
         text-decoration: none;
     }
     
@@ -1837,7 +1841,7 @@
         }
     }
     
-    a.custom-color-orange {
+    a.custom-color-blue {
         background: #80d1db !important;
     }
     
