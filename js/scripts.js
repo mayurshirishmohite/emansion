@@ -12,13 +12,13 @@ $(document).ready(function() {
     function checkSearch() {
         if ($('#search-form').css('display') == 'none') {
             $('#search-form').slideDown();
-            $('#sb-search .fa.fa-search').hide();
+            $('#sb-search .fa-search').hide();
             $('#nav-icon-search').show();
 
         } else {
             $('#search-form').slideUp();
             $('#nav-icon-search').hide();
-            $('#sb-search .fa.fa-search').show();
+            $('#sb-search .fa-search').show();
         }
     }
 
@@ -74,12 +74,12 @@ $(document).ready(function() {
         var fullDescrition = $('#full-description');
         if ($(this).parent().next(fullDescrition).css('display') == 'none') {
             $(this).parent().next(fullDescrition).slideDown();
-            $(this).find('i').removeClass('fa-chevron-down');
-            $(this).find('i').addClass('fa-chevron-up');
+            $(this).find('svg').removeClass('fa-chevron-down');
+            $(this).find('svg').addClass('fa-chevron-up');
         } else {
             $(this).parent().next(fullDescrition).slideUp('slow');
-            $(this).find('i').removeClass('fa-chevron-up');
-            $(this).find('i').addClass('fa-chevron-down');
+            $(this).find('svg').removeClass('fa-chevron-up');
+            $(this).find('svg').addClass('fa-chevron-down');
         }
     });
     // Clap Count 
@@ -151,7 +151,7 @@ $(document).ready(function() {
     };
 
     // expand textarea
-    $('#real_response .fa-expand').click(function(event) {
+    $('.textarea-expand').click(function(event) {
         var textarea_input = $('#real_response_body');
         if (!$(this).hasClass('active')) {
             $(this).addClass('active');

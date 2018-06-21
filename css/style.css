@@ -330,6 +330,13 @@
         cursor: pointer;
     }
     
+    button.search-btn svg.svg-inline--fa.fa-search.fa-w-16 {
+        font-size: 22px;
+        top: 5px;
+        position: relative;
+        right: 5px;
+    }
+    
     form#search-form .fa-times {
         font-size: 20px;
         color: #fff;
@@ -346,6 +353,11 @@
         outline: none;
         transition: all 0.5s linear;
         text-indent: 15px;
+    }
+    
+    a.sb-search-cta {
+        font-size: 24px;
+        color: white;
     }
     /*********** Helper Classes ************/
     
@@ -765,13 +777,13 @@
         cursor: pointer;
     }
     
-    #res_search_box label .far {
+    #res_search_box label svg.svg-inline--fa.fa-image {
         color: rgb(193, 205, 211);
-        font-size: 22px;
+        font-size: 36px;
         padding-top: 13px;
     }
     
-    #res_search_box input:checked+.far {
+    #res_search_box input:checked+svg.svg-inline--fa.fa-image {
         color: #f9560d;
     }
     /**** PAGINATION ************/
@@ -1055,11 +1067,11 @@
         z-index: 1;
     }
     
-    #real_response_checkbox+label i#res_chkbox .fa {
+    #real_response_checkbox+label i#res_chkbox .fa-check {
         display: none;
     }
     
-    #real_response_checkbox:checked+label i#res_chkbox .fa {
+    #real_response_checkbox:checked+label i#res_chkbox .fa-check {
         display: inline-block;
     }
     
@@ -1073,7 +1085,7 @@
         height: 200px !important;
     }
     
-    #real_response .fa-expand {
+    #real_response svg.fa-expand {
         font-size: 20px;
         cursor: pointer;
         margin: 0 15px;
@@ -1311,8 +1323,15 @@
         display: none;
     }
     
-    .mail_wind .radio-container input[type=radio]:checked+i.res_radio .fa {
-        display: inline-block;
+    .mail_wind .radio-container input[type=radio]+i.res_radio .svg-inline--fa {
+        display: none;
+    }
+    
+    .mail_wind .radio-container input[type=radio]:checked+i.res_radio .svg-inline--fa {
+        left: 5px;
+        position: relative;
+        top: 5px;
+        display: block;
     }
     
     .mail_wind .radio-container input[type=radio]:checked+i.res_radio {
@@ -1511,10 +1530,14 @@
         cursor: pointer;
     }
     
-    .rec_property .checkbox input:checked+label .box i {
+    .rec_property .checkbox input+label .box svg.svg-inline--fa.fa-check {
+        left: 15px;
+        position: relative;
+        top: 15px;
         -webkit-transition-duration: 150ms;
         transition-duration: 150ms;
         opacity: 1;
+        font-size: 21px;
     }
     
     .rec_property .checkbox label {
