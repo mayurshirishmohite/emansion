@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     // cursor on tap
     $('input').click(function() {
         $(this).focus();
@@ -279,14 +280,19 @@ $(document).ready(function() {
     $('.custom-nav-tabs').scroll(function() {
         hscrollTab();
     });
+
     //function to detect HScroll bar if exists or not!
+
     $.fn.hasHScrollBar = function() {
         return this.get(0).scrollWidth > this.innerWidth();
     }
-    if ($('.custom-nav-tabs').hasHScrollBar()) {
-        $('.right-tab-arrow').fadeIn();
-    } else {
-        $('.right-tab-arrow,.left-tab-arrow').fadeOut();
+
+    if ($(".custom-nav-tabs").is(":visible")) {
+        if ($('.custom-nav-tabs').hasHScrollBar()) {
+            $('.right-tab-arrow').fadeIn();
+        } else {
+            $('.right-tab-arrow,.left-tab-arrow').fadeOut();
+        }
     }
     // scroll tab function to hide and how arrows
     function hscrollTab() {
@@ -312,5 +318,20 @@ $(document).ready(function() {
     $fixedColumn.find('tr').each(function(i, elem) {
         $(this).height($table.find('tr:eq(' + i + ')').height());
     });
+
+
+    var toggle_Desc = $('.property-view-detail-toggle');
+    // Check first user visits and make changes
+    if (typeof window.localStorage !== "undefined" && !localStorage.getItem('visited')) {
+        // Set visited flag in local storage
+        localStorage.setItem('visited', true);
+        // Alert the user
+        $('#full-description').slideDown();
+        $('.property-view-detail-toggle').children().removeClass('fa-chevron-down');
+        $('.property-view-detail-toggle').children().addClass('fa-chevron-up');
+        console.log("Hello my friend. This is your first visit.");
+    } else {
+        console.log("Second visits");
+    }
 
 });

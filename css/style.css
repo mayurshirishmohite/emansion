@@ -458,6 +458,11 @@
         height: 380px;
     }
     
+    .mc-property-overview-dicussion {
+        color: #fff;
+        height: 150px;
+    }
+    
     .overlay {
         background: -moz-linear-gradient(top, rgba(112, 131, 140, 0.8) 0%, rgba(16, 22, 25, 0.8) 100%);
         background: -webkit-linear-gradient(top, rgba(112, 131, 140, 0.8) 0%, rgba(16, 22, 25, 0.8) 100%);
@@ -485,6 +490,14 @@
         width: 100%;
         z-index: -1;
         height: 380px;
+        position: absolute;
+    }
+    
+    .property-thumbnail-dicussion {
+        overflow: hidden;
+        width: 100%;
+        z-index: -1;
+        height: 150px;
         position: absolute;
     }
     
