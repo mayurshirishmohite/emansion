@@ -327,8 +327,8 @@ $(document).ready(function() {
         localStorage.setItem('visited', true);
         // Alert the user
         $('#full-description').slideDown();
-        $('.property-view-detail-toggle').children().removeClass('fa-chevron-down');
-        $('.property-view-detail-toggle').children().addClass('fa-chevron-up');
+        $(toggle_Desc).children().removeClass('fa-chevron-down');
+        $(toggle_Desc).children().addClass('fa-chevron-up');
         console.log("Hello my friend. This is your first visit.");
     } else {
         console.log("Second visits");
