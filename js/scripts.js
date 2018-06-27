@@ -319,7 +319,7 @@ $(document).ready(function() {
         $(this).height($table.find('tr:eq(' + i + ')').height());
     });
 
-    var proDesc = $('#detail_and_post>.sticky-btns>a');
+    var proDesc = $('#detail_and_post>.sticky-btns>a.proDesc');
     var toggle_Desc = $('.property-view-detail-toggle');
     // Check first user visits and make changes
     if (typeof window.localStorage !== "undefined" && !localStorage.getItem('visited')) {
@@ -329,11 +329,14 @@ $(document).ready(function() {
         $('#full-description').slideDown();
         $(toggle_Desc).children().removeClass('fa-chevron-down');
         $(toggle_Desc).children().addClass('fa-chevron-up');
+
+        //sticky button text when user visits first time
         proDesc.html('最初の訪問');
-        console.log("Hello my friend. This is your first visit.");
+        //console.log("Hello my friend. This is your first visit.");
     } else {
+        //sticky button text when user visits Second time
         proDesc.html('2回目の訪問');
-        console.log("Second visits");
+        //console.log("Second visits");
     }
 
 });
