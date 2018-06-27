@@ -319,7 +319,7 @@ $(document).ready(function() {
         $(this).height($table.find('tr:eq(' + i + ')').height());
     });
 
-
+    var proDesc = $('#detail_and_post>.sticky-btns>a');
     var toggle_Desc = $('.property-view-detail-toggle');
     // Check first user visits and make changes
     if (typeof window.localStorage !== "undefined" && !localStorage.getItem('visited')) {
@@ -329,8 +329,10 @@ $(document).ready(function() {
         $('#full-description').slideDown();
         $(toggle_Desc).children().removeClass('fa-chevron-down');
         $(toggle_Desc).children().addClass('fa-chevron-up');
+        proDesc.html('最初の訪問');
         console.log("Hello my friend. This is your first visit.");
     } else {
+        proDesc.html('2回目の訪問');
         console.log("Second visits");
     }
 
