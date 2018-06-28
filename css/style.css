@@ -1154,6 +1154,7 @@
     }
     
     #detail_and_post .sticky-btns a:first-child,
+    #detail_and_post .sticky-btns a:nth-child(2),
     #pricing_tables .sticky-btns a:first-child {
         background-color: #a0aaae;
         width: 28%;

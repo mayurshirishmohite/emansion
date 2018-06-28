@@ -154,7 +154,8 @@
                 <!-- Sticky buttons -->
                 <div id="detail_and_post">
                     <div class="sticky-btns">
-                        <a href="#" class="proDesc">物件概要</a>
+                        <a href="#current_showcase_property" class="new-visit">visit-1</a>
+                        <a href="#recommended_property" class="old-visit">visit-2</a>
                         <a id="sticky-action-btn">投稿する</a>
                     </div>
                     <div class="sticky-posts"> <a id="close-sticky-inputs">X</a>
@@ -403,7 +404,7 @@
                 <div id="fadeout_price_btn"></div>
                 <!-- Recommended Property Current Property -->
                 <div class="spacing-top">
-                    <div class="current_showcase_property">
+                    <div class="current_showcase_property" id="current_showcase_property">
 
                         <div class="recommended_img"> <img src="https://realestate.c.yimg.jp/new/mansion/image/resize?dir=rich/1002/1963/image/100219630047.jpg">
                             <div class="overlay"></div>
@@ -497,216 +498,219 @@
     <!-- Fadeout Trigger -->
 
     <!-- Select UnSelect   -->
-    <div class="finding_nearby gray-bg clearfix">
-        <h2>ご近所物件</h2>
-        <a href="" class="checkbox_trigger pull-left">全てにチェックを入れる</a>
-        <a href="" class="nearby_information pull-right">まとめて資料請求(無料)</a>
-    </div>
+    <div id="recommended_property">
+        <div class="finding_nearby gray-bg clearfix">
+            <h2>ご近所物件</h2>
+            <a href="" class="checkbox_trigger pull-left">全てにチェックを入れる</a>
+            <a href="" class="nearby_information pull-right">まとめて資料請求(無料)</a>
+        </div>
 
-    <!-- Select UnSelect   -->
-    <!-- FadeIn for NearBy Sticky layer -->
-    <div id="fadeinfinding_nearby"></div>
+        <!-- Select UnSelect   -->
+        <!-- FadeIn for NearBy Sticky layer -->
+        <div id="fadeinfinding_nearby"></div>
 
 
-    <!-- recommended property 27/12/2017-->
-    <div class="rec_property">
-        <div class="rec_property_image" style="background-image:url(https://dummy-images.com/buildings/dummy-600x900-City.jpg);"></div>
-        <div class="overlay"></div>
-        <div class="spacer-20px">
-            <div class="row no-margin">
-                <div class="col-md-9 col-lg-9 col-sm-9 col-xs-7 no-padding">
-                    <h1 class="rec_title">プラウドシティ</h1>
-                </div>
-                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-5 no-padding">
-                    <div class="text-right dropup dropdown-custom-bottom">
-                        <a href="#" class="dropdown-toggle more-menu" id="rec_property_dd" data-toggle="dropdown" role="button" aria-expanded="true">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </a>
-                        <ul class="dropdown-menu dropup-custom" role="menu" aria-labelledby="rec_property_dd">
-
-                            <li>
-                                <a href="#">
-                                    <div class="fa-icons"> <i class="far fa-file">
-                                                </i>
-                                    </div> 見学記</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="fa-icons"><i class="fas fa-info"></i></div> まとめ</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="fa-icons"><i class="far fa-user"></i></div> 住民スレ</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="fa-icons"><i class="far fa-question-circle"></i></div> 資料請求</a>
-                            </li>
-                            <div class="css-shapes-arrow-top"></div>
-                        </ul>
+        <!-- recommended property 27/12/2017-->
+        <div class="rec_property">
+            <div class="rec_property_image" style="background-image:url(https://dummy-images.com/buildings/dummy-600x900-City.jpg);"></div>
+            <div class="overlay"></div>
+            <div class="spacer-20px">
+                <div class="row no-margin">
+                    <div class="col-md-9 col-lg-9 col-sm-9 col-xs-7 no-padding">
+                        <h1 class="rec_title">プラウドシティ</h1>
                     </div>
-                    <div class="price"> 4,490万円～8,790万円</div>
-                </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-5 no-padding">
+                        <div class="text-right dropup dropdown-custom-bottom">
+                            <a href="#" class="dropdown-toggle more-menu" id="rec_property_dd" data-toggle="dropdown" role="button" aria-expanded="true">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                            <ul class="dropdown-menu dropup-custom" role="menu" aria-labelledby="rec_property_dd">
 
-            </div>
-            <div class="rec_cta_btn_div">
-                <div class="row">
-                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-2">
-                        <div class="checkbox">
-                            <input id="check" type="checkbox" />
-                            <label for="check">
+                                <li>
+                                    <a href="#">
+                                        <div class="fa-icons"> <i class="far fa-file">
+                                                </i>
+                                        </div> 見学記</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="fa-icons"><i class="fas fa-info"></i></div> まとめ</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="fa-icons"><i class="far fa-user"></i></div> 住民スレ</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="fa-icons"><i class="far fa-question-circle"></i></div> 資料請求</a>
+                                </li>
+                                <div class="css-shapes-arrow-top"></div>
+                            </ul>
+                        </div>
+                        <div class="price"> 4,490万円～8,790万円</div>
+                    </div>
+
+                </div>
+                <div class="rec_cta_btn_div">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-2">
+                            <div class="checkbox">
+                                <input id="check" type="checkbox" />
+                                <label for="check">
                         <div class="box"><i class="fa fa-check"></i></div>
                         </label></div>
-                    </div>
-                    <div class="col-md-9 col-lg-9 col-sm-9 col-xs-10 text-right">
-                        <div class="rec_cta_button">
+                        </div>
+                        <div class="col-md-9 col-lg-9 col-sm-9 col-xs-10 text-right">
+                            <div class="rec_cta_button">
 
-                            <a href="#" class="white-btn">検討スレ</a>
-                            <a href="#" class="color-btn active">物件概要</a> </div>
+                                <a href="#" class="white-btn">検討スレ</a>
+                                <a href="#" class="color-btn active">物件概要</a> </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
-    <!-- recommended property ends 27/12/2017-->
-    <!-- recommended property 27/12/2017-->
-    <div class="rec_property">
-        <div class="rec_property_image" style="background-image:url(https://dummy-images.com/buildings/dummy-600x900-City.jpg);"></div>
-        <div class="overlay"></div>
-        <div class="spacer-20px">
-            <div class="row no-margin">
-                <div class="col-md-9 col-lg-9 col-sm-9 col-xs-7 no-padding">
-                    <h1 class="rec_title">プラウドシティ</h1>
-                </div>
-                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-5 no-padding">
+        <!-- recommended property ends 27/12/2017-->
+        <!-- recommended property 27/12/2017-->
+        <div class="rec_property">
+            <div class="rec_property_image" style="background-image:url(https://dummy-images.com/buildings/dummy-600x900-City.jpg);"></div>
+            <div class="overlay"></div>
+            <div class="spacer-20px">
+                <div class="row no-margin">
+                    <div class="col-md-9 col-lg-9 col-sm-9 col-xs-7 no-padding">
+                        <h1 class="rec_title">プラウドシティ</h1>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-5 no-padding">
 
 
-                    <div class="text-right dropup dropdown-custom-bottom">
-                        <a href="#" class="dropdown-toggle more-menu" id="rec_property_dd" data-toggle="dropdown" role="button" aria-expanded="true">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </a>
-                        <ul class="dropdown-menu dropup-custom" role="menu" aria-labelledby="rec_property_dd">
+                        <div class="text-right dropup dropdown-custom-bottom">
+                            <a href="#" class="dropdown-toggle more-menu" id="rec_property_dd" data-toggle="dropdown" role="button" aria-expanded="true">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                            <ul class="dropdown-menu dropup-custom" role="menu" aria-labelledby="rec_property_dd">
 
-                            <li>
-                                <a href="#">
-                                    <div class="fa-icons"> <i class="far fa-file">
+                                <li>
+                                    <a href="#">
+                                        <div class="fa-icons"> <i class="far fa-file">
                                                         </i>
-                                    </div> 見学記</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="fa-icons"><i class="fas fa-info"></i></div> まとめ</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="fa-icons"><i class="far fa-user"></i></div> 住民スレ</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="fa-icons"><i class="far fa-question-circle"></i></div> 資料請求</a>
-                            </li>
+                                        </div> 見学記</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="fa-icons"><i class="fas fa-info"></i></div> まとめ</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="fa-icons"><i class="far fa-user"></i></div> 住民スレ</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="fa-icons"><i class="far fa-question-circle"></i></div> 資料請求</a>
+                                </li>
 
-                            <div class="css-shapes-arrow-top"></div>
-                        </ul>
+                                <div class="css-shapes-arrow-top"></div>
+                            </ul>
+                        </div>
+
+                        <div class="price"> 4,490万円～8,790万円</div>
                     </div>
 
-                    <div class="price"> 4,490万円～8,790万円</div>
                 </div>
-
-            </div>
-            <div class="rec_cta_btn_div">
-                <div class="row">
-                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-2">
-                        <div class="checkbox">
-                            <input id="check_01" type="checkbox" />
-                            <label for="check_01">
+                <div class="rec_cta_btn_div">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-2">
+                            <div class="checkbox">
+                                <input id="check_01" type="checkbox" />
+                                <label for="check_01">
             <div class="box"><i class="fa fa-check"></i></div>
             </label></div>
-                    </div>
-                    <div class="col-md-9 col-lg-9 col-sm-9 col-xs-10 text-right">
-                        <div class="rec_cta_button">
+                        </div>
+                        <div class="col-md-9 col-lg-9 col-sm-9 col-xs-10 text-right">
+                            <div class="rec_cta_button">
 
-                            <a href="#" class="white-btn">検討スレ</a>
-                            <a href="#" class="color-btn active">物件概要</a> </div>
+                                <a href="#" class="white-btn">検討スレ</a>
+                                <a href="#" class="color-btn active">物件概要</a> </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
-    <!-- recommended property ends 27/12/2017-->
-    <!-- recommended property 27/12/2017-->
-    <div class="rec_property">
-        <div class="rec_property_image" style="background-image:url(https://dummy-images.com/buildings/dummy-600x900-City.jpg);"></div>
-        <div class="overlay"></div>
-        <div class="spacer-20px">
-            <div class="row no-margin">
-                <div class="col-md-9 col-lg-9 col-sm-9 col-xs-7 no-padding">
-                    <h1 class="rec_title">プラウドシティ</h1>
-                </div>
-                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-5 no-padding">
+        <!-- recommended property ends 27/12/2017-->
+        <!-- recommended property 27/12/2017-->
+        <div class="rec_property">
+            <div class="rec_property_image" style="background-image:url(https://dummy-images.com/buildings/dummy-600x900-City.jpg);"></div>
+            <div class="overlay"></div>
+            <div class="spacer-20px">
+                <div class="row no-margin">
+                    <div class="col-md-9 col-lg-9 col-sm-9 col-xs-7 no-padding">
+                        <h1 class="rec_title">プラウドシティ</h1>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-5 no-padding">
 
 
-                    <div class="text-right dropup dropdown-custom-bottom">
-                        <a href="#" class="dropdown-toggle more-menu" id="rec_property_dd" data-toggle="dropdown" role="button" aria-expanded="true">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </a>
-                        <ul class="dropdown-menu dropup-custom" role="menu" aria-labelledby="rec_property_dd">
+                        <div class="text-right dropup dropdown-custom-bottom">
+                            <a href="#" class="dropdown-toggle more-menu" id="rec_property_dd" data-toggle="dropdown" role="button" aria-expanded="true">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                            <ul class="dropdown-menu dropup-custom" role="menu" aria-labelledby="rec_property_dd">
 
-                            <li>
-                                <a href="#">
-                                    <div class="fa-icons"> <i class="far fa-file">
+                                <li>
+                                    <a href="#">
+                                        <div class="fa-icons"> <i class="far fa-file">
                                                         </i>
-                                    </div> 見学記</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="fa-icons"><i class="fas fa-info"></i></div> まとめ</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="fa-icons"><i class="far fa-user"></i></div> 住民スレ</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="fa-icons"><i class="far fa-question-circle"></i></div> 資料請求</a>
-                            </li>
-                            <div class="css-shapes-arrow-top"></div>
-                        </ul>
+                                        </div> 見学記</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="fa-icons"><i class="fas fa-info"></i></div> まとめ</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="fa-icons"><i class="far fa-user"></i></div> 住民スレ</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="fa-icons"><i class="far fa-question-circle"></i></div> 資料請求</a>
+                                </li>
+                                <div class="css-shapes-arrow-top"></div>
+                            </ul>
+                        </div>
+
+                        <div class="price"> 4,490万円～8,790万円</div>
                     </div>
 
-                    <div class="price"> 4,490万円～8,790万円</div>
                 </div>
-
-            </div>
-            <div class="rec_cta_btn_div">
-                <div class="row">
-                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-2">
-                        <div class="checkbox">
-                            <input id="check_02" type="checkbox" />
-                            <label for="check_02">
+                <div class="rec_cta_btn_div">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-2">
+                            <div class="checkbox">
+                                <input id="check_02" type="checkbox" />
+                                <label for="check_02">
                 <div class="box"><i class="fa fa-check"></i></div>
                 </label></div>
-                    </div>
-                    <div class="col-md-9 col-lg-9 col-sm-9 col-xs-10 text-right">
-                        <div class="rec_cta_button">
+                        </div>
+                        <div class="col-md-9 col-lg-9 col-sm-9 col-xs-10 text-right">
+                            <div class="rec_cta_button">
 
-                            <a href="#" class="white-btn">検討スレ</a>
-                            <a href="#" class="color-btn active">物件概要</a> </div>
+                                <a href="#" class="white-btn">検討スレ</a>
+                                <a href="#" class="color-btn active">物件概要</a> </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
+        <!-- Sticky layer hide from here -->
     </div>
-    <!-- Sticky layer hide from here -->
+    <!-- id- recommended_property ends -->
     <div id="fadeoutfinding_nearby"></div>
     <!-- recommended property ends 27/12/2017-->
     <div id="findingNearBy_sticky" class="gray-bg">

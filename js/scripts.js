@@ -319,7 +319,17 @@ $(document).ready(function() {
         $(this).height($table.find('tr:eq(' + i + ')').height());
     });
 
-    var proDesc = $('#detail_and_post>.sticky-btns>a.proDesc');
+    //  one page navigation for top menu 
+    $('#detail_and_post .sticky-btns a[href^="#"]').on('click', function(event) {
+        var target = $($(this).attr('href'));
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        }
+    });
+
     var toggle_Desc = $('.property-view-detail-toggle');
     // Check first user visits and make changes
     if (typeof window.localStorage !== "undefined" && !localStorage.getItem('visited')) {
@@ -331,11 +341,13 @@ $(document).ready(function() {
         $(toggle_Desc).children().addClass('fa-chevron-up');
 
         //sticky button text when user visits first time
-        proDesc.html('最初の訪問');
+        $('.new-visit').show();
+        $('.old-visit').hide();
         //console.log("Hello my friend. This is your first visit.");
     } else {
         //sticky button text when user visits Second time
-        proDesc.html('2回目の訪問');
+        $('.new-visit').hide();
+        $('.old-visit').show();
         //console.log("Second visits");
     }
 
