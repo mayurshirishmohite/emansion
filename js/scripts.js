@@ -319,7 +319,7 @@ $(document).ready(function() {
         $(this).height($table.find('tr:eq(' + i + ')').height());
     });
 
-    //  one page navigation for top menu 
+    //  Generic nav click function on same page
     $('#detail_and_post .sticky-btns a[href^="#"]').on('click', function(event) {
         var target = $($(this).attr('href'));
         if (target.length) {
@@ -343,12 +343,10 @@ $(document).ready(function() {
         //sticky button text when user visits first time
         $('.new-visit').show();
         $('.old-visit').hide();
-        //console.log("Hello my friend. This is your first visit.");
     } else {
         //sticky button text when user visits Second time
         $('.new-visit').hide();
         $('.old-visit').show();
-        //console.log("Second visits");
     }
 
 });
