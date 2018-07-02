@@ -336,7 +336,7 @@ $(document).ready(function() {
         // Set visited flag in local storage
         localStorage.setItem('visited', true);
         // Alert the user
-        $('#full-description').slideDown();
+        $('#full-description.desc-discussion-thread').slideDown();
         $(toggle_Desc).children().removeClass('fa-chevron-down');
         $(toggle_Desc).children().addClass('fa-chevron-up');
 
