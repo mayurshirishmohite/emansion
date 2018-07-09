@@ -330,23 +330,4 @@ $(document).ready(function() {
         }
     });
 
-    var toggle_Desc = $('.property-view-detail-toggle');
-    // Check first user visits and make changes
-    if (typeof window.localStorage !== "undefined" && !localStorage.getItem('visited')) {
-        // Set visited flag in local storage
-        localStorage.setItem('visited', true);
-        // Alert the user
-        $('#full-description.desc-discussion-thread').slideDown();
-        $(toggle_Desc).children().removeClass('fa-chevron-down');
-        $(toggle_Desc).children().addClass('fa-chevron-up');
-
-        //sticky button text when user visits first time
-        $('.new-visit').show();
-        $('.old-visit').hide();
-    } else {
-        //sticky button text when user visits Second time
-        $('.new-visit').hide();
-        $('.old-visit').show();
-    }
-
 });
