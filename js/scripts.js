@@ -75,10 +75,14 @@ $(document).ready(function() {
         var fullDescrition = $('#full-description');
         if ($(this).parent().next(fullDescrition).css('display') == 'none') {
             $(this).parent().next(fullDescrition).slideDown();
+            $(this).find('.desc-c').hide();
+            $(this).find('.desc-o').show();
             $(this).find('svg').removeClass('fa-chevron-down');
             $(this).find('svg').addClass('fa-chevron-up');
         } else {
             $(this).parent().next(fullDescrition).slideUp('slow');
+            $(this).find('.desc-o').hide();
+            $(this).find('.desc-c').show();
             $(this).find('svg').removeClass('fa-chevron-up');
             $(this).find('svg').addClass('fa-chevron-down');
         }
