@@ -335,28 +335,3 @@ $(document).ready(function() {
     });
 
 });
-var toggle_Desc = $('.property-view-detail-toggle');
-var n = localStorage.getItem('on_load_counter');
-
-if (n === null) {
-    n = 0;
-}
-n++;
-
-localStorage.setItem("on_load_counter", n);
-
-nums = n.toString().split('').map(Number);
-for (var i of nums) {
-    // document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
-    if (i == 1 || i == 2) {
-        $('#full-description').slideDown();
-        $(toggle_Desc).children().removeClass('fa-chevron-down');
-        $(toggle_Desc).children().addClass('fa-chevron-up');
-        $('.new-visit,.desc-o').show();
-        $('.old-visit,.desc-c').hide();
-    } else {
-        $('#full-description').slideUp();
-        $('.new-visit,.desc-o').hide();
-        $('.old-visit,.desc-c').show();
-    }
-}

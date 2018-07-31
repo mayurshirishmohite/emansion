@@ -785,6 +785,33 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        var toggle_Desc = $('.property-view-detail-toggle');
+        var n = localStorage.getItem('dt2');
+
+        if (n === null) {
+            n = 0;
+        }
+        n++;
+
+        localStorage.setItem("dt2", n);
+
+        nums = n.toString().split('').map(Number);
+        for (var i of nums) {
+            // document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
+            if (i == 1 || i == 2) {
+                $('#full-description').slideDown();
+                $(toggle_Desc).children().removeClass('fa-chevron-down');
+                $(toggle_Desc).children().addClass('fa-chevron-up');
+                $('.new-visit,.desc-o').show();
+                $('.old-visit,.desc-c').hide();
+            } else {
+                $('#full-description').slideUp();
+                $('.new-visit,.desc-o').hide();
+                $('.old-visit,.desc-c').show();
+            }
+        }
+    </script>
     <script src="js/scripts.js"></script>
 </body>
 
