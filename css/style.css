@@ -24,10 +24,17 @@
         cursor: pointer;
         font-size: 26px;
     }
+	.title-section,
+	.title-section-nbg {
+		padding:5px 10px 5px 10px;
+	}
 	.title-section{
 		background-color:#f9560d;
-		padding:5px 10px 5px 10px;
 		color:#fff;
+	}
+	.title-section-nbg h4{
+		color:#000;
+		margin-bottom:0;
 	}
 	.apartment-lists {
 		padding:10px 10px 0 10px;
@@ -37,6 +44,9 @@
 	}
 	.apartment-lists  p{
 		margin:0;
+	}
+	.brdr-top {
+		border-top:1px solid #979797;
 	}
 	.border-bottom {
 		border-bottom:1px solid #979797;
@@ -62,7 +72,21 @@
 	.reviews span + div {
 		padding-top:10px;
 	}
-	
+	.reviews-small {
+		text-align:center;
+		border:1px solid #646464;
+		padding:5px;
+		font-size:15px;
+		line-height:20px;
+		width:100%;
+		min-height:50px;
+		max-height:120px;
+		margin-bottom:10px;
+	}
+	.reviews-small span + div {
+		padding-top:10px;
+	}
+
 	a {
 		color:#333;
 	}
