@@ -13,13 +13,13 @@ $(document).ready(function() {
     function checkSearch() {
         if ($('#search-form').css('display') == 'none') {
             $('#search-form').slideDown();
-            $('#sb-search .fa-search').hide();
+            $('#sb-search .fa-search,.site-description').hide();
             $('#nav-icon-search').show();
-
+			
         } else {
             $('#search-form').slideUp();
             $('#nav-icon-search').hide();
-            $('#sb-search .fa-search').show();
+            $('#sb-search .fa-search,.site-description').show();
         }
     }
 
@@ -333,5 +333,14 @@ $(document).ready(function() {
             }, 1000);
         }
     });
-
+	
+	$(document).ready(function(){
+	  $(".owl-carousel").owlCarousel({
+		loop:true,
+		margin:10,
+		center:true,
+		dots:false,
+		nav:true,
+	  });
+	});
 });

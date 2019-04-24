@@ -24,6 +24,97 @@
         cursor: pointer;
         font-size: 26px;
     }
+	.title-section{
+		background-color:#f9560d;
+		padding:5px 10px 5px 10px;
+		color:#fff;
+	}
+	.apartment-lists {
+		padding:10px 10px 0 10px;
+	}
+	.apartment-lists  img{
+		height:100%;
+	}
+	.apartment-lists  p{
+		margin:0;
+	}
+	.border-bottom {
+		border-bottom:1px solid #979797;
+		padding:10px 0;
+	}
+	
+	.border-bottom:last-child {
+		padding:10px 0 0 0;
+	}
+	
+	.reviews {
+		text-align:center;
+		border:1px solid #646464;
+		padding:5px;
+		font-size:15px;
+		line-height:20px;
+		margin:5px 0;
+		width:100%;
+		min-height:85px;
+		max-height:120px;
+		padding-top:20px;
+	}
+	.reviews span + div {
+		padding-top:10px;
+	}
+	
+	a {
+		color:#333;
+	}
+	
+	.pd-ten {
+		padding:10px;
+	}
+	
+	.owl-carousel {
+		border-bottom:1px solid #666;
+	}
+	.owl-carousel.owl-drag .owl-item {
+		text-align:center;
+	}
+	.profile-img {
+		padding:10px;
+	}
+	.owl-carousel .owl-item img {
+		max-width: 100%;
+	}
+	.owl-carousel  {
+		position:relative;
+	}
+	.owl-carousel .owl-nav {
+		font-size:30px;
+	}
+	.owl-carousel .owl-nav .owl-prev ,
+	.owl-carousel .owl-nav .owl-next {
+		position:absolute;
+		top: 42%;
+		background: white !important;
+		border-radius: 50%;
+		width: 30px;
+		height: 30px;
+		box-shadow: 0px 0px 5px #0006;
+		color: #a0aaaf;
+		font-size: 35px; 
+		outline: none;
+	}
+	
+	.owl-carousel .owl-nav .owl-prev {
+		left: 10px;
+	}
+	.owl-carousel .owl-nav .owl-next {
+		right: 10px;
+	}
+	
+	.ext-lnk {
+		padding:0;
+		list-style:none;
+		margin:0;
+	}
     /****************** MENU *********************/
     
     #menu,
@@ -221,7 +312,7 @@
         height: auto;
         overflow: hidden;
         background-color: #fff;
-        margin: 10px 0;
+        margin: 10px;
         text-align: center;
     }
     
@@ -229,7 +320,12 @@
         width: 100%;
         max-width: 480px;
     }
-    
+	
+	.site-description {
+		text-align:center;
+		padding:20px;
+	}    
+	
     .container-tabs {
         position: relative;
     }
@@ -1169,7 +1265,7 @@
     
     #detail_and_post .sticky-btns a#sticky-action-btn {
         background-color: #f9560d;
-        width: 68%;
+        width: 67%;
         text-decoration: none;
     }
     
@@ -1890,6 +1986,7 @@
         padding-top: 0;
         padding-bottom: 20px;
     }
+	
     /*********** MEDIA QUERIES *************/
     
     @media screen and (max-width:326px) {
