@@ -110,10 +110,34 @@
 		right: 10px;
 	}
 	
-	.ext-lnk {
+	ul.ext-lnk {
 		padding:0;
 		list-style:none;
-		margin:0;
+		margin:0;		
+	}
+	ul.ext-lnk li{		
+		border-bottom:1px solid #969696;
+		position:relative;
+	}
+	ul.ext-lnk li a {
+		display:block;
+		line-height:45px;
+		padding-left:10px;
+		text-decoration:none;
+	}
+	ul.ext-lnk li > a:after {
+		 content: "\f054";
+		 font-family: FontAwesome;
+		 right:10px;
+		 font-size:16px;
+		 position:absolute;
+		 color:#bcbcbc;
+		 top:0;
+	}
+	/* fixing white space on right */
+	.row {
+		margin-right: -10px;
+		margin-left: -15px;
 	}
     /****************** MENU *********************/
     
