@@ -170,15 +170,54 @@ $(document).ready(function() {
     // Scroll to fixed for detail_and_post
     $(window).scroll(function() {
         var trigger_position = $(this).scrollTop() + $(this).height();
-        /* console.log('Scroll top:' + $(this).scrollTop());
-         console.log('This Height :' + $(this).height());*/
-        var fadeinposition = $('#fadein_inquiry_position').offset().top;
-        var fadeoutposition = $('#fadeout_inquiry_position').offset().top;
-        var fadeinfinding_nearby = $('#fadeinfinding_nearby').offset().top;
-        var fadeoutfinding_nearby = $('#fadeoutfinding_nearby').offset().top;
-        var fadeoutfinding_downarrow = $('#fadeout_downarrow').offset().top;
-        var fadein_price_btn = $('#fadein_price_btn').offset().top;
-        var fadeout_price_btn = $('#fadeout_price_btn').offset().top;
+		//Check if elements exists before setting offset;
+		var fdin_inq_pos = $('#fadein_inquiry_position');
+		var fadeinposition = "";
+		if (fdin_inq_pos.length) {
+			fadeinposition = fdin_inq_pos.offset().top;
+		}
+        
+        //Check if elements exists before setting offset;
+		var fdout_inq_pos = $('#fadeout_inquiry_position');
+		var fadeoutposition = "";
+		if (fdout_inq_pos.length) {
+			fadeoutposition = fdout_inq_pos.offset().top;
+		}
+
+        //Check if elements exists before setting offset;
+		var fdin_find_nby = $('#fadeinfinding_nearby');
+		var fadeinfinding_nearby = "";
+		if (fdin_find_nby.length) {
+			fadeinfinding_nearby = fdin_find_nby.offset().top;
+		}
+		
+        //Check if elements exists before setting offset;
+		var fdout_find_nby = $('#fadeoutfinding_nearby');
+		var fadeoutfinding_nearby = "";
+		if (fdout_find_nby.length) {
+			fadeoutfinding_nearby = fdout_find_nby.offset().top;
+		}
+		
+        //Check if elements exists before setting offset;
+		var fdout_down_arr = $('#fadeout_downarrow');
+		var fadeoutfinding_downarrow = "";
+		if (fdout_down_arr.length) {
+			fadeoutfinding_downarrow = fdout_down_arr.offset().top;
+		}
+		
+       //Check if elements exists before setting offset;
+		var fdin_price_btn = $('#fadein_price_btn');
+		var fadein_price_btn = "";
+		if (fdin_price_btn.length) {
+			fadein_price_btn = fdin_price_btn.offset().top;
+		}
+		
+        //Check if elements exists before setting offset;
+		var fdout_price_btn = $('#fadeout_price_btn');
+		var fadeout_price_btn = "";
+		if (fdout_price_btn.length) {
+			fadeout_price_btn = fdout_price_btn.offset().top;
+		}
 
         if (trigger_position > fadeoutposition) {
             $("#detail_and_post").fadeOut("slow");
@@ -333,14 +372,13 @@ $(document).ready(function() {
             }, 1000);
         }
     });
-	
-	$(document).ready(function(){
+
+	if($(".owl-carousel").length){
 	  $(".owl-carousel").owlCarousel({
 		loop:true,
 		margin:10,
 		center:true,
 		dots:false,
 		nav:true,
-	  });
-	});
+	  });}
 });
