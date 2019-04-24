@@ -139,6 +139,25 @@
 		margin-right: -10px;
 		margin-left: -15px;
 	}
+	#notify .alert {
+		padding: 15px;
+		margin-bottom: 0;
+		border: 0px solid transparent;
+		border-radius: 0px;
+		font-size:15px;
+		text-align:center;
+	}
+	#notify .alert button{
+		border-radius: 50%;
+		border: 1px solid;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: relative;
+		top: -7px;
+		line-height: 30px;
+		opacity: 1;
+	}
     /****************** MENU *********************/
     
     #menu,
