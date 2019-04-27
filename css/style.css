@@ -60,7 +60,6 @@ body {
 
 .rev-parent a{
 	text-align:center;
-	padding:12px 10px 40px 10px;
 	font-size:15px;
 	line-height:20px;
 	margin:5px 0;
@@ -69,14 +68,9 @@ body {
 	border:1px solid #b3b4b5;
 	text-decoration:none;
 	position:relative;
-	min-height:94px;
 }
 .rev-parent a span + span{
-	position: absolute;
-	bottom: 10px;
-	text-align: center;
-	width: 100%;
-	left: 0;
+	display: block;
 }
 .rev-parent a,.reviews-small a{	
 	background: rgba(255,255,255,1);
@@ -173,15 +167,14 @@ ul.ext-lnk li a {
 	line-height:45px;
 	padding-left:10px;
 	text-decoration:none;
+	position:relative;
 }
-ul.ext-lnk li > a:after {
-	 content: "\f054";
-	 font-family: FontAwesome;
-	 right:10px;
-	 font-size:16px;
-	 position:absolute;
+
+ul.ext-lnk li > a  svg {
+	position:absolute;
+	right:10px;
+	top:14px;
 	 color:#bcbcbc;
-	 top:0;
 }
 /* fixing white space on right */
 .row {
