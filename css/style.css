@@ -200,6 +200,9 @@ ul.ext-lnk li > a  svg {
 	line-height: 30px;
 	opacity: 1;
 }
+#notify .alert a{
+	text-decoration:none;
+}
 /****************** MENU *********************/
 
 #menu,
