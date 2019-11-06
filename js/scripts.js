@@ -68,7 +68,7 @@ $(document).ready(function() {
             overlayMenu.hide();
         }
     }
-
+   
     // Show/Hide Property  Detail Toggle
     $('.property-view-detail-toggle').click(function(event) {
         event.preventDefault();
@@ -380,5 +380,23 @@ $(document).ready(function() {
 		center:true,
 		dots:false,
 		nav:true,
-	  });}
+      });}
+      
+      // Filter options for search results
+      $('.more-filter').click(function(){         
+        event.preventDefault();
+        if ($('.filter-opt-sub-list').css('display') == 'none') {
+            $('.filter-opt-sub-list').slideDown();
+            $(this).find('svg').removeClass('fa-chevron-down');
+            $(this).find('svg').addClass('fa-chevron-up');
+            $(this).find('.filterC').hide();
+            $(this).find('.filterO').show();
+        } else {
+            $('.filter-opt-sub-list').slideUp();
+            $(this).find('svg').removeClass('fa-chevron-up');
+            $(this).find('svg').addClass('fa-chevron-down');
+            $(this).find('.filterO').hide();
+            $(this).find('.filterC').show();
+        }
+      });
 });
