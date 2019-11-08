@@ -2100,13 +2100,25 @@ padding: 0 5px 0 0;
 	padding: 8px 0 0 0;
 }
 #header.header-gray .small-logo {
-	width: 40px;    text-align: left;
-    left: -12px;
+    width: 35px;
+    text-align: center;
+    left: -5px;
     position: relative;
-    top: 3px;
+    top: 6px;
 }
+
+.sticky-search-cont.fixed {
+    position: fixed;
+	top:0; left:0;
+	z-index: 120;
+	width: 100%;
+	transition: all 0.3s linear;
+ }
+	
 .filter-opt-cont {
 	padding: 5px;
+	text-align: center;
+	background-color: white;
 }
 .filter-opt-cont ul.filter-opt {
     padding: 0;
@@ -2114,13 +2126,24 @@ padding: 0 5px 0 0;
     display: inline-block;
 }
 .filter-opt-cont label {
-    display: inline-block;
+	display: inline-block;
+	padding-right: 8px;
 }
 .filter-opt-sub-list,
 .filterO{
 	display: none;
 	padding: 0;
     margin: 0;
+}
+.filterO.filterOInline{
+	width: 84px;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+}
+.filterO.filterOInline svg{
+    position: relative;
+    right: -12px;
 }
 .filter-opt-cont ul.filter-opt li a,
 .filter-opt-sub-list li a {
@@ -2152,6 +2175,18 @@ padding: 0 5px 0 0;
 	.filter-opt-cont ul.filter-opt li a{
 		padding: 5px 1px;
 		font-size: 12px;
+	}
+	#header.header-gray .small-logo {
+		width: 28px;
+		left: -2px;
+		top: 10px;
+	}
+	.filterO.filterOInline{
+		width: 78px;
+	}
+	.filter-opt-cont label {
+		display: inline-block;
+		padding-right: 3px;
 	}
 }
 /*********** MEDIA QUERIES *************/

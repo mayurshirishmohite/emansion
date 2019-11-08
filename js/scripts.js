@@ -383,6 +383,14 @@ $(document).ready(function() {
       });}
       
       // Filter options for search results
+      $(window).scroll(function(){
+        var sticky = $('.sticky-search-cont'),
+            scroll = $(window).scrollTop();
+      
+        if (scroll >= 100) sticky.addClass('fixed');
+        else sticky.removeClass('fixed');
+      });
+
       $('.more-filter').click(function(){         
         event.preventDefault();
         if ($('.filter-opt-sub-list').css('display') == 'none') {
@@ -390,12 +398,12 @@ $(document).ready(function() {
             $(this).find('svg').removeClass('fa-chevron-down');
             $(this).find('svg').addClass('fa-chevron-up');
             $(this).find('.filterC').hide();
-            $(this).find('.filterO').show();
+            $(this).find('.filterO').addClass('filterOInline');
         } else {
             $('.filter-opt-sub-list').slideUp();
             $(this).find('svg').removeClass('fa-chevron-up');
             $(this).find('svg').addClass('fa-chevron-down');
-            $(this).find('.filterO').hide();
+            $(this).find('.filterO').removeClass('filterOInline');;
             $(this).find('.filterC').show();
         }
       });
