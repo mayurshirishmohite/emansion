@@ -2117,7 +2117,7 @@ padding: 0 5px 0 0;
  }
 	
 .filter-opt-cont {
-	padding: 5px;
+	padding: 9px 0 5px 0;
 	text-align: center;
 	background-color: white;
 }
@@ -2130,11 +2130,15 @@ padding: 0 5px 0 0;
 	display: inline-block;
 	padding-right: 8px;
 }
-.filter-opt-sub-list,
-.filterO{
+.filterO {
+	display:none;
+}
+.filter-opt-sub-list {
 	display: none;
 	padding: 0;
     margin: 0;
+	padding-top: 4px;
+    padding-bottom: 4px;
 }
 .filterO.filterOInline{
 	width: 84px;
@@ -2153,7 +2157,7 @@ padding: 0 5px 0 0;
 .filter-opt-cont ul.filter-opt li,
 .filter-opt-sub-list li {
 	display: inline-block;
-	margin: 0px 0 10px 0;
+	margin: 0px;
     padding: 0 1px;
     font-size: 13px;
 }
@@ -2163,7 +2167,7 @@ padding: 0 5px 0 0;
 }
 .filter-opt-sub-list li a {
     border: 1px solid #4A4A4A;
-    padding: 5px 8px;
+    padding: 5px 10px;
 }
 .filter-opt-cont ul.filter-opt li a svg {
 	border: 1px solid #4A4A4A;
