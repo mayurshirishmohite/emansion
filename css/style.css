@@ -2182,7 +2182,7 @@ a.custom-color-blue {
     -ms-transition: position 10s;
     -o-transition: position 10s;
     transition: all 0.5s ease;
-    animation: smoothScroll2 1s forwards;
+    animation: smoothScroll2 0.5s forwards;
 }
 
 .sticky-search-cont.fixed {
@@ -2202,6 +2202,15 @@ a.custom-color-blue {
     }
     100% {
         transform: translateY(0px);
+    }
+}
+
+@keyframes smoothScroll2 {
+    0% {
+        transform: translateY(40px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
 

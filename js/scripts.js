@@ -15,7 +15,7 @@ $(document).ready(function() {
             $('#search-form').slideDown();
             $('#sb-search .fa-search,.site-description').hide();
             $('#nav-icon-search').show();
-			
+
         } else {
             $('#search-form').slideUp();
             $('#nav-icon-search').hide();
@@ -68,7 +68,7 @@ $(document).ready(function() {
             overlayMenu.hide();
         }
     }
-   
+
     // Show/Hide Property  Detail Toggle
     $('.property-view-detail-toggle').click(function(event) {
         event.preventDefault();
@@ -170,54 +170,54 @@ $(document).ready(function() {
     // Scroll to fixed for detail_and_post
     $(window).scroll(function() {
         var trigger_position = $(this).scrollTop() + $(this).height();
-		//Check if elements exists before setting offset;
-		var fdin_inq_pos = $('#fadein_inquiry_position');
-		var fadeinposition = "";
-		if (fdin_inq_pos.length) {
-			fadeinposition = fdin_inq_pos.offset().top;
-		}
-        
         //Check if elements exists before setting offset;
-		var fdout_inq_pos = $('#fadeout_inquiry_position');
-		var fadeoutposition = "";
-		if (fdout_inq_pos.length) {
-			fadeoutposition = fdout_inq_pos.offset().top;
-		}
+        var fdin_inq_pos = $('#fadein_inquiry_position');
+        var fadeinposition = "";
+        if (fdin_inq_pos.length) {
+            fadeinposition = fdin_inq_pos.offset().top;
+        }
 
         //Check if elements exists before setting offset;
-		var fdin_find_nby = $('#fadeinfinding_nearby');
-		var fadeinfinding_nearby = "";
-		if (fdin_find_nby.length) {
-			fadeinfinding_nearby = fdin_find_nby.offset().top;
-		}
-		
+        var fdout_inq_pos = $('#fadeout_inquiry_position');
+        var fadeoutposition = "";
+        if (fdout_inq_pos.length) {
+            fadeoutposition = fdout_inq_pos.offset().top;
+        }
+
         //Check if elements exists before setting offset;
-		var fdout_find_nby = $('#fadeoutfinding_nearby');
-		var fadeoutfinding_nearby = "";
-		if (fdout_find_nby.length) {
-			fadeoutfinding_nearby = fdout_find_nby.offset().top;
-		}
-		
+        var fdin_find_nby = $('#fadeinfinding_nearby');
+        var fadeinfinding_nearby = "";
+        if (fdin_find_nby.length) {
+            fadeinfinding_nearby = fdin_find_nby.offset().top;
+        }
+
         //Check if elements exists before setting offset;
-		var fdout_down_arr = $('#fadeout_downarrow');
-		var fadeoutfinding_downarrow = "";
-		if (fdout_down_arr.length) {
-			fadeoutfinding_downarrow = fdout_down_arr.offset().top;
-		}
-		
-       //Check if elements exists before setting offset;
-		var fdin_price_btn = $('#fadein_price_btn');
-		var fadein_price_btn = "";
-		if (fdin_price_btn.length) {
-			fadein_price_btn = fdin_price_btn.offset().top;
-		}
-		
+        var fdout_find_nby = $('#fadeoutfinding_nearby');
+        var fadeoutfinding_nearby = "";
+        if (fdout_find_nby.length) {
+            fadeoutfinding_nearby = fdout_find_nby.offset().top;
+        }
+
         //Check if elements exists before setting offset;
-		var fdout_price_btn = $('#fadeout_price_btn');
-		var fadeout_price_btn = "";
-		if (fdout_price_btn.length) {
-			fadeout_price_btn = fdout_price_btn.offset().top;
-		}
+        var fdout_down_arr = $('#fadeout_downarrow');
+        var fadeoutfinding_downarrow = "";
+        if (fdout_down_arr.length) {
+            fadeoutfinding_downarrow = fdout_down_arr.offset().top;
+        }
+
+        //Check if elements exists before setting offset;
+        var fdin_price_btn = $('#fadein_price_btn');
+        var fadein_price_btn = "";
+        if (fdin_price_btn.length) {
+            fadein_price_btn = fdin_price_btn.offset().top;
+        }
+
+        //Check if elements exists before setting offset;
+        var fdout_price_btn = $('#fadeout_price_btn');
+        var fadeout_price_btn = "";
+        if (fdout_price_btn.length) {
+            fadeout_price_btn = fdout_price_btn.offset().top;
+        }
 
         if (trigger_position > fadeoutposition) {
             $("#detail_and_post").fadeOut("slow");
@@ -373,25 +373,26 @@ $(document).ready(function() {
         }
     });
 
-	if($(".owl-carousel").length){
-	  $(".owl-carousel").owlCarousel({
-		loop:true,
-		margin:10,
-		center:true,
-		dots:false,
-		nav:true,
-      });}
-      
-      // Filter options for search results
-      $(window).scroll(function(){
+    if ($(".owl-carousel").length) {
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 10,
+            center: true,
+            dots: false,
+            nav: true,
+        });
+    }
+
+    // Filter options for search results
+    $(window).scroll(function() {
         var sticky = $('.sticky-search-cont'),
             scroll = $(window).scrollTop();
-      
-        if (scroll >= 100) sticky.addClass('fixed');
-        else sticky.removeClass('fixed');
-      });
 
-      $('.more-filter').click(function(){         
+        if (scroll >= 50) sticky.addClass('fixed');
+        else sticky.removeClass('fixed');
+    });
+
+    $('.more-filter').click(function() {
         event.preventDefault();
         if ($('.filter-opt-sub-list').css('display') == 'none') {
             $('.filter-opt-sub-list').slideDown();
@@ -406,5 +407,5 @@ $(document).ready(function() {
             $(this).find('.filterO').removeClass('filterOInline');;
             $(this).find('.filterC').show();
         }
-      });
+    });
 });
