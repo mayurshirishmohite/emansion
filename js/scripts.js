@@ -67,6 +67,14 @@ $(document).ready(function() {
             StickyOnScroll.show();
             overlayMenu.hide();
         }
+
+        // For Search results polyfil if menu dd is open than switch to rel pos
+        if ($('nav').hasClass('active')) {
+            $('html, body').animate({ scrollTop: 0 }, 1);
+            $('.sticky-search-cont').css('position', 'relative');
+        } else {
+            $('.sticky-search-cont').css('position', 'fixed');
+        }
     }
 
     // Show/Hide Property  Detail Toggle
@@ -388,8 +396,8 @@ $(document).ready(function() {
         var sticky = $('.sticky-search-cont'),
             scroll = $(window).scrollTop();
 
-        if (scroll >= 50) sticky.addClass('fixed');
-        else sticky.removeClass('fixed');
+        if (scroll >= 50) sticky.addClass('shadow');
+        else sticky.removeClass('shadow');
     });
 
     $('.more-filter').click(function() {
