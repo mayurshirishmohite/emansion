@@ -60,12 +60,17 @@ $(document).ready(function() {
                 StickyOnScroll.hide();
                 overlayMenu.show();
             }
+			
+			//Hide Filter when DD menu open
+			$('.filter-opt-cont').hide();
         } else {
             $('#nav-icon').removeClass('open');
             $('nav').removeClass('active');
             $('.main-menu').slideUp();
             StickyOnScroll.show();
             overlayMenu.hide();
+			//Show Filter when DD menu closed
+			$('.filter-opt-cont').show();
         }
 
         // For Search results polyfil if menu dd is open than switch to rel pos
